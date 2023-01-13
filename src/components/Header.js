@@ -14,10 +14,10 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar dark color='primary' sticky='top' expand='md'>
+        <Navbar dark color='primary' sticky='top' expand='xl'>
             <NavbarBrand className='ms-5' href='/'>
-                <img src={Ibanez} alt='nucamp logo' className='float-start' />
-                <h1 className='mt-1'>PGA Rocks</h1>
+                <img src={Ibanez} alt='Ibanez logo' className='float-start' />
+                <h1 id='title' className='m-1' >Guitar Index</h1>
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>
@@ -29,7 +29,7 @@ const Header = () => {
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/directory'>
-                            <i className='fa fa-list fa-lg' /> Directory
+                            <i className='fa fa-list fa-sm' /> Directory
                         </NavLink>
                     </NavItem>
                     <NavItem>
