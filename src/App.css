@@ -7,13 +7,17 @@ h2,
 h3,
 .card-body > .card-title {
     font-family: 'Lobster', cursive;
+    
 }
 
 .card-title {
     font-weight: 500;
     font-size: 1.25rem;
+    color:#901cad;
 }
-
+.card-body{
+    color:aqua;
+}
 h2 {
     color: #3046c5;
 }
@@ -49,7 +53,7 @@ h2 {
 
 .navbar-dark {
     background-color: #901cad;
-    background-image: linear-gradient(to right, white, #09155a, black);
+    background-image: linear-gradient(to right, white, #09155a, black,fuchsia);
     border-bottom: #ffc8da solid;
     margin-bottom: 1rem;
     min-height: 8rem;
@@ -77,6 +81,5 @@ h2 {
 
 #title{
     font-size: 75px;
-    text-align: center;
-    color: aqua;
+    color:fuchsia;
 }

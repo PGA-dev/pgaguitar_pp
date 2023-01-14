@@ -1,7 +1,7 @@
-import { COMMENTS } from '../../app/shared/COMMENTS';
+import { GUITARSTAT } from '../../app/shared/GUITARSTAT';
 
-export const selectCommentsByCampsiteId = (campsiteId) => {
-    return COMMENTS.filter(
-        (comment) => comment.campsiteId === parseInt(campsiteId)
+export const selectCommentsByGuitarId = (guitarId) => {
+    return GUITARSTAT.filter(
+        (comment) => comment.guitarId === parseInt(guitarId)
     );
 };

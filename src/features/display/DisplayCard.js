@@ -1,5 +1,5 @@
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-
+//used in DisplayList on Homepage...
 const DisplayCard = ({ item }) => {
     const { image, name, description } = item;
     return (
