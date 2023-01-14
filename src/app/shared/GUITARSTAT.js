@@ -1,7 +1,7 @@
 export const GUITARSTAT = [
     {
         id: 0,
-        GUITARID: 0,
+        guitarId: 0,
         rating: 5,
         text: 'The grass was indeed greener here than our last campsite.',
         author: 'Simon Hunt',
@@ -9,7 +9,7 @@ export const GUITARSTAT = [
     },
     {
         id: 1,
-        GUITARID: 0,
+        guitarId: 0,
         rating: 3,
         text: 'This lone monkey kept following us back to our tent.',
         author: 'Zandra Katherine',
@@ -17,7 +17,7 @@ export const GUITARSTAT = [
     },
     {
         id: 2,
-        GUITARID: 0,
+        guitarId: 0,
         rating: 4,
         text: 'Do not feed the wildlife. They will follow you back to the tent.',
         author: 'Amy Keophilavong',
@@ -25,7 +25,7 @@ export const GUITARSTAT = [
     },
     {
         id: 3,
-        GUITARID: 0,
+        guitarId: 0,
         rating: 3,
         text: "Avoid Sundays; couldn't relax and play my flute with all the noisy kids.",
         author: 'Jean Luc',
@@ -33,7 +33,7 @@ export const GUITARSTAT = [
     },
     {
         id: 4,
-        GUITARID: 0,
+        guitarId: 0,
         rating: 5,
         text: "This has been our favorite campsite for over 7 years. It is an absolutely beautiful site. The hosts are very friendly and helpful. Don't forget to try out the lake.",
         author: 'R. E. Osariemen',
@@ -41,7 +41,7 @@ export const GUITARSTAT = [
     },
     {
         id: 5,
-        GUITARID: 1,
+        guitarId: 1,
         rating: 4,
         text: "There's nothing more fun than setting up a tent in a rainstorm.",
         author: 'Juan Cortez',
@@ -49,7 +49,7 @@ export const GUITARSTAT = [
     },
     {
         id: 6,
-        GUITARID: 1,
+        guitarId: 1,
         rating: 5,
         text: 'I caught a world-record-breaking trout here on my last visit.',
         author: 'McKenzie Sebastian',
@@ -57,7 +57,7 @@ export const GUITARSTAT = [
     },
     {
         id: 7,
-        GUITARID: 1,
+        guitarId: 1,
         rating: 5,
         text: 'The campground was beautiful, but the bugs could bite sometimes.',
         author: 'Brennen Ech',
@@ -65,7 +65,7 @@ export const GUITARSTAT = [
     },
     {
         id: 8,
-        GUITARID: 1,
+        guitarId: 1,
         rating: 4,
         text: "Love the river but I didn't catch any fish.",
         author: 'Amy Keophilavong',
@@ -73,7 +73,7 @@ export const GUITARSTAT = [
     },
     {
         id: 9,
-        GUITARID: 1,
+        guitarId: 1,
         rating: 5,
         text: 'A wonderful place to reconnect with nature.',
         author: 'Jordan Runn',
@@ -81,7 +81,7 @@ export const GUITARSTAT = [
     },
     {
         id: 10,
-        GUITARID: 2,
+        guitarId: 2,
         rating: 5,
         text: 'The Frozen Tundra is great place for family and friends camping!',
         author: 'Olaf the Snowman',
@@ -89,7 +89,7 @@ export const GUITARSTAT = [
     },
     {
         id: 11,
-        GUITARID: 2,
+        guitarId: 2,
         rating: 1,
         text: 'We had to leave about 2am to go back to the city because the quiet was just too much!',
         author: 'Vincent and Mona Lisa Gambini',
@@ -97,7 +97,7 @@ export const GUITARSTAT = [
     },
     {
         id: 12,
-        GUITARID: 2,
+        guitarId: 2,
         rating: 5,
         text: 'The stars at night were a revelation!',
         author: 'Ann Dabramov',
@@ -105,7 +105,7 @@ export const GUITARSTAT = [
     },
     {
         id: 13,
-        GUITARID: 2,
+        guitarId: 2,
         rating: 4,
         text: 'Great scenic hiking trails but it was challenging to go up the mountain.',
         author: 'Amy Keophilavong',
@@ -113,7 +113,7 @@ export const GUITARSTAT = [
     },
     {
         id: 14,
-        GUITARID: 2,
+        guitarId: 2,
         rating: 5,
         text: 'Perfect scenery for a smoked kipper breakfast with friends!',
         author: 'Dave Lister',
@@ -121,7 +121,7 @@ export const GUITARSTAT = [
     },
     {
         id: 15,
-        GUITARID: 3,
+        guitarId: 3,
         rating: 4,
         text: 'Just remember a bear can run and climb faster than you...',
         author: 'Markell Richards',
@@ -129,7 +129,7 @@ export const GUITARSTAT = [
     },
     {
         id: 16,
-        GUITARID: 3,
+        guitarId: 3,
         rating: 5,
         text: 'Excellent site to recharge from the city.',
         author: 'Amy Keophilavong',
@@ -137,7 +137,7 @@ export const GUITARSTAT = [
     },
     {
         id: 17,
-        GUITARID: 3,
+        guitarId: 3,
         rating: 5,
         text: 'What a magnificent view!',
         author: 'Tinus Lorvaldes',
@@ -145,7 +145,7 @@ export const GUITARSTAT = [
     },
     {
         id: 18,
-        GUITARID: 3,
+        guitarId: 3,
         rating: 4,
         text: 'The sites are huge! We felt like we were in the middle of nowhere, in a good way.',
         author: 'Chloe Haskins',
@@ -153,7 +153,7 @@ export const GUITARSTAT = [
     },
     {
         id: 19,
-        GUITARID: 3,
+        guitarId: 3,
         rating: 5,
         text: "The photos don't do justice to the beauty of this place.",
         author: 'Minae Lee',

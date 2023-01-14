@@ -1,5 +1,5 @@
-import { PROMOTIONS } from '../../app/shared/MULTIGUITAR';
+import { MULTIGUITAR } from '../../app/shared/MULTIGUITAR';
 
 export const selectFeaturedPromotion = () => {
-    return PROMOTIONS.find((promotion) => promotion.featured);
+    return MULTIGUITAR.find((multiguitar) => multiguitar.featured);
 };

@@ -1,4 +1,4 @@
-import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
+import EHB1506 from '../assets/img/p_region_EHB1506MS_BIF_1P_01.png';
 //Photo by Jonny Caspari on Unsplash
 import RG5328 from '../assets/img/p_region_RG5328_LDK_00_02.png';
 // Photo by LoboStudio Hamburg on Unsplash
@@ -6,11 +6,11 @@ import bootsImg from '../assets/img/boots.jpg';
 // Photo by Jonathan Gallegos on Unsplash
 import asyncImg from '../assets/img/mount-promise.jpg';
 
-export const PROMOTIONS = [
+export const MULTIGUITAR = [
     {
         id: 0,
         name: 'Mountain Adventure',
-        image: breadCrumbImg,
+        image: EHB1506,
         featured: false,
         description:
             'Book a 5-day mountain trek with a seasoned outdoor guide! Fly fishing equipment and lessons provided.'
@@ -21,7 +21,7 @@ export const PROMOTIONS = [
         image: RG5328,
         featured: true,
         description:
-            'Use for Carousel'
+            'This 8 string monster, coming with a Gibralter II-8 bridge, Dimarzio Fusion Edge 8 pickups and a Macassar Ebony Fretboard'
     },
     {
         id: 2,

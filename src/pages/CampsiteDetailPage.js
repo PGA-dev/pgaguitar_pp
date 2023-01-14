@@ -6,15 +6,15 @@ import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../components/SubHeader';
 
 const CampsiteDetailPage = () => {
-    const { campsiteId } = useParams();
-    const campsite = selectCampsiteById(campsiteId);
+    const { guitarId } = useParams();
+    const guitar = selectCampsiteById(guitarId);
 
     return (
         <Container>
             <Row>
-                <SubHeader current={campsite.name} detail={true} />
-                <CampsiteDetail campsite={campsite} />
-                <CommentsList campsiteId={campsiteId} />
+                <SubHeader current={guitar.name} detail={true} />
+                <CampsiteDetail guitar={guitar} />
+                <CommentsList guitarId={guitarId} />
             </Row>
         </Container>
     );

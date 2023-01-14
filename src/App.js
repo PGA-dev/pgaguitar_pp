@@ -16,7 +16,7 @@ function App() {
         <Route path='contact' element={<ContactPage />} />
         <Route path='directory' element={<CampsitesDirectoryPage />} />
         <Route
-          path='directory/:campsiteId'
+          path='directory/:guitarId'
           element={<CampsiteDetailPage />}
         />
       </Routes>

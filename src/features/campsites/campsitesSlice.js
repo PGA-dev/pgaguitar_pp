@@ -1,20 +1,20 @@
-import { CAMPSITES } from "../../app/shared/GUITAR";
+import { GUITAR } from "../../app/shared/GUITAR";
 
 
 export const selectAllCampsites = () => {
-    return CAMPSITES;
+    return GUITAR;
 };
 
 // export const selectRandomCampsite = ()=> {
 //     return CAMPSITES[Math.floor(CAMPSITES.length * Math.random())];
 // }
 
-export const selectCampsiteById = (id) => {
-    return CAMPSITES.find((campsite) => campsite.id === parseInt(id));
+export const selectCampsiteById = (guitarid) => {
+    return GUITAR.find((guitar) => guitar.id === parseInt(guitarid));
 };
 
 export const selectFeaturedCampsite = () => {
-    return CAMPSITES.find((campsite) => campsite.featured);
+    return GUITAR.find((guitar) => guitar.featured);
 };
 
 

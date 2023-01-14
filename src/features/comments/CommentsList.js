@@ -1,9 +1,9 @@
 import { Col } from 'reactstrap';
 import Comment from './Comment';
-import { selectCommentsByGuitarId } from './commentsSlice';
+import { selectStatByGuitarId } from './commentsSlice';
 
 const CommentsList = ({ guitarId }) => {
-    const comments = selectCommentsByGuitarId(guitarId);
+    const comments = selectStatByGuitarId(guitarId);
 
     if (comments && comments.length > 0) {
         return (

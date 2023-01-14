@@ -2,17 +2,17 @@ import reactLakeImg from '../assets/img/react-lake.jpg';
 import chromeRiverImg from '../assets/img/chrome-river.jpg';
 import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
 import reduxWoodsImg from '../assets/img/redux-woods.jpg';
-import guitarImg from '../assets/img/guitar.jpg';
-
-export const CAMPSITES = [
+import guitarImg from '../assets/img/p_region_RG8527Z_SDE_00_03.png';
+//WAS CAMPSITES
+export const GUITAR = [
     {
         id: 0,
-        name: 'React Lake Campground',
-        image: reactLakeImg,
+        name: 'RG 8527',
+        image: guitarImg,
         elevation: 1233,
-        featured: false,
+        featured: true,
         description:
-            'Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.'
+            'This 7 string monster, coming with a lo-pro edge (edge zero), Dimarzio PAF 7 pickups and a Macassar Ebony Fretboard'
     },
     {
         id: 1,
@@ -28,7 +28,7 @@ export const CAMPSITES = [
         name: 'Breadcrumb Trail Campground',
         image: breadCrumbImg,
         elevation: 2901,
-        featured: true,
+        featured: false,
         description:
             'Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground.'
     },

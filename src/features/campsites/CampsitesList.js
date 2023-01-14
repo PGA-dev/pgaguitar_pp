@@ -3,13 +3,13 @@ import CampsiteCard from "./CampsiteCard";
 import { selectAllCampsites} from './campsitesSlice';
 
 const CampsitesList = () => {
-    const campsites = selectAllCampsites();
+    const guitar = selectAllCampsites();
     return (
         <Row className='ms-auto'>
-            {campsites.map((campsite) => {
+            {guitar.map((guitar) => {
                 return (
-                    <Col md='5' className='m-4' key={campsite.id}>
-                        <CampsiteCard campsite={campsite} />
+                    <Col md='5' className='m-4' key={guitar.id}>
+                        <CampsiteCard guitar={guitar} />
                     </Col>
                 );
             })}
