@@ -1,9 +1,9 @@
 # Guitar Buying Manufacturing Specifications Guide for Guitar Players
-
+### Ibanez POC
 ## A NuCamp Project
 ### by PGA
 
-#### https://github.com/PGA-dev/PGA_pp.git
+#### https://github.com/PGA-dev/_pp.git //still private
 ## Portfolio Project Perspectives
 One of the most interesting questions I get asked as a guitar instructor is: "what paramaters are relevant to buying a guitar?" The answer, like most issues in life, varies with the needs of the student, or musician asking the question. While most beginner players don't really need a lot of information to get them started, potentially realizing that too much overkill on specifics might end up killing their "enjoyable" new hobby, they do often need solid technical data to inform them and educate them to make future musical decisions and purchases. Advanced, or pro-level players, often need a great deal more information on each instrument, and a way of comparing relevant brands and models for their particular musical needs. For these reasons I have decided to attempt a manufacturer-driven specification guide to electrical guitars for my Bootstrap project; with an optimistic hope to extend this to an honors project, or as a part of a larger honors package for graduation. 
 
@@ -17,18 +17,19 @@ One of the most interesting questions I get asked as a guitar instructor is: "wh
 - Links to reviews and retail purchase sites
 -Initial version will be a POC using Ibanez as the only brand
     -Using Ibanez is useful due to the Company's transparent parts/sales/marketing featured right on the Ibanez USA site
+- This is a re-hash of my original Bootstrap project, that has been totally reformulated for React
 
 ## Prospective technology
-- Bootstrap
+- React
 - Node.js for server-side scripting
 - Mongo.db if we get that far and extend into backend course with this project
-- HTML 
-- css
-- javascript
-- git
+- JSX 
+- css/SCSS
+- Mostly Vanilla Javascript
+- gitlab for local git editing
 - GitHub repositories
 
-## Layout
+## Layout (prospective - this was the original from BS)
 - Home Page
 - General Guide Page
 - About the Guide
