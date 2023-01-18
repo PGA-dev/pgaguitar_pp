@@ -1,7 +1,7 @@
 import EHB1506 from '../assets/img/p_region_EHB1506MS_BIF_1P_01.png';
-//Photo by Jonny Caspari on Unsplash
+//Image courtesy of Hoshino Gakki/Ibanez.com
 import RG5328 from '../assets/img/p_region_RG5328_LDK_00_02.png';
-// Photo by LoboStudio Hamburg on Unsplash
+//Image courtesy of Hoshino Gakki/Ibanez.com
 import bootsImg from '../assets/img/boots.jpg';
 // Photo by Jonathan Gallegos on Unsplash
 import asyncImg from '../assets/img/mount-promise.jpg';

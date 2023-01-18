@@ -3,8 +3,8 @@ export const GUITARSTAT = [
         id: 0,
         guitarId: 0,
         rating: 5,
-        text: 'The grass was indeed greener here than our last campsite.',
-        author: 'Simon Hunt',
+        text: '7 String bliss',
+        author: 'RG8527',
         date: '2018-10-25T16:30Z'
     },
     {
