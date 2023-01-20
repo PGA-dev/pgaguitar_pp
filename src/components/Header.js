@@ -10,7 +10,7 @@ import {
 import { NavLink } from 'react-router-dom';
 import Ibanez from '../app/assets/img/Ibanez_logo.png';
 
-const Header = () => {
+const Header = () => { 
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
@@ -29,12 +29,17 @@ const Header = () => {
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/directory'>
-                            <i className='fa fa-list fa-sm' /> Directory
+                            <i className='fa fa-list fa-sm' /> Guitar
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/directory'>
+                            <i className='fa fa-list fa-sm' /> Bass
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/about'>
-                            <i className='fa fa-info fa-lg' /> About
+                            <i className='fa fa-info fa-lg' /> Guide
                         </NavLink>
                     </NavItem>
                     <NavItem>
