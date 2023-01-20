@@ -1,6 +1,6 @@
-
-import chromeRiverImg from '../assets/img/chrome-river.jpg';
-import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
+import guitar5328Img from '../assets/img/p_region_RG5328_LDK_00_02.png'
+import bass1506Img from '../assets/img/p_region_EHB1506MS_BIF_1P_01.png';
+import bass5006Img from '../assets/img/p_region_SR5006_OL_00_05.png';
 import guitarImg from '../assets/img/p_region_RG8527Z_SDE_00_03.png';
 //WAS CAMPSITES
 export const GUITAR = [
@@ -16,20 +16,28 @@ export const GUITAR = [
     {
         id: 1,
         name: 'RG 5328',
-        image: chromeRiverImg,
+        image: guitar5328Img,
         elevation: 877,
         featured: false,
         description:
-            'Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.'
+            'This 8 string monster, coming with a Gibralter II-8 bridge, Dimarzio Fusion Edge 8 pickups and a Macassar Ebony Fretboard'
     },
     {
         id: 2,
-        name: 'Breadcrumb Trail Campground',
-        image: breadCrumbImg,
+        name: 'SR 5006',
+        image: bass5006Img,
         elevation: 2901,
         featured: false,
         description:
-            'Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground.'
+            'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
     },
-
+    {
+        id: 3,
+        name: 'SR 1506',
+        image: bass1506Img,
+        elevation: 2901,
+        featured: false,
+        description:
+            'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
+    },
 ];

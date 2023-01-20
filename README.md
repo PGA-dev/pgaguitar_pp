@@ -34,10 +34,16 @@ One of the most interesting questions I get asked as a guitar instructor is: "wh
 - General Guide Page
 - About the Guide
 - Contact Page
-- Ibanez
-    - RG Line page
-    - jCustom Line page
-    - Workshop Bass page
+- Initially all data will be in the form of an array, then will draw from DB
+- Guitar Source Data list feeds from an array that is a conjuction of the following:
+    - Guitar Array
+    - Multiscale Guitar array
+    - Bass Array
+    - Multi bass array
+- Guitar Page
+- Bass Page
+- Multiscale Guitar page
+- Guitar details array that will sort based upon instrument id
 - Site Map
 ## Market Survey & Research
 
