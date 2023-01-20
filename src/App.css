@@ -34,7 +34,8 @@ h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#ffc8da, rgb(8, 25, 122));
+    /* background-image: linear-gradient(#ffc8da, rgb(8, 25, 122)); */
+    background-image: radial-gradient(#ffc8da, rgb(8, 25, 122));
     padding: 20px 0;
     margin-top: 2rem;
 }
