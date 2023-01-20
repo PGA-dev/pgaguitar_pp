@@ -1,7 +1,6 @@
-import reactLakeImg from '../assets/img/react-lake.jpg';
+
 import chromeRiverImg from '../assets/img/chrome-river.jpg';
 import breadCrumbImg from '../assets/img/breadcrumb-trail.jpg';
-import reduxWoodsImg from '../assets/img/redux-woods.jpg';
 import guitarImg from '../assets/img/p_region_RG8527Z_SDE_00_03.png';
 //WAS CAMPSITES
 export const GUITAR = [
@@ -16,7 +15,7 @@ export const GUITAR = [
     },
     {
         id: 1,
-        name: 'Chrome River Campground ',
+        name: 'RG 5328',
         image: chromeRiverImg,
         elevation: 877,
         featured: false,
@@ -32,13 +31,5 @@ export const GUITAR = [
         description:
             'Let NuCamp be your guide to this off-the-beaten-path, hike-in-only campground.'
     },
-    {
-        id: 3,
-        name: 'Redux Woods Campground',
-        image: reduxWoodsImg,
-        elevation: 42,
-        featured: false,
-        description:
-            "You'll never want to leave this hidden gem, deep within the lush Redux Woods."
-    }
+
 ];

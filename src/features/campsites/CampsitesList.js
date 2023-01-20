@@ -8,7 +8,7 @@ const CampsitesList = () => {
         <Row className='ms-auto'>
             {guitar.map((guitar) => {
                 return (
-                    <Col md='5' className='m-4' key={guitar.id}>
+                    <Col md='12' className='m-4' key={guitar.id}>
                         <CampsiteCard guitar={guitar} />
                     </Col>
                 );
