@@ -14,7 +14,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar dark color='primary' sticky='top' expand='xl'>
+        <Navbar dark color='primary' sticky='top' expand='lg'>
             <NavbarBrand className='ms-5' href='/'>
                 <img src={Ibanez} alt='Ibanez logo' className='float-start' />
                 <h1 id='title' className='m-1' >Guitar Index</h1>

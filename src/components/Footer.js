@@ -1,19 +1,21 @@
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Ibanez from '../app/assets/img/Ibanez_logo.png';
 
 const Footer = () => {
     return (
         <footer className='site-footer'>
             <Container>
                 <Row>
+
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5>Site Directory</h5>
+                        <h5>Buying Guides</h5>
                         <ul className='list-unstyled'>
                             <li>
-                                <Link to='/'>Home</Link>
+                                <Link to='/directory'>Guitars</Link>
                             </li>
                             <li>
-                                <Link to='/directory'>Directory</Link>
+                                <Link to='/directory'>Bass</Link>
                             </li>
                             <li>
                                 <Link to='/about'>About</Link>
@@ -23,9 +25,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </Col>
-                    <Col>
-                    <h4 className='text-warning'>All images property/courtesey of Hoshino Gakki.com and Ibanez.com</h4>
-                    </Col>
+
                     <Col xs='6' sm='3' className='text-center'>
                         <h5>Social</h5>
                         <a
@@ -57,10 +57,35 @@ const Footer = () => {
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='mailto:notaneemail@haha.co'
+                            href='mailto:paulgadam@gmail.com'
                         >
-                            <i className='fa fa-envelope-o' /> PGA@notanemail.com
+                            <i className='fa fa-envelope-o' /> paulgadam@gmail.com.com
                         </a>
+                    </Col>
+
+                    <Col md='2'>
+                        <div  md='1'className='text-center'>
+                            <img src={Ibanez} alt='Ibanez logo' className='rounded img-fluid' />
+                        </div>
+                        <br></br>
+                        <h4 id='siteRefs' className='text-center'>All images property/courtesey of Hoshino Gakki.com and Ibanez.com</h4>
+                    </Col>
+                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
+                        <h5>Contact Links</h5>
+                        <ul className='list-unstyled'>
+                            <li>
+                                <a href="https://www.linkedin.com/in/paul-adam-86ba423b/">Author LI</a>
+                            </li>
+                            <li>
+                                <a href="https://www.nucamp.co/">NuCamp</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ibanez.com/usa/">Ibanez</a>
+                            </li>
+                            <li>
+                                <Link to='/contact'>Contact Page</Link>
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>

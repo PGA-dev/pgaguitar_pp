@@ -37,7 +37,7 @@ h2 {
     /* background-image: linear-gradient(#ffc8da, rgb(8, 25, 122)); */
     background-image: radial-gradient(#ffc8da, rgb(8, 25, 122));
     padding: 20px 0;
-    margin-top: 2rem;
+    margin-top: black 4rem;
 }
 
 .navbar-brand {
@@ -83,4 +83,8 @@ h2 {
 #title{
     font-size: 75px;
     color:fuchsia;
+}
+
+#siteRefs{
+    font-size: 14px;
 }
