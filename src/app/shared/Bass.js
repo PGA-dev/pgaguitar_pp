@@ -22,7 +22,7 @@ export const BASS = [
         id: 2,
         name: 'SR 5006',
         image: bass5006Img,
-        featured: false,
+        featured: true,
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
     },

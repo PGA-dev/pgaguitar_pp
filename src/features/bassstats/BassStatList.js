@@ -10,7 +10,7 @@ const BassStatList = ({ bassid }) => {
             <Col md='5' className='m-1'>
                 <h4>Comments</h4>
                 {bassstats.map((bassstat) => {
-                    return <BassStat key={bassstat.id} bassstat={guitarstat} />;
+                    return <BassStat key={bassstat.id} bassstat={bassstat} />;
                 })}
             </Col>
         );
