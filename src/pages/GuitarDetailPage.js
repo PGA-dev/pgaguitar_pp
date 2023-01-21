@@ -5,7 +5,7 @@ import GuitarDetail from '../features/guitar/GuitarDetail';
 import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../components/SubHeader';
 
-const CampsiteDetailPage = () => {
+const GuitarDetailPage = () => {
     const { guitarId } = useParams();
     const guitar = selectGuitarById(guitarId);
 
@@ -20,4 +20,4 @@ const CampsiteDetailPage = () => {
     );
 };
 
-export default CampsiteDetailPage;
+export default GuitarDetailPage;

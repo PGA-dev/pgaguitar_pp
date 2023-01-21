@@ -2,7 +2,7 @@ import { Container } from 'reactstrap';
 import GuitarList from '../features/guitar/GuitarList';
 import SubHeader from '../components/SubHeader';
 
-const CampsitesDirectoryPage = () => {
+const GuitarDirectoryPage = () => {
     return (
         <Container>
             <SubHeader current='Directory' />
@@ -11,4 +11,4 @@ const CampsitesDirectoryPage = () => {
     );
 };
 
-export default CampsitesDirectoryPage;
+export default GuitarDirectoryPage;
