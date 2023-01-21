@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import CampsitesDirectoryPage from './pages/CampsitesDirectoryPage';
 import CampsiteDetailPage from './pages/CampsiteDetailPage';
 import './App.css';
+import BassDirectory from './pages/BassDirectory';
+import BassDetail from './features/Bass/BassDetail';
 
 function App() {
   return (
@@ -18,6 +20,11 @@ function App() {
         <Route
           path='directory/:guitarId'
           element={<CampsiteDetailPage />}
+        />
+        <Route path='bassdir' element={<BassDirectory />} />
+        <Route
+          path='bassdir/:guitarId'
+          element={<BassDetail />}
         />
       </Routes>
       <Footer />

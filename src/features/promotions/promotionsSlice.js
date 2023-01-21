@@ -1,5 +1,5 @@
 import { MULTIGUITAR } from '../../app/shared/MULTIGUITAR';
 
-export const selectFeaturedPromotion = () => {
+export const selectFeaturedMulti= () => {
     return MULTIGUITAR.find((multiguitar) => multiguitar.featured);
 };
