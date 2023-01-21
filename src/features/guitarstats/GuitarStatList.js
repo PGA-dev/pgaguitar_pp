@@ -1,6 +1,6 @@
 import { Col } from 'reactstrap';
 import GuitarStat from './GuitarStat';
-import { selectStatByGuitarId } from './commentsSlice';
+import { selectStatByGuitarId } from './guitarStatSlice';
 
 const GuitarStatList = ({ guitarId }) => {
     const guitarstats = selectStatByGuitarId(guitarId);

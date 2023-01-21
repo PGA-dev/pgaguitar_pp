@@ -2,7 +2,7 @@ import { Container, Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
 import { selectCampsiteById } from '../features/campsites/campsitesSlice';
 import CampsiteDetail from '../features/campsites/CampsiteDetail';
-import CommentsList from '../features/comments/CommentsList';
+import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../components/SubHeader';
 
 const CampsiteDetailPage = () => {
@@ -14,7 +14,7 @@ const CampsiteDetailPage = () => {
             <Row>
                 <SubHeader current={guitar.name} detail={true} />
                 <CampsiteDetail guitar={guitar} />
-                <CommentsList guitarId={guitarId} />
+                <GuitarStatList guitarId={guitarId} />
             </Row>
         </Container>
     );

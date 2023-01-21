@@ -1,7 +1,7 @@
 import { Col, Row } from 'reactstrap';
 import DisplayCard from './DisplayCard';
 import { selectFeaturedCampsite } from '../campsites/campsitesSlice';
-import { selectFeaturedMulti } from '../promotions/promotionsSlice';
+import { selectFeaturedMulti } from '../multiguitar/multiGuitarSlice';
 //Used to map DisplayCards for HomePage...
 
 const DisplayList = () => {
