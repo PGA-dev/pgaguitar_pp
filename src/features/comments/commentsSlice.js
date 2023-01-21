@@ -1,7 +1,7 @@
 import { GUITARSTAT } from '../../app/shared/GUITARSTAT';
 
-export const selectStatByGuitarId = (guitarId) => {
+export const selectStatByGuitarId = (guitarid) => {
     return GUITARSTAT.filter(
-        (comment) => comment.guitarId === parseInt(guitarId)
+        (comment) => comment.guitarid === parseInt(guitarid)
     );
 };
