@@ -1,7 +1,7 @@
 import { Container, Row } from 'reactstrap';
 import { useParams } from 'react-router-dom';
-import { selectCampsiteById } from '../features/campsites/campsitesSlice';
-import CampsiteDetail from '../features/campsites/CampsiteDetail';
+import { selectCampsiteById } from '../features/guitar/guitarSlice';
+import CampsiteDetail from '../features/guitar/GuitarDetail';
 import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../components/SubHeader';
 

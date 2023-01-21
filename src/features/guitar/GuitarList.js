@@ -1,6 +1,6 @@
-import { Row, Col} from 'reactstrap';
-import CampsiteCard from "./CampsiteCard";
-import { selectAllCampsites} from './campsitesSlice';
+import { Row, Col } from 'reactstrap';
+import GuitarCard from "./GuitarCard";
+import { selectAllCampsites } from './guitarSlice';
 
 const CampsitesList = () => {
     const guitar = selectAllCampsites();
@@ -9,7 +9,7 @@ const CampsitesList = () => {
             {guitar.map((guitar) => {
                 return (
                     <Col md='12' className='m-4' key={guitar.id}>
-                        <CampsiteCard guitar={guitar} />
+                        <GuitarCard guitar={guitar} />
                     </Col>
                 );
             })}
