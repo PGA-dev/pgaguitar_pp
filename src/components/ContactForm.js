@@ -45,17 +45,6 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label htmlFor='phoneNum' md='2'>
-                    Phone
-                </Label>
-                <Col md='10'>
-                    <Field className='form-control' name='phoneNum' placeholder='PhoneNum' />
-                    <ErrorMessage name='phoneNum'>
-                        {(msg) => <p className='text-danger'>{msg}</p>}
-                    </ErrorMessage>
-                </Col>
-            </FormGroup>
-            <FormGroup row>
                 <Label htmlFor='email' md='2'>
                     Email
                 </Label>
@@ -67,27 +56,22 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label check md={{ size: 4, offset: 2 }}>
+                <Label check md={{ size: 5, offset: 2 }}>
                     <Field
                         name='agree'
                         type='checkbox'
                         className='form-check-input'
                     />{' '}
-                    May we contact you?
+                    Image to upload?
                 </Label>
-                <Col md='4'>
-                    <Field className='form-control' name='contactType' as='select' >
-                        <option>By Phone</option>
-                        <option>By Email</option>
-                    </Field>
-                </Col>
+
             </FormGroup>
             <FormGroup row>
                 <Label htmlFor='feedback' md='2'>
                     Your Feedback
                 </Label>
                 <Col md='10'>
-                    <Field className='form-control' name='feedback' as='textarea' rows='12' />
+                    <Field className='form-control' name='feedback' as='textarea' rows='4' />
                     <ErrorMessage name='feedback'>
                         {(msg) => <p className='text-danger'>{msg}</p>}
                     </ErrorMessage>

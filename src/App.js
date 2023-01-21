@@ -23,7 +23,7 @@ function App() {
         />
         <Route path='bassdir' element={<BassDirectory />} />
         <Route
-          path='bassdir/:guitarId'
+          path='bassdir/:bassId'
           element={<BassDetail />}
         />
       </Routes>
