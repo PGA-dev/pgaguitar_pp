@@ -1,9 +1,9 @@
 import { Row, Col } from 'reactstrap';
 import GuitarCard from "./GuitarCard";
-import { selectAllCampsites } from './guitarSlice';
+import { selectAllGuitar } from './guitarSlice';
 
-const CampsitesList = () => {
-    const guitar = selectAllCampsites();
+const GuitarList = () => {
+    const guitar = selectAllGuitar();
     return (
         <Row className='ms-auto'>
             {guitar.map((guitar) => {
@@ -17,4 +17,4 @@ const CampsitesList = () => {
     );
 };
 
-export default CampsitesList;
+export default GuitarList;

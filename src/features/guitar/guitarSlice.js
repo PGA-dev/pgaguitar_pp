@@ -1,7 +1,7 @@
 import { GUITAR } from "../../app/shared/GUITAR";
 
 
-export const selectAllCampsites = () => {
+export const selectAllGuitar = () => {
     return GUITAR;
 };
 
@@ -9,11 +9,11 @@ export const selectAllCampsites = () => {
 //     return CAMPSITES[Math.floor(CAMPSITES.length * Math.random())];
 // }
 
-export const selectCampsiteById = (guitarid) => {
+export const selectGuitarById = (guitarid) => {
     return GUITAR.find((guitar) => guitar.id === parseInt(guitarid));
 };
 
-export const selectFeaturedCampsite = () => {
+export const selectFeaturedGuitar = () => {
     return GUITAR.find((guitar) => guitar.featured);
 };
 
