@@ -6,15 +6,15 @@ import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../components/SubHeader';
 
 const GuitarDetailPage = () => {
-    const { guitarId } = useParams();
-    const guitar = selectGuitarById(guitarId);
+    const { guitarid } = useParams();
+    const guitar = selectGuitarById(guitarid);
 
     return (
         <Container>
             <Row>
                 <SubHeader current={guitar.name} detail={true} />
                 <GuitarDetail guitar={guitar} />
-                <GuitarStatList guitarId={guitarId} />
+                <GuitarStatList guitarId={guitarid} />
             </Row>
         </Container>
     );

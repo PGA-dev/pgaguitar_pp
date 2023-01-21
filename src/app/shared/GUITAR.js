@@ -8,7 +8,6 @@ export const GUITAR = [
         id: 0,
         name: 'Rg Guitars',
         image: guitarImg,
-        elevation: 1233,
         featured: true,
         description:
             'This 7 string monster, coming with a lo-pro edge (edge zero), Dimarzio PAF 7 pickups and a Macassar Ebony Fretboard'
@@ -17,7 +16,6 @@ export const GUITAR = [
         id: 1,
         name: 'RG 5328',
         image: guitar5328Img,
-        elevation: 877,
         featured: false,
         description:
             'This 8 string monster, coming with a Gibralter II-8 bridge, Dimarzio Fusion Edge 8 pickups and a Macassar Ebony Fretboard'
@@ -26,7 +24,6 @@ export const GUITAR = [
         id: 2,
         name: 'SR 5006',
         image: bass5006Img,
-        elevation: 2901,
         featured: false,
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
@@ -35,7 +32,6 @@ export const GUITAR = [
         id: 3,
         name: 'SR 1506',
         image: bass1506Img,
-        elevation: 2901,
         featured: false,
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'

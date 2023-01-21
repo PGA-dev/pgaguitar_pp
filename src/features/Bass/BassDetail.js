@@ -1,7 +1,7 @@
 import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
-const BassDetail = ( {guitar} ) => {
-    const { id, image, name, description } = guitar;
+const BassDetail = ( {bass} ) => {
+    const { id, image, name, description } = bass;
 
     return (
         <Col md='5' className='m-1'>

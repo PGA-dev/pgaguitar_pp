@@ -2,8 +2,8 @@ import { Col } from 'reactstrap';
 import GuitarStat from './GuitarStat';
 import { selectStatByGuitarId } from './guitarStatSlice';
 
-const GuitarStatList = ({ guitarId }) => {
-    const guitarstats = selectStatByGuitarId(guitarId);
+const GuitarStatList = ({ guitarid }) => {
+    const guitarstats = selectStatByGuitarId(guitarid);
 
     if (guitarstats && guitarstats.length > 0) {
         return (
@@ -17,7 +17,7 @@ const GuitarStatList = ({ guitarId }) => {
     }
     return (
         <Col md='5' className='m-1'>
-            There are no comments for this campsite yet.
+            We don't have any information on this model yet.
         </Col>
     );
 };
