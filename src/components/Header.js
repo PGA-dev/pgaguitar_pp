@@ -1,27 +1,25 @@
 import { useState } from 'react';
-import { 
-    Navbar, 
+import {Col} from 'reactstrap';
+import {
+    Navbar,
     NavbarBrand,
     Collapse,
     NavbarToggler,
-    Nav, 
+    Nav,
     NavItem,
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import Ibanez from '../app/assets/img/Ibanez_logo.png';
 
-const Header = () => { 
+const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <Navbar dark color='primary' sticky='top' expand='lg'>
-            <NavbarBrand className='ms-5' href='/'>
-                <img src={Ibanez} alt='Ibanez logo' className='float-start' />
-                <h1 id='title' className='m-1' >Guitar Index</h1>
-            </NavbarBrand>
-            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
+
+            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
-                <Nav className='ms-auto' navbar>
+                <Nav className='me-auto' navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
                             <i className='fa fa-home fa-lg' /> Home
@@ -48,9 +46,24 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                 </Nav>
+                <Col m='2'>
+                    <h1 id='title' className='text-center' style={headstyle} >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
+                    <h5 style={{ color: "purple",padding: "6px", fontSize: "45px",fontFamily: "Arial-bold"}} className='text-center'>Ibanez Edition</h5>
+                    </Col>
             </Collapse>
+            
+            <NavbarBrand className='text-left' href='/'>
+                <img src={Ibanez} alt='Ibanez logo' className='float-start' />
+
+            </NavbarBrand>            
         </Navbar>
     );
+};
+const headstyle = {
+    color: "SlateBlue",
+    padding: "8px",
+    fontSize: "75px",
+    fontFamily: "Arial-bold"
 };
 
 export default Header;
