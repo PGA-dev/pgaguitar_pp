@@ -9,117 +9,117 @@ export const BASSSTAT = [
         id: 1,
         bassid: 0,
         heading: 'Model:',
-        text: 'This lone monkey kept following us back to our tent.',
+        text: 'Taasdfasdf',
 
     },
     {
         id: 2,
         bassid: 0,
         heading: 'Model:',
-        text: 'Do not feed the wildlife. They will follow you back to the tent.',
+        text: 'asdfasdfasdf',
 
     },
     {
         id: 3,
         bassid: 0,
         heading: 'Model:',
-        text: "Avoid Sundays; couldn't relax and play my flute with all the noisy kids.",
+        text: "asdfasdf",
 
     },
     {
         id: 4,
         bassid: 0,
         heading: 'Model:',
-        text: "This has been our favorite campsite for over 7 years. It is an absolutely beautiful site. The hosts are very friendly and helpful. Don't forget to try out the lake."
+        text: "Tasdfsadfasdfa."
     },
     {
         id: 5,
         bassid: 1,
         heading: 'Model:',
-        text: "There's nothing more fun than setting up a tent in a rainstorm."
+        text: "asdfasdfasdf"
     },
     {
         id: 6,
         bassid: 1,
         heading: 'Model:',
-        text: 'I caught a world-record-breaking trout here on my last visit.'
+        text: 'asdfasdfa'
     },
     {
         id: 7,
         bassid: 1,
         heading: 'Model:',
-        text: 'The campground was beautiful, but the bugs could bite sometimes.'
+        text: 'Text filler'
     },
     {
         id: 8,
         bassid: 1,
         heading: 'Model:',
-        text: "Love the river but I didn't catch any fish."
+        text: "Text filler"
     },
     {
         id: 9,
         bassid: 1,
         heading: 'Model:',
-        text: 'A wonderful place to reconnect with nature.'
+        text: 'Text filler'
     },
     {
         id: 10,
         bassid: 2,
         heading: 'Model:',
-        text: 'The Frozen Tundra is great place for family and friends camping!'
+        text: 'Text filler'
     },
     {
         id: 11,
         bassid: 2,
         heading: 'Model:',
-        text: 'We had to leave about 2am to go back to the city because the quiet was just too much!'
+        text: 'Text filler'
     },
     {
         id: 12,
         bassid: 2,
         heading: 'Model:',
-        text: 'The stars at night were a revelation!'
+        text: 'Text filler'
     },
     {
         id: 13,
         bassid: 2,
         heading: 'Model:',
-        text: 'Great scenic hiking trails but it was challenging to go up the mountain.'
+        text: 'Text filler'
     },
     {
         id: 14,
         bassid: 2,
         heading: 'Model:',
-        text: 'Perfect scenery for a smoked kipper breakfast with friends!'
+        text: 'Text filler'
     },
     {
         id: 15,
         bassid: 3,
         heading: 'Model:',
-        text: 'Just remember a bear can run and climb faster than you...'
+        text: 'Text filler'
     },
     {
         id: 16,
         bassid: 3,
         heading: 'Model:',
-        text: 'Excellent site to recharge from the city.'
+        text: 'Text filler'
     },
     {
         id: 17,
         bassid: 3,
         heading: 'Model:',
-        text: 'What a magnificent view!'
+        text: 'Text filler'
     },
     {
         id: 18,
         bassid: 3,
         heading: 'Model:',
-        text: 'The sites are huge! We felt like we were in the middle of nowhere, in a good way.'
+        text: 'Text filler'
     },
     {
         id: 19,
         bassid: 3,
         heading: 'Model:',
-        text: "The photos don't do justice to the beauty of this place."
+        text: "TText filler"
     }
 ];

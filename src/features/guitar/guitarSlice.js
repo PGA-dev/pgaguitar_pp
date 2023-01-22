@@ -5,9 +5,6 @@ export const selectAllGuitar = () => {
     return GUITAR;
 };
 
-// export const selectRandomCampsite = ()=> {
-//     return CAMPSITES[Math.floor(CAMPSITES.length * Math.random())];
-// }
 
 export const selectGuitarById = (guitarid) => {
     return GUITAR.find((guitar) => guitar.id === parseInt(guitarid));

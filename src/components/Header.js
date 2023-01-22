@@ -26,13 +26,13 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/directory'>
+                        <NavLink className='nav-link' to='/guitardirectory'>
                             <i className='fa fa-list fa-sm' /> Guitar
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/directory'>
-                            <i className='fa fa-list fa-sm' /> Bass
+                        <NavLink className='nav-link' to='/modeldirectory'>
+                            <i className='fa fa-list fa-sm' /> Models
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -62,8 +62,8 @@ const Header = () => {
 const headstyle = {
     color: "SlateBlue",
     padding: "8px",
-    fontSize: "75px",
-    fontFamily: "Arial-bold"
+    fontSize: "65px",
+    fontFamily: "Papyrus"
 };
 
 export default Header;

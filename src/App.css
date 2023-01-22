@@ -34,11 +34,11 @@ h2 {
 }
 
 .site-footer {
-    /* background-image: linear-gradient(#ffc8da, rgb(8, 25, 122)); */
     background-image: radial-gradient(#ffc8da, rgb(8, 25, 122));
     padding: 20px 0;
     margin-top: black 4rem;
     border-top: #20678b solid;
+    font-family: papyrus;
 }
 
 .navbar-brand {
@@ -51,6 +51,7 @@ h2 {
     height: 150%;
     margin-right: 2rem;
     max-width: 4rem;
+
 }
 
 .navbar-dark {
@@ -59,6 +60,7 @@ h2 {
     border-bottom: #20678b solid;
     margin-bottom: 1rem;
     min-height: 8rem;
+    font-family: papyrus;
 }
 
 .page-enter {

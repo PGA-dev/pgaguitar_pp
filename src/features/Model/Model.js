@@ -1,9 +1,9 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-const BassCard = ({ bass }) => {
-    if (bass) {
-        const { id, image, name } = bass;
+const Model = ({ model }) => {
+    if (model) {
+        const { id, image, name } = model;
         return (
             <Link to={`${id}`}>
                 <Card>
@@ -19,4 +19,4 @@ const BassCard = ({ bass }) => {
 }
 
 
-export default BassCard;
+export default Model;

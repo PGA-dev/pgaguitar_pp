@@ -5,7 +5,7 @@ import SubHeader from '../components/SubHeader';
 const GuitarDirectoryPage = () => {
     return (
         <Container>
-            <SubHeader current='Directory' />
+            <SubHeader current='GuitarDirectory' />
             <GuitarList />
         </Container>
     );

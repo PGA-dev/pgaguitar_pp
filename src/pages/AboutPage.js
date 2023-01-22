@@ -23,17 +23,27 @@ const AboutPage = () => {
             </Row>
             <Row>
                 <Col>
-                <Card>
-                    <CardHeader className="bg-primary">
-                        Header for my card
-                    </CardHeader>
-                    <CardBody className="bg-danger">
-                        Body for my guitar card and such
-                    </CardBody>
-                </Card>
+                    <Card>
+                        <CardHeader className=" mt-1 bg text-left" style={{  border: "5px ridge #e6e3fa", borderRadius: "2%", backgroundColor: "LightGrey", color: "Blue",padding: "12px", fontSize: "60px", fontFamily: "lobster"}}>
+                           About the Author
+                        </CardHeader>
+                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea",backgroundColor: "LightSteelBlue", color: "SkyBlue",padding: "6px", fontSize: "45px",fontFamily: "Lucida Handwriting"}}>
+                            Body for my guitar card and such
+                            <p> asdlfkajsdflkajsdfasdf</p>
+                            <p> asdlfkajsdflkajsdfasdf</p>
+                            <p> asdlfkajsdflkajsdfasdf</p>
+                            <p> asdlfkajsdflkajsdfasdf</p>
+                            <p> asdlfkajsdflkajsdfasdf</p>
+                        </CardBody>
+                    </Card>
                 </Col>
             </Row>
-
+            <Row>
+                <Col>
+                    <br></br>
+                    <br></br>
+                </Col>
+            </Row>
         </Container>
     );
 };
