@@ -1,6 +1,6 @@
 
 const BassStat = ({bassstat}) => {
-    const { text, heading } = bassstat;
+    const { id, text, heading } = bassstat;
     return (
         <p>
             {heading}: {text}
