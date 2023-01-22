@@ -6,23 +6,24 @@ const AboutPage = () => {
     return (
         <Container>
             <SubHeader current={'Guitar Flip'} />
-            <Row className='row-content'>
-                <Col sm='6'>
-<GuitarFlip />
-                </Col>
+            <Row>
+                <Col>
+                <br></br>
+                <br></br>
 
-                <Col >
 
-                              <Card>
-                        <CardHeader className='bg-primary text-white'>
-                            <h2>Flip</h2>
-                        </CardHeader>
-                        <CardBody>
-                            
-                        </CardBody>
-                    </Card>
                 </Col>
             </Row>
+            <Row className='row-content ms-auto'>
+
+                    <GuitarFlip />
+
+
+
+            </Row>
+<Row>
+
+</Row>
 
         </Container>
     );
