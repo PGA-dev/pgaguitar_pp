@@ -1,8 +1,8 @@
 import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
-const ModelDetail = ({ model }) => {
-    if (model) {
-        const { id, image, name, description } = model;
+const ITypeDetail = ({ itype }) => {
+    if (itype) {
+        const { id, image, name, description } = itype;
 
         return (
             <Col md='5' className='m-1'>
@@ -17,4 +17,4 @@ const ModelDetail = ({ model }) => {
     }; return null;
 };
 
-export default ModelDetail;
+export default ITypeDetail;

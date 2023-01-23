@@ -3,14 +3,14 @@ export const validateContactForm = (values) => {
 
     // First Name
 
-    const regF = /^[A-Z][a-z]{1,14}$/;
+    const regF = /^[A-Z][a-z]{1,20}$/;
     if (!regF.test(values.firstName)) {
         errors.firstName = 'First name is required and should be in the the Xxxx format...2-15 chars';
     }
 
     // Last Name
 
-    const regL = /^[A-Z][a-z]{1,14}$/;
+    const regL = /^[A-Z][a-z]{1,20}$/;
     if (!regL.test(values.lastName)) {
         errors.lastName = 'The Last name should be in the the Xxxx format...2-15 chars';
     }

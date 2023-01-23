@@ -2,7 +2,7 @@ export const GUITARSTAT = [
     {
         id: 0,
         guitarid: 0,
-        heading: 'Model:',
+        heading: 'Model',
         text: '7 String bliss'
     },
     {
@@ -95,31 +95,61 @@ export const GUITARSTAT = [
     {
         id: 15,
         guitarid: 3,
-        heading: 'Model:',
-        text: 'Text filler'
+        heading: 'Model',
+        text: 'RG8520 j.Custom'
     },
     {
         id: 16,
         guitarid: 3,
-        heading: 'Model:',
-        text: 'Text filler'
+        heading: 'Country of Manufacture',
+        text: 'Japan'
     },
     {
         id: 17,
         guitarid: 3,
-        heading: 'Model:',
-        text: 'Text filler'
+        heading: 'Number of Strings',
+        text: '6'
     },
     {
         id: 18,
         guitarid: 3,
-        heading: 'Model:',
-        text: 'Text filler'
+        heading: 'Bridge Pickup',
+        text: 'Dimarzio Tone Zone'
     },
     {
         id: 19,
         guitarid: 3,
         heading: 'Model:',
         text: "Text filler"
-    }
+    },
+    {
+        id: 20,
+        guitarid: 3,
+        heading: 'Model:',
+        text: 'Text filler'
+    },
+    {
+        id: 21,
+        guitarid: 3,
+        heading: 'Model:',
+        text: 'Text filler'
+    },
+    {
+        id: 22,
+        guitarid: 3,
+        heading: 'Model:',
+        text: 'Text filler'
+    },
+    {
+        id: 23,
+        guitarid: 3,
+        heading: 'Model:',
+        text: 'Text filler'
+    },
+    {
+        id: 24,
+        guitarid: 3,
+        heading: 'Model:',
+        text: "Text filler"
+    },
 ];

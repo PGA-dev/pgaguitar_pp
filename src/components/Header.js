@@ -31,8 +31,8 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/modeldirectory'>
-                            <i className='fa fa-list fa-sm' /> Models
+                        <NavLink className='nav-link' to='/GuideTypeDirectory'>
+                            <i className='fa fa-list fa-sm' /> Guides
                         </NavLink>
                     </NavItem>
                     <NavItem>
@@ -48,7 +48,7 @@ const Header = () => {
                 </Nav>
                 <Col m='2'>
                     <h1 id='title' className='text-center' style={headstyle} >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
-                    <h5 style={{ color: "purple",padding: "6px", fontSize: "45px",fontFamily: "Arial-bold"}} className='text-center'>Ibanez Edition</h5>
+                    <h5 style={{ color: "purple",padding: "6px", fontSize: "45px",fontFamily: "Arial-bold"}} className='text-center'>Ibanez POC Edition</h5>
                     </Col>
             </Collapse>
             

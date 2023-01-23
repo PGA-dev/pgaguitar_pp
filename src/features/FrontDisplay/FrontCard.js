@@ -1,6 +1,6 @@
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 //used in DisplayList on Homepage...
-const DisplayCard = ({ item }) => {
+const FrontCard = ({ item }) => {
     const { image, name, description } = item;
     return (
         <Card>
@@ -13,4 +13,4 @@ const DisplayCard = ({ item }) => {
     );
 };
 
-export default DisplayCard;
+export default FrontCard;

@@ -14,7 +14,7 @@ const GuitarDetailPage = () => {
             <Row>
                 <SubHeader current={guitar.name} detail={true} />
                 <GuitarDetail guitar={guitar} />
-                <GuitarStatList guitarId={guitarid} />
+                <GuitarStatList guitarid={guitarid} />
             </Row>
         </Container>
     );

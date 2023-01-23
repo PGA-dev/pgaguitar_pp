@@ -1,5 +1,5 @@
 import { Container } from 'reactstrap';
-import DisplayList from '../features/display/DisplayList';
+import DisplayList from '../features/FrontDisplay/FrontEndDisplay';
 import SubHeader from '../components/SubHeader';
 
 const HomePage = () => {
