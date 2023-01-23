@@ -9,6 +9,8 @@ import './App.css';
 import ITypeDirectory from './pages/ITypeDirectory';
 import ITypeDetail from './features/itype/ITypeDetail';
 import AboutPage from './pages/AboutPage';
+import BassDirectory from './pages/BassDirectory';
+import BassDetailPage from './pages/BassDetailPage';
 
 function App() {
   return (
@@ -20,10 +22,15 @@ function App() {
         <Route path='about' element={<AboutPage />} />
         <Route path='GuideTypeDirectory' element={<ITypeDirectory />} />
         <Route path='guitardirectory' element={<GuitarDirectory />} />
-          <Route
-            path='guitardirectory/:guitarid'
-            element={<GuitarDetailPage />}
-          />
+        <Route
+          path='guitardirectory/:guitarid'
+          element={<GuitarDetailPage />}
+        />
+        <Route path='bassdirectory' element={<BassDirectory />} />
+        <Route
+          path='bassdirectory/:bassid'
+          element={<BassDetailPage />}
+        />
 
       </Routes>
       <Footer />

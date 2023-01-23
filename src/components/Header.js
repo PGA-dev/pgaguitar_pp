@@ -31,8 +31,8 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/GuideTypeDirectory'>
-                            <i className='fa fa-list fa-sm' /> Guides
+                        <NavLink className='nav-link' to='/bassdirectory'>
+                            <i className='fa fa-list fa-sm' /> Bass
                         </NavLink>
                     </NavItem>
                     <NavItem>

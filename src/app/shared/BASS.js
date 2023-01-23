@@ -1,30 +1,31 @@
-import guitar5328Img from '../assets/img/p_region_RG5328_LDK_00_02.png'
-import guitar8570Img from '../assets/img/p_region_RG8570Z_BRE_00_03.png';
-import guitar8527Img from '../assets/img/p_region_RG8527Z_SDE_00_03.png';
+import bass2605 from '../assets/img/p_region_SR2605_CBB_1P_03.png'
+import basssr5000 from '../assets/img/p_region_SR5000_OL_00_05.png';
+import EHB1506 from '../assets/img/p_region_EHB1506MS_BIF_1P_01.png';
+//Image courtesy of Hoshino Gakki/Ibanez.com
 import bassebh1500 from '../assets/img/p_region_EHB1500_DEF_1P_01.png';
 //WAS CAMPSITES
 export const BASS = [
     {
         id: 0,
-        name: '8527',
-        image: guitar8527Img,
+        name: 'EHB1506',
+        image: EHB1506,
         featured: false,
         description:
-            'This 7 string monster, coming with a lo-pro edge (edge zero), Dimarzio PAF 7 pickups and a Macassar Ebony Fretboard'
+            'Multiscale 6 string'
     },
     {
         id: 1,
-        name: 'RG 5328',
-        image: guitar5328Img,
+        name: 'sr5000',
+        image: basssr5000,
         featured: false,
         description:
             'This 8 string monster, coming with a Gibralter II-8 bridge, Dimarzio Fusion Edge 8 pickups and a Macassar Ebony Fretboard'
     },
     {
         id: 2,
-        name: '8570',
-        image: guitar8570Img,
-        featured: false,
+        name: '2605',
+        image: bass2605,
+        featured: true,
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
     },
@@ -32,7 +33,7 @@ export const BASS = [
         id: 3,
         name: 'EBH 1500 workshop',
         image: bassebh1500,
-        featured: true,
+        featured: false,
         description:
             'EBH 1500 workshop bass'
     },
