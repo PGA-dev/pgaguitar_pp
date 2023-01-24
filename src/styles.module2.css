@@ -1,0 +1,30 @@
+.c {
+  position: absolute;
+  max-width: 500px;
+  max-height: 500px;
+  width: 350px;
+  height: 200px;
+  cursor: crosshair;
+  will-change: transform, opacity;
+  }
+  
+  .front,
+  .back {
+    background-size: cover;
+  }
+  
+  .back {
+    background-image: url(/src/app/assets/img/p_region_PIA3761_SLW_00_02.png);
+  }
+  
+  .front {
+    background-image: url(/src/app/assets/img/guitar.jpg);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+  

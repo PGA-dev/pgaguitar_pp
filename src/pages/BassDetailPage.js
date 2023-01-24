@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { selectBassById } from '../features/bass/bassSlice';
 import BassDetail from '../features/bass/BassDetail';
 import BassStatList from '../features/bassstats/BassStatList';
-import SubHeader from '../components/SubHeader';
+import SubHeader from '../site/SubHeader';
 
 const BassDetailPage = () => {
     const { bassid } = useParams();

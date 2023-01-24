@@ -1,12 +1,13 @@
 import { Container } from 'reactstrap';
-import DisplayList from '../features/FrontDisplay/FrontEndDisplay';
-import SubHeader from '../components/SubHeader';
+import FrontEndDisplay from '../features/FrontDisplay/FrontEndDisplay';
+import SubHeader from '../site/SubHeader';
+import FrontEndCarouselDisplay from '../features/FrontDisplay/FronEndCarouselDisplay';
 
 const HomePage = () => {
     return (
         <Container>
             <SubHeader current='Home' />
-            <DisplayList />
+            <FrontEndDisplay />
         </Container>
     );
 };

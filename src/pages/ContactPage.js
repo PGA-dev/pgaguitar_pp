@@ -1,6 +1,6 @@
 import { Container, Col, Row } from 'reactstrap';
-import SubHeader from '../components/SubHeader';
-import ContactForm from '../components/ContactForm';
+import SubHeader from '../site/SubHeader';
+import ContactForm from '../site/ContactForm';
 import I8527Img from '../app/assets/img/p_region_RG8527Z_SDE_00_03.png';
 
 const ContactPage = () => {

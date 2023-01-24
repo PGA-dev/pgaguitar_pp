@@ -1,6 +1,6 @@
 import { Container } from 'reactstrap';
 import GuitarList from '../features/guitar/GuitarList';
-import SubHeader from '../components/SubHeader';
+import SubHeader from '../site/SubHeader';
 
 const GuitarDirectoryPage = () => {
     return (

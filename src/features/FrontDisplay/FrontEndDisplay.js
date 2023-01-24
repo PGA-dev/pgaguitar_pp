@@ -1,5 +1,5 @@
 import { Col, Row } from 'reactstrap';
-import DisplayCard from './FrontCard';
+import FrontCard from './FrontCard';
 import { selectFeaturedGuitar } from '../guitar/guitarSlice';
 import { selectFeaturedMulti } from '../multiguitar/multiGuitarSlice';
 import { selectFeaturedMultiBass } from '../mutibass/multiBassSlice';
@@ -15,7 +15,7 @@ const FrontEndDisplay = () => {
             {items.map((item, idx) => {
                 return (
                     <Col md='12' className='mt-1' key={idx}>
-                        <DisplayCard item={item} />
+                        <FrontCard item={item} />
                     </Col>
                 );
             })}

@@ -1,21 +1,24 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'papyrus', fantasy;
 }
 
 h1,
 h2,
 h3,
 .card-body > .card-title {
-    font-family: 'Lobster', cursive;
+    font-family: 'papyrus', fantasy;
     
 }
 
 .card-title {
     font-weight: 500;
     font-size: 1.25rem;
+    font-family: papyrus;
     color:#901cad;
 }
 .card-body{
+    
+    font-family: papyrus;
     color:aqua;
 }
 h2 {
@@ -25,6 +28,7 @@ h2 {
 .card-img-overlay .card-title {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
+    font-family: papyrus;
 }
 
 .row-content {
@@ -41,27 +45,28 @@ h2 {
     font-family: papyrus;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     max-width: 4rem;
     margin-right: 2rem;
-}
+} */
 
-.navbar-brand img {
+/* .navbar-brand img {
     width: 150%;
     height: 150%;
     margin-right: 2rem;
     max-width: 4rem;
 
-}
+} */
 
-.navbar-dark {
+/* .navbar-dark {
     background-color: #901cad;
     background-image: radial-gradient( #09155a, black);
-    border-bottom: #20678b solid;
+    border-bottom: #20678b solid 5px;
     margin-bottom: 1rem;
-    min-height: 8rem;
+    min-height: 1rem;
     font-family: papyrus;
-}
+} */
+
 
 .page-enter {
     opacity: 0;
@@ -86,8 +91,28 @@ h2 {
 #title{
     font-size: 75px;
     color:fuchsia;
+    font-family: papyrus;
 }
 
 #siteRefs{
     font-size: 14px;
+}
+
+#navhead{
+    /* background-color: #901cad; */
+    background-image: radial-gradient(black, #09155a );
+    border-bottom: #20678b solid 1px;
+    margin-bottom: 0rem;
+    min-height: 1rem;
+    font-family: papyrus;
+}
+
+#headerhead{
+    /* background-color: #901cad; */
+    background-image: radial-gradient( #09155a,black );
+    border-bottom: #20678b solid 2px;
+    margin-bottom: 1rem;
+    padding-top: 4rem;
+    min-height: 15rem;
+    font-family: papyrus;
 }

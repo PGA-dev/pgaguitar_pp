@@ -6,8 +6,8 @@ const FrontCard = ({ item }) => {
         <Card>
             <CardImg src={image} alt={name} />
             <CardBody>
-                <CardTitle>{name}</CardTitle>
-                <CardText>{description}</CardText>
+                <CardTitle style={{padding:'10px', fontFamily: 'papyrus', color: 'blueviolet'}}>{name}</CardTitle>
+                <CardText style={{fontFamily: 'papyrus', color: 'aqua'}}>{description}</CardText>
             </CardBody>
         </Card>
     );

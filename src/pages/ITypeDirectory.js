@@ -1,6 +1,6 @@
 import { Container } from 'reactstrap';
 import ITypeList from '../features/itype/ITypeList';
-import SubHeader from '../components/SubHeader';
+import SubHeader from '../site/SubHeader';
 
 const ITypeDirectory = () => {
     return (

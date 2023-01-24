@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './site/Header';
+import Footer from './site/Footer';
+import NavHeader from './site/NavHeader';
 import GuitarDirectory from './pages/GuitarDirectory';
 import GuitarDetailPage from './pages/GuitarDetailPage';
 import './App.css';
@@ -15,6 +16,7 @@ import BassDetailPage from './pages/BassDetailPage';
 function App() {
   return (
     <div className='App'>
+      <NavHeader />
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />

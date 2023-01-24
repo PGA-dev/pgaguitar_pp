@@ -8,7 +8,7 @@ const BassStatList = ({ bassid }) => {
     if (bassstats && bassstats.length > 0) {
         return (
             <Col md='5' className='m-1'>
-                <h4>Comments</h4>
+                <h4 style={{padding:'2px', fontFamily: 'papyrus', color: 'blueviolet'}}>Model Features</h4>
                 {bassstats.map((bassstat) => {
                     return <BassStat key={bassstat.id} bassstat={bassstat} />;
                 })}

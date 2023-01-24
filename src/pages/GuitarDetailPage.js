@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { selectGuitarById } from '../features/guitar/guitarSlice';
 import GuitarDetail from '../features/guitar/GuitarDetail';
 import GuitarStatList from '../features/guitarstats/GuitarStatList';
-import SubHeader from '../components/SubHeader';
+import SubHeader from '../site/SubHeader';
 
 const GuitarDetailPage = () => {
     const { guitarid } = useParams();

@@ -2,27 +2,27 @@ export const BASSSTAT = [
     {
         id: 0,
         bassid: 0,
-        heading: 'Model:',
+        heading: 'Model',
         text: '7 String bliss'
     },
     {
         id: 1,
         bassid: 0,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'Taasdfasdf',
 
     },
     {
         id: 2,
         bassid: 0,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'asdfasdfasdf',
 
     },
     {
         id: 3,
         bassid: 0,
-        heading: 'Model:',
+        heading: 'Model',
         text: "asdfasdf",
 
     },
@@ -89,37 +89,37 @@ export const BASSSTAT = [
     {
         id: 14,
         bassid: 2,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'Text filler'
     },
     {
         id: 15,
         bassid: 3,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'Text filler'
     },
     {
         id: 16,
         bassid: 3,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'Text filler'
     },
     {
         id: 17,
         bassid: 3,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'Text filler'
     },
     {
         id: 18,
         bassid: 3,
-        heading: 'Model:',
+        heading: 'Model',
         text: 'Text filler'
     },
     {
         id: 19,
         bassid: 3,
-        heading: 'Model:',
+        heading: 'Model',
         text: "TText filler"
     }
 ];

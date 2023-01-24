@@ -7,7 +7,7 @@ const GuitarCard = ({ guitar }) => {
         <Link to={`${id}`}>
             <Card>
                 <CardImg width='100%' src={image} alt={name} />
-                <CardImgOverlay>
+                <CardImgOverlay >
                     <CardTitle>{name}</CardTitle>
                 </CardImgOverlay>
             </Card>

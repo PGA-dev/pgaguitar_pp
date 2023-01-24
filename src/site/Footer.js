@@ -9,7 +9,7 @@ const Footer = () => {
                 <Row>
 
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5>Buying Guides</h5>
+                        <h5 style={{ color: "purple"}}>Buying Guides</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <Link to='/guitardirectory'>Guitars</Link>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </Col>
 
                     <Col xs='6' sm='3' className='text-center'>
-                        <h5>Social</h5>
+                        <h5 style={{ color: "purple"}}>Social</h5>
                         <a
                             className='btn btn-social-icon btn-instagram'
                             href='http://instagram.com/'
@@ -59,7 +59,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:paulgadam@gmail.com'
                         >
-                            <i className='fa fa-envelope-o' /> paulgadam@gmail.com.com
+                            <i className='fa fa-envelope-open' /> paulgadam@gmail.com.com
                         </a>
                     </Col>
 
@@ -68,10 +68,10 @@ const Footer = () => {
                             <img src={Ibanez} alt='Ibanez logo' className='rounded img-fluid' />
                         </div>
                         <br></br>
-                        <h4 id='siteRefs' className='text-center'>All images property/courtesey of Hoshino Gakki.com and Ibanez.com</h4>
+                        <h4 id='siteRefs' className='text-center'style={{ color: "purple"}}>All images property/courtesey of Hoshino Gakki.com and Ibanez.com</h4>
                     </Col>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5>Contact Links</h5>
+                        <h5 style={{ color: "purple"}}>Contact Links</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <a href="https://www.linkedin.com/in/paul-adam-86ba423b/">Author LI</a>

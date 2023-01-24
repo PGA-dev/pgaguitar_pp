@@ -1,6 +1,6 @@
 import { Container } from 'reactstrap';
 import BassList from '../features/bass/BassList';
-import SubHeader from '../components/SubHeader';
+import SubHeader from '../site/SubHeader';
 
 const BassDirectoryPage = () => {
     return (
