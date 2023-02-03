@@ -98,8 +98,15 @@ h2 {
 
 #frontcard {
     border: #20678b ridge 5px;
+    background-color: slategray;
 }
 
 #bgcard {
     border: #20678b ridge 5px;
+    background-color: slategray;
+}
+
+#gdetail {
+    border: #20678b ridge 5px;
+    background-color: slategray;
 }

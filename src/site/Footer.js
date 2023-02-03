@@ -18,7 +18,7 @@ const Footer = () => {
                                 <Link to='/bassdirectory'>Bass</Link>
                             </li>
                             <li>
-                                <Link to='/about'>About</Link>
+                                <Link to='/guitarbody'>Guitar Body</Link>
                             </li>
                             <li>
                                 <Link to='/'>Site Home</Link>

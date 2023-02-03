@@ -30,6 +30,10 @@ function App() {
           path='guitardirectory/:guitarid'
           element={<GuitarDetailPage />}
         />
+        <Route
+          path='guitardirectory/:guitarid/:guitarbody'
+          element={<GuitarBodyPage />}
+        />
         <Route path='bassdirectory' element={<BassDirectory />} />
         <Route
           path='bassdirectory/:bassid'

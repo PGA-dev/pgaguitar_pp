@@ -11,7 +11,7 @@ export const selectGuitarById = (guitarid) => {
 };
 
 export const selectFeaturedGuitar = () => {
-    return GUITAR.find((guitar) => guitar.featured);
+    return GUITAR.filter((guitar) => guitar.featured);
 };
 
 
