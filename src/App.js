@@ -7,8 +7,6 @@ import NavHeader from './site/NavHeader';
 import GuitarDirectory from './pages/GuitarDirectory';
 import GuitarDetailPage from './pages/GuitarDetailPage';
 import './App.css';
-import ITypeDirectory from './pages/ITypeDirectory';
-import ITypeDetail from './features/itype/ITypeDetail';
 import AboutPage from './pages/AboutPage';
 import BassDirectory from './pages/BassDirectory';
 import BassDetailPage from './pages/BassDetailPage';
@@ -24,7 +22,6 @@ function App() {
         <Route path='contact' element={<ContactPage />} />
         <Route path='about' element={<AboutPage />} />
         <Route path='guitarbody' element={<GuitarBodyPage />} />
-        <Route path='guidetypedirectory' element={<ITypeDirectory />} />
         <Route path='guitardirectory' element={<GuitarDirectory />} />
         <Route
           path='guitardirectory/:guitarid'
