@@ -6,9 +6,9 @@ import guitar8520Img from '../assets/img/p_region_RG8520_GE_00_03.png';
 export const GUITAR = [
     {
         id: 0,
-        name: '8527',
+        name: 'Guitar Body',
         image: guitar8527Img,
-        featured: false,
+        featured: 0,
         pageUrl: '/guitarbody',
         pageUrlTitle: 'GuitarBody',
         description:
@@ -18,7 +18,7 @@ export const GUITAR = [
         id: 1,
         name: 'RGA 622',
         image: guitarRGA622,
-        featured: true,
+        featured: 1,
         pageUrl: '/guitarbody',
         pageUrlTitle: 'GuitarBody',
         description:
@@ -28,7 +28,7 @@ export const GUITAR = [
         id: 2,
         name: '8570',
         image: guitar8570Img,
-        featured: true,
+        featured: 2,
         pageUrl: '/guitarbody',
         pageUrlTitle: 'GuitarBody',
         description:
@@ -38,7 +38,7 @@ export const GUITAR = [
         id: 3,
         name: 'RG 8520',
         image: guitar8520Img,
-        featured: false,
+        featured: 3,
         pageUrl: '/guitarbody',
         pageUrlTitle: 'GuitarBody',
         description:

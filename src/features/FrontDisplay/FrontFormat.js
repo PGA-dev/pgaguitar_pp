@@ -1,4 +1,4 @@
-import { Card, CardSubtitle, CardFooter, CardImg, CardTitle, CardBody } from 'reactstrap';
+import { Card, CardSubtitle, CardImg, CardTitle, CardBody } from 'reactstrap';
 //used in DisplayList on Homepage...
 const FrontFormat = ({ feature }) => {
     const { image, name, description } = feature;
