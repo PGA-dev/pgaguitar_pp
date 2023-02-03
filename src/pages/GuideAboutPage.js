@@ -5,7 +5,7 @@ import I8527Img from '../app/assets/img/p_region_RG8527Z_SDE_00_03.png';
 const GuitarBodyPage = () => {
     return (
         <Container>
-            <SubHeader current='GuitarBody' />
+            <SubHeader current='About Guide' />
             <Row className='row'>
                 <Col md='6'>
                     <div md='1' className='text-center'>
@@ -15,7 +15,7 @@ const GuitarBodyPage = () => {
                 <Col md='6'>
                     <div>
                         <p>
-                            Some fancy text for our future guitar body and wood stuff
+                            Some fancy text for our future guitar guide
                         </p>
                     </div>
                 </Col>

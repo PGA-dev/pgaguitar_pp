@@ -9,27 +9,27 @@ export const GUITAR = [
         name: 'Guitar Body',
         image: guitar8527Img,
         featured: 0,
-        pageUrl: '/guitarbody',
+        pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:
             'Guitar Body Guide: Top Wood, body wood, etc...'
     },
     {
         id: 1,
-        name: 'RGA 622',
+        name: 'Guitar Necks',
         image: guitarRGA622,
         featured: 1,
-        pageUrl: '/guitarbody',
+        pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:
-            'Standard S-style 6-string H-s pickup config Rocking A Tone Zone and a Air Norton S'
+            'We have Guitar Neck Guides'
     },
     {
         id: 2,
         name: '8570',
         image: guitar8570Img,
         featured: 2,
-        pageUrl: '/guitarbody',
+        pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
@@ -39,7 +39,7 @@ export const GUITAR = [
         name: 'RG 8520',
         image: guitar8520Img,
         featured: 3,
-        pageUrl: '/guitarbody',
+        pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'

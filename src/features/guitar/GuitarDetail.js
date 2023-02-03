@@ -1,7 +1,7 @@
 import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 const GuitarDetail = ({ guitar }) => {
-    const { id, image, name, pageUrlTitle, pageUrl } = guitar;
+    const { id, image, name } = guitar;
 
     return (
         <Col md='12' className='m-1'>
@@ -9,7 +9,11 @@ const GuitarDetail = ({ guitar }) => {
                 <CardImg top src={image} alt={name} />
                 <CardBody>
                     <CardText>
-                        <Link to={pageUrl}>{pageUrlTitle}</Link>
+                        <div>
+                            <h4 className='text-center' m-2>
+                                {name}
+                            </h4>
+                        </div>
                     </CardText>
                 </CardBody>
             </Card>
