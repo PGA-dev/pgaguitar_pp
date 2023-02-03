@@ -50,11 +50,5 @@ const NavHeader = () => {
         </Navbar>
     );
 };
-// const headstyle = {
-//     color: "SlateBlue",
-//     padding: "8px",
-//     fontSize: "65px",
-//     fontFamily: "Papyrus"
-// };
 
 export default NavHeader;
