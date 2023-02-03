@@ -9,6 +9,7 @@ export const GUITAR = [
         name: '8527',
         image: guitar8527Img,
         featured: false,
+        pageUrl: '',
         description:
             'This 7 string monster, coming with a lo-pro edge (edge zero), Dimarzio PAF 7 pickups and a Macassar Ebony Fretboard'
     },
@@ -17,6 +18,7 @@ export const GUITAR = [
         name: 'RGA 622',
         image: guitarRGA622,
         featured: true,
+        pageUrl: '',
         description:
             'Standard S-style 6-string H-s pickup config Rocking A Tone Zone and a Air Norton S'
     },
@@ -25,6 +27,7 @@ export const GUITAR = [
         name: '8570',
         image: guitar8570Img,
         featured: true,
+        pageUrl: '',
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
     },
@@ -33,6 +36,7 @@ export const GUITAR = [
         name: 'RG 8520',
         image: guitar8520Img,
         featured: false,
+        pageUrl: '',
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
     },

@@ -1,22 +1,22 @@
 import React from 'react';
 import { UncontrolledCarousel, Col } from 'reactstrap';
-
+import guitar5170Img from '../../app/assets/img/p_region_RG5170B_BK_00_01.png';
 //import {CAROUSEL} from '../../app/shared/CAROUSEL';
 const items = [
     {
-        src: '../assets/img/p_region_RG5170G_SVF_00_01.png',
+    src: guitar5170Img,
         altText: '5170',
         caption: 'RG 5170',
         header: 'RG5170'
     },
     {
-        src: '../assets/img/p_region_RG5170G_SVF_00_01.png',
+        src: guitar5170Img,
         altText: '5170',
         caption: 'RG 5170',
         header: 'RG5170'
     },
     {
-        src: '../assets/img/p_region_RG5170G_SVF_00_01.png',
+        src: guitar5170Img,
         altText: '5170',
         caption: 'RG 5170',
         header: 'RG5170'

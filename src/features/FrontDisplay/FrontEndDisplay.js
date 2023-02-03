@@ -1,21 +1,21 @@
 import { Col, Row } from 'reactstrap';
-import FrontCard from './FrontCard';
-import { selectFeaturedGuitar } from '../guitar/guitarSlice';
-import { selectFeaturedMulti } from '../multiguitar/multiGuitarSlice';
-import { selectFeaturedMultiBass } from '../mutibass/multiBassSlice';
-import { selectFeaturedBass } from '../bass/bassSlice';
+import FrontFormat from './FrontFormat';
+import { selectFeaturedGuitar } from './Featured';
+import { selectFeaturedMulti } from './Featured';
+import { selectFeaturedMultiBass } from './Featured';
+import { selectFeaturedBass } from './Featured';
 //Used to map DisplayCards for HomePage...
 
 const FrontEndDisplay = () => {
-    const items = [selectFeaturedGuitar(), selectFeaturedMulti(),selectFeaturedMultiBass(), selectFeaturedBass(),];
+    const features = [selectFeaturedGuitar(), selectFeaturedMulti(),selectFeaturedMultiBass(), selectFeaturedBass(),];
     //mapping from CAMPSITES.js data array and PROMOTIONS.js data array...1 from each on Homepage
 
     return (
         <Row>
-            {items.map((item, idx) => {
+            {features.map((feature, idx) => {
                 return (
                     <Col md='12' className='mt-1' key={idx}>
-                        <FrontCard item={item} />
+                        <FrontFormat feature={feature} />
                     </Col>
                 );
             })}

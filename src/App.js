@@ -12,6 +12,7 @@ import ITypeDetail from './features/itype/ITypeDetail';
 import AboutPage from './pages/AboutPage';
 import BassDirectory from './pages/BassDirectory';
 import BassDetailPage from './pages/BassDetailPage';
+import GuitarBodyPage from './pages/GuitarBody';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='contact' element={<ContactPage />} />
         <Route path='about' element={<AboutPage />} />
-        <Route path='GuideTypeDirectory' element={<ITypeDirectory />} />
+        <Route path='guitarbody' element={<GuitarBodyPage />} />
+        <Route path='guidetypedirectory' element={<ITypeDirectory />} />
         <Route path='guitardirectory' element={<GuitarDirectory />} />
         <Route
           path='guitardirectory/:guitarid'
@@ -33,7 +35,6 @@ function App() {
           path='bassdirectory/:bassid'
           element={<BassDetailPage />}
         />
-
       </Routes>
       <Footer />
     </div>

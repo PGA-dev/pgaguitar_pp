@@ -17,15 +17,15 @@ export const BASS = [
         id: 1,
         name: 'sr5000',
         image: basssr5000,
-        featured: false,
+        featured: true,
         description:
-            'This 8 string monster, coming with a Gibralter II-8 bridge, Dimarzio Fusion Edge 8 pickups and a Macassar Ebony Fretboard'
+            'This Japanese Craft made bass is the 4 string in the 5000 series'
     },
     {
         id: 2,
         name: '2605',
         image: bass2605,
-        featured: true,
+        featured: false,
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
     },

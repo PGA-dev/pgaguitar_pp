@@ -26,8 +26,9 @@ h2 {
 }
 
 .card-img-overlay .card-title {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: #061568;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0);
     font-family: papyrus;
 }
 
@@ -44,28 +45,6 @@ h2 {
     border-top: #20678b solid;
     font-family: papyrus;
 }
-
-/* .navbar-brand {
-    max-width: 4rem;
-    margin-right: 2rem;
-} */
-
-/* .navbar-brand img {
-    width: 150%;
-    height: 150%;
-    margin-right: 2rem;
-    max-width: 4rem;
-
-} */
-
-/* .navbar-dark {
-    background-color: #901cad;
-    background-image: radial-gradient( #09155a, black);
-    border-bottom: #20678b solid 5px;
-    margin-bottom: 1rem;
-    min-height: 1rem;
-    font-family: papyrus;
-} */
 
 
 .page-enter {
@@ -115,4 +94,12 @@ h2 {
     padding-top: 4rem;
     min-height: 15rem;
     font-family: papyrus;
+}
+
+#frontcard {
+    border: #20678b ridge 5px;
+}
+
+#bgcard {
+    border: #20678b ridge 5px;
 }

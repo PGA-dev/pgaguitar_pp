@@ -2,7 +2,7 @@ import { Col, Row } from 'reactstrap';
 
 
 const Header = () => {
-    //const [menuOpen, setMenuOpen] = useState(false);
+
 
     return (
         <Row className='text-center'>

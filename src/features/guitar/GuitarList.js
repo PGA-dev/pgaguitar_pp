@@ -1,7 +1,7 @@
 import { Row, Col } from 'reactstrap';
 import GuitarCard from "./GuitarCard";
 import { selectAllGuitar } from './guitarSlice';
-
+//Guitar Directory pull
 const GuitarList = () => {
     const guitar = selectAllGuitar();
     return (

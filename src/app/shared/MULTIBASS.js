@@ -8,7 +8,7 @@ export const MULTIBASS = [
         id: 0,
         name: 'EHB1506',
         image: EHB1506,
-        featured: false,
+        featured: true,
         description:
             'Multiscale 6 string'
     },
@@ -16,9 +16,9 @@ export const MULTIBASS = [
         id: 1,
         name: 'EHB1505',
         image: EHB1505,
-        featured: true,
+        featured: false,
         description:
-            'Multiscale 6 string'
+            'Multiscale 5 string'
     },
 
 ];
