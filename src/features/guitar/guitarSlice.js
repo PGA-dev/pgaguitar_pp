@@ -10,8 +10,16 @@ export const selectGuitarById = (guitarid) => {
     return GUITAR.find((guitar) => guitar.id === parseInt(guitarid));
 };
 
-export const selectFeaturedGuitar = () => {
-    return GUITAR.filter((guitar) => guitar.featured === true);
+export const selectFeaturedGuitar1 = () => {
+    return GUITAR.find((guitar) => guitar.featured === 1);
+};
+
+export const selectFeaturedGuitar2 = () => {
+    return GUITAR.find((guitar) => guitar.featured === 2);
+};
+
+export const selectFeaturedGuitar3 = () => {
+    return GUITAR.find((guitar) => guitar.featured === 3);
 };
 
 

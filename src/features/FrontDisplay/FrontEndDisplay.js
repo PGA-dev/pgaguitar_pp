@@ -1,6 +1,6 @@
 import { Col, Row } from 'reactstrap';
 import FrontFormat from './FrontFormat';
-import { selectFeaturedGuitar1, selectFeaturedGuitar2, selectFeaturedGuitar3 } from './Featured';
+import { selectFeaturedGuitar1, selectFeaturedGuitar2, selectFeaturedGuitar3 } from '../guitar/guitarSlice';
 
 //Used to map DisplayCards for HomePage...
 

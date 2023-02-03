@@ -24,8 +24,16 @@ export const selectGuitarById = (guitarid) => (state) =>{
     return state.guitars.guitarArray.find((guitar) => guitar.id === parseInt(guitarid));
 };
 
-export const selectFeaturedGuitar = (state) => {
-    return state.guitars.guitarArray.filter((guitar) => guitar.featured);
+
+export const selectFeaturedGuitar1 = () => {
+    return state.guitars.guitarArray.find((guitar) => guitar.featured === 1);
 };
 
+export const selectFeaturedGuitar2 = () => {
+    return state.guitars.guitarArray.find((guitar) => guitar.featured === 2);
+};
+
+export const selectFeaturedGuitar3 = () => {
+    return state.guitars.guitarArray.find((guitar) => guitar.featured === 3);
+};
 
