@@ -6,7 +6,9 @@ const FrontFormat = ({ feature }) => {
     return (
         <Link to={pageUrl}>
             <Card id='bgcard'>
-                <CardImg width='100%' src={image} alt={name} />
+                <CardImg src={image} alt={name}   style={{
+        height: 1000, width: 1000
+      }}/>
                 <CardImgOverlay>
                     <CardTitle style={{ padding: '330px 500px 5px 10px', fontFamily: 'papyrus', color: 'aqua' }}>{name} Guide</CardTitle>
                 </CardImgOverlay>

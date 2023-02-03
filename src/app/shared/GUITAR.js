@@ -2,7 +2,13 @@ import guitarRGA622 from '../assets/img/p_region_RGA622XH_BK_00_01.png';
 import guitar8570Img from '../assets/img/p_region_RG8570Z_BRE_00_03.png';
 import guitar8527Img from '../assets/img/p_region_RG8527Z_SDE_00_03.png';
 import guitar8520Img from '../assets/img/p_region_RG8520_GE_00_03.png';
-//WAS CAMPSITES
+import guitarString from '../assets/img/nyxl110.jpeg';
+//https://www.daddario.com/globalassets/inriver/resources/ds_nyxl1046_main_transparent2.png
+import guitarBridge from '../assets/img/9862135.jpg'
+//https://www.thomannmusic.com/ibanez_low_edge_pro_cosmo_black.htm
+import guitarPickup from '../assets/img/DP259FBB+BK.png'
+//https://d2emr0qhzqfj88.cloudfront.net/s3fs-public/products/DP259BB%2BBK.png
+
 export const GUITAR = [
     {
         id: 0,
@@ -18,7 +24,7 @@ export const GUITAR = [
         id: 1,
         name: 'Guitar Necks',
         image: guitarRGA622,
-        featured: 1,
+        featured: 4,
         pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:
@@ -26,9 +32,9 @@ export const GUITAR = [
     },
     {
         id: 2,
-        name: '8570',
-        image: guitar8570Img,
-        featured: 2,
+        name: 'Guitar Strings',
+        image: guitarString,
+        featured: 1,
         pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:
@@ -36,8 +42,18 @@ export const GUITAR = [
     },
     {
         id: 3,
-        name: 'RG 8520',
-        image: guitar8520Img,
+        name: 'Guitar Bridges',
+        image: guitarBridge,
+        featured: 2,
+        pageUrl: '/guideaboutpage',
+        pageUrlTitle: 'GuitarBody',
+        description:
+            'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
+    },
+    {
+        id: 4,
+        name: 'Guitar Pickups',
+        image: guitarPickup,
         featured: 3,
         pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
