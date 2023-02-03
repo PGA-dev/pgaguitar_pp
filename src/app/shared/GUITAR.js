@@ -8,13 +8,16 @@ import guitarBridge from '../assets/img/9862135.jpg'
 //https://www.thomannmusic.com/ibanez_low_edge_pro_cosmo_black.htm
 import guitarPickup from '../assets/img/DP259FBB+BK.png'
 //https://d2emr0qhzqfj88.cloudfront.net/s3fs-public/products/DP259BB%2BBK.png
-
+import guitarNeck from '../assets/img/neck_01.jpg'
+//https://www.ibanez.com/images/products/detail/neck_01.jpg
+import guitarBody from '../assets/img/DSC02586.jpeg'
+//https://i1.wp.com/blog.music-man.com/wp-content/uploads/2019/12/DSC02586.jpg?resize=960%2C1440
 export const GUITAR = [
     {
         id: 0,
         name: 'Guitar Body',
-        image: guitar8527Img,
-        featured: 0,
+        image: guitarBody,
+        featured: 1,
         pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:
@@ -23,7 +26,7 @@ export const GUITAR = [
     {
         id: 1,
         name: 'Guitar Necks',
-        image: guitarRGA622,
+        image: guitarNeck,
         featured: 4,
         pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
@@ -34,7 +37,7 @@ export const GUITAR = [
         id: 2,
         name: 'Guitar Strings',
         image: guitarString,
-        featured: 1,
+        featured: 0,
         pageUrl: '/guideaboutpage',
         pageUrlTitle: 'GuitarBody',
         description:

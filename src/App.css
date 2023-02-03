@@ -99,15 +99,15 @@ h2 {
 #frontcard {
     color: aqua;
     border: #20678b ridge 5px;
-    background-color: slategray;
+    background-color: black;
 }
 
 #bgcard {
     border: #20678b ridge 5px;
-    background-color: slategray;
+    background-color: black;
 }
 
 #gdetail {
     border: #20678b ridge 5px;
-    background-color: slategray;
+    background-color: black;
 }

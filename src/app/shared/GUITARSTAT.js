@@ -30,6 +30,14 @@ export const GUITARSTAT = [
         Manufacture3URL: 'https://www.kieselguitars.com/'
 
     },
+    {
+        id: 4,
+        guitarid: 4,
+        Manufacture1URL: 'https://www.ibanez.com/usa/',
+        Manufacture2URL: 'https://www.jacksonguitars.com/en-US/start',
+        Manufacture3URL: 'https://www.kieselguitars.com/'
+
+    },
 
 
 
