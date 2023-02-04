@@ -1,7 +1,8 @@
 
 const GuitarStat = ({ guitarstat }) => {
-    const { Manufacture1URL, Manufacture2URL, Manufacture3URL } = guitarstat;
+    const { nameMan, Manufacture1URL, Manufacture2URL, Manufacture3URL } = guitarstat;
     return (
+       <>
         <p style={{ padding: '2px', fontFamily: 'papyrus', color: 'blueviolet' }} >
             <ul>
                 <li>
@@ -16,6 +17,7 @@ const GuitarStat = ({ guitarstat }) => {
             </ul>
             <div style={{ padding: '2px', fontFamily: 'papyrus', color: 'aqua' }}></div>
         </p>
+        </>
     );
 };
 

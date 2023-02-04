@@ -16,6 +16,13 @@ const GuitarDetailPage = () => {
                 <GuitarDetail guitar={guitar} />
                 <GuitarStatList guitarid={guitarid} />
             </Row>
+            <Row>
+                <div>
+                    <h5>
+                        this is my h5 heading
+                    </h5>
+                </div>
+            </Row>
         </Container>
     );
 };

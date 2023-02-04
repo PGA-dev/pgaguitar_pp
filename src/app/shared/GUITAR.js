@@ -18,7 +18,7 @@ export const GUITAR = [
         name: 'Guitar Body',
         image: guitarBody,
         featured: 1,
-        pageUrl: '/guideaboutpage',
+        pageUrl: '/guitardirectory/0',
         pageUrlTitle: 'GuitarBody',
         description:
             'Guitar Body Guide: Top Wood, body wood, etc...'
@@ -28,7 +28,7 @@ export const GUITAR = [
         name: 'Guitar Necks',
         image: guitarNeck,
         featured: 4,
-        pageUrl: '/guideaboutpage',
+        pageUrl: '/guitardirectory/1',
         pageUrlTitle: 'GuitarBody',
         description:
             'We have Guitar Neck Guides'
@@ -38,7 +38,7 @@ export const GUITAR = [
         name: 'Guitar Strings',
         image: guitarString,
         featured: 0,
-        pageUrl: '/guideaboutpage',
+        pageUrl: '/guitardirectory/2',
         pageUrlTitle: 'GuitarBody',
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
@@ -48,7 +48,7 @@ export const GUITAR = [
         name: 'Guitar Bridges',
         image: guitarBridge,
         featured: 2,
-        pageUrl: '/guideaboutpage',
+        pageUrl: '/guitardirectory/3',
         pageUrlTitle: 'GuitarBody',
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'
@@ -58,7 +58,7 @@ export const GUITAR = [
         name: 'Guitar Pickups',
         image: guitarPickup,
         featured: 3,
-        pageUrl: '/guideaboutpage',
+        pageUrl: '/guitardirectory/4',
         pageUrlTitle: 'GuitarBody',
         description:
             'A standard 34" 6-string Tuned B-C with Barts and all the trimings'

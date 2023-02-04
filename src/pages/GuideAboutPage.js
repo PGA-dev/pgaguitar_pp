@@ -7,7 +7,7 @@ const GuitarBodyPage = () => {
         <Container>
             <SubHeader current='About Guide' />
             <Row className='row'>
-                <Col md='6'>
+                <Col md='12'>
                     <div md='1' className='text-center'>
                         <img src={I8527Img} alt='Ibanez logo' className='rounded img-fluid' />
                     </div>
