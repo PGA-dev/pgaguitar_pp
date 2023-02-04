@@ -28,7 +28,7 @@ h2 {
 .card-img-overlay .card-title {
     color: #061568;
     font-size: 35px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, .2);
     font-family: papyrus;
 }
 
@@ -97,7 +97,7 @@ h2 {
 }
 
 #frontcard {
-    color: aqua;
+    color: blue;
     border: #20678b ridge 5px;
     background-color: black;
 }
