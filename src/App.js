@@ -20,9 +20,9 @@ function App() {
         <Route path='contact' element={<ContactPage />} />
         <Route path='about' element={<AboutPage />} />
         <Route path='guideaboutpage' element={<GuideAboutPage />} />
-        <Route path='guitardirectory' element={<GuitarDirectory />} />
+        <Route path='guidedirectory' element={<GuitarDirectory />} />
         <Route
-          path='guitardirectory/:guitarid'
+          path='guidedirectory/:guitarid'
           element={<GuitarDetailPage />}
         />
       </Routes>

@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import {Col} from 'reactstrap';
+//import {Col} from 'reactstrap';
 import {
     Navbar,
-    NavbarBrand,
     Collapse,
     NavbarToggler,
     Nav,
@@ -25,8 +24,8 @@ const NavHeader = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/guitardirectory' style={{ color: "purple"}}>
-                            <i style={{ color: "aqua"}}  className='fa fa-cogs fa-sm' /> Guitar
+                        <NavLink className='nav-link' to='/guidedirectory' style={{ color: "purple"}}>
+                            <i style={{ color: "aqua"}}  className='fa fa-cogs fa-sm' /> Guides
                         </NavLink>
                     </NavItem>
                     <NavItem>
