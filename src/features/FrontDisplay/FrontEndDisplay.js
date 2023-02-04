@@ -6,8 +6,7 @@ import { selectFeaturedGuitar1, selectFeaturedGuitar2, selectFeaturedGuitar3 } f
 
 const FrontEndDisplay = () => {
     const features = [selectFeaturedGuitar1(), selectFeaturedGuitar2(), selectFeaturedGuitar3(),];
-    //mapping from CAMPSITES.js data array and PROMOTIONS.js data array...1 from each on Homepage
-
+    
     return (
         <Row>
             {features.map((feature, idx) => {

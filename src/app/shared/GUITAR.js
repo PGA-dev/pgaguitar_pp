@@ -27,7 +27,7 @@ export const GUITAR = [
         id: 1,
         name: 'Guitar Necks',
         image: guitarNeck,
-        featured: 4,
+        featured: 0,
         pageUrl: '/guitardirectory/1',
         pageUrlTitle: 'GuitarBody',
         description:

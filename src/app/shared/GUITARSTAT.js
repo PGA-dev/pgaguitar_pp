@@ -5,7 +5,7 @@ export const GUITARSTAT = [
         nameMan: 'Guitar Body Manufacturers and Comparison Pages',
         Manufacture1URL: 'https://warmoth.com/index.php/guitar-bodies',
         Manufacture2URL: 'https://usacustomguitars.com/?page_id=1317',
-        Manufacture3URL: 'https://www.kieselguitars.com/'
+        Manufacture3URL: 'https://www.stewmac.com/tonewoods/shop-tonewood-by-instrument/electric-guitar-bodies-and-necks-and-wood/electric-guitar-body-blanks/'
 
     },
     {
@@ -14,7 +14,7 @@ export const GUITARSTAT = [
         nameMan: 'Guitar Neck Manufacturers Pages',
         Manufacture1URL: 'https://www.ibanez.com/usa/',
         Manufacture2URL: 'https://www.jacksonguitars.com/en-US/start',
-        Manufacture3URL: 'https://www.kieselguitars.com/'
+        Manufacture3URL: 'https://www.stewmac.com/tonewoods/shop-tonewood-by-instrument/electric-guitar-bodies-and-necks-and-wood/electric-guitar-necks/'
     },
     {
         id: 2,
