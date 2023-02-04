@@ -1,4 +1,4 @@
-import { Card, CardSubtitle, CardImg, CardTitle, CardBody,CardImgOverlay } from 'reactstrap';
+import { Card, CardImg, CardTitle,CardImgOverlay } from 'reactstrap';
 import { Link } from 'react-router-dom';
 //used in DisplayList on Homepage...
 const FrontFormat = ({ feature }) => {

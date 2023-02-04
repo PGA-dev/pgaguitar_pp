@@ -1,4 +1,4 @@
-import { Card, CardImg, CardImgOverlay, CardTitle, CardBody, CardSubtitle } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle} from 'reactstrap';
 import { Link } from 'react-router-dom';
 //Used in guitar Directory for list
 const GuitarCard = ({ guitar }) => {
