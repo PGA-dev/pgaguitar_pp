@@ -23,6 +23,20 @@ const GuitarDetailPage = () => {
                     </h5>
                 </div>
             </Row>
+            <Row>
+                <div>
+                    <h5>
+                        this is my h5 heading2
+                    </h5>
+                </div>
+            </Row>
+            <Row>
+                <div>
+                    <h5>
+                        this is my h5 heading3
+                    </h5>
+                </div>
+            </Row>
         </Container>
     );
 };

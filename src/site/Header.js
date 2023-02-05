@@ -1,16 +1,37 @@
 import { Col, Row } from 'reactstrap';
-
+import { useState, useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
 
 const Header = () => {
 
+    const [toggle, setToggle] = useState(false);
+
+    const animatedStyle = useSpring({
+        opacity: toggle ? 1 : 0,
+        transform: toggle ? 'scale(1,1)' : 'scale(0,0)',
+        config: { duration: 1500 }
+    });
+    const animatedStyle2 = useSpring({
+        opacity: toggle ? 1 : 0,
+        transform: toggle ? 'scale(1,1)' : 'scale(0,1)',
+        config: { duration: 1500 }
+    });
+
+    useEffect(() => {
+        setToggle(true);
+    }, []);
 
     return (
+
         <Row className='text-center'>
             <Col id='headerhead' >
                 <h1 m='12' id='title' style={headstyle} >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
-                <h5 style={{ color: "purple", padding: "6px", fontSize: "45px", fontFamily: "Arial-bold" }} className='text-center'>A React Redux Adventure...</h5>
+                <animated.div style={animatedStyle}>
+                    <h5 style={{ color: "aqua", padding: "6px", fontSize: "45px", fontFamily: "Arial-bold" }} className='text-center'>A React Redux Adventure...</h5>
+                </animated.div>
             </Col>
         </Row>
+
     );
 };
 const headstyle = {

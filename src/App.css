@@ -34,7 +34,7 @@ h2 {
 
 .row-content {
     padding: 50px 0;
-    border-bottom: 1px ridge;
+    border-bottom: 0px ridge;
     min-height: 200px;
 }
 
