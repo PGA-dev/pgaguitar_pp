@@ -12,7 +12,6 @@ import { useSpring, animated } from 'react-spring';
 
 const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-
     const [toggle, setToggle] = useState(false);
 
     const animatedStyle = useSpring({

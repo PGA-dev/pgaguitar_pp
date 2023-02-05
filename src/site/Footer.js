@@ -51,12 +51,22 @@ const Footer = () => {
 
                     </Col>
 
-                    <Col md='2'>
-                        <div md='1' className='text-center'>
-                            <img src={Ibanez} alt='Ibanez logo' className='rounded img-fluid' />
-                        </div>
-                        <br></br>
-                        <h4 id='siteRefs' className='text-center' style={{ color: "purple" }}>All images property/courtesey of Hoshino Gakki.com and Ibanez.com</h4>
+                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
+                        <h5 style={{ color: "purple" }}>Buying Guides</h5>
+                        <ul className='list-unstyled'>
+                            <li>
+                                <Link to='/guitardirectory'>Guitars</Link>
+                            </li>
+                            <li>
+                                <Link to='/guitardirectory'>Guitars</Link>
+                            </li>
+                            <li>
+                                <Link to='/guitarbody'>Guitar Body</Link>
+                            </li>
+                            <li>
+                                <Link to='/'>Site Home</Link>
+                            </li>
+                        </ul>
                     </Col>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5 style={{ color: "purple" }}>Outside Links</h5>
