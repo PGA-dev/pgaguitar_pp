@@ -2,7 +2,7 @@ import { Container } from 'reactstrap';
 import GuitarList from '../features/guitar/GuitarList';
 import SubHeader from '../site/SubHeader';
 
-const GuitarDirectoryPage = () => {
+const GuideDirectoryPage = () => {
     return (
         <Container>
             <SubHeader current='guidedirectory' />
@@ -11,4 +11,4 @@ const GuitarDirectoryPage = () => {
     );
 };
 
-export default GuitarDirectoryPage;
+export default GuideDirectoryPage;
