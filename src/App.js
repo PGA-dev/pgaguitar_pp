@@ -9,15 +9,21 @@ import GuitarDetailPage from './pages/GuitarDetailPage';
 import './App.css';
 import AboutPage from './pages/AboutPage';
 import GuideAboutPage from './pages/GuideAboutPage';
+import { useState } from 'react';
 
 function App() {
+  //const [style, changeStyle] = useState("#00000f"); must get this working on page change
+
+
+
   return (
+    <div style={{ background: '#000000', opacity:'.98', color: 'aqua'}} >
     <div className='App'>
       <NavHeader />
       <Header />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='contact' element={<ContactPage />} />
+        <Route path='contact' element={<ContactPage />}  />
         <Route path='about' element={<AboutPage />} />
         <Route path='guideaboutpage' element={<GuideAboutPage />} />
         <Route path='guidedirectory' element={<GuideDirectory />} />
@@ -27,6 +33,7 @@ function App() {
         />
       </Routes>
       <Footer />
+    </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import SubHeader from '../site/SubHeader';
 const GuideDirectoryPage = () => {
     return (
         <Container>
-            <SubHeader current='guidedirectory' />
+            <SubHeader current='GuideDirectory' />
             <GuitarList />
         </Container>
     );

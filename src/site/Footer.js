@@ -12,16 +12,19 @@ const Footer = () => {
                         <h5 style={{ color: "purple" }}>Buying Guides</h5>
                         <ul className='list-unstyled'>
                             <li>
-                                <Link to='/guitardirectory'>Guitars</Link>
+                                <Link to='/guidedirectory/0'>Guitar Body</Link>
                             </li>
                             <li>
-                                <Link to='/guitardirectory'>Guitars</Link>
+                                <Link to='/guidedirectory/1'>Guitar Neck</Link>
                             </li>
                             <li>
-                                <Link to='/guitarbody'>Guitar Body</Link>
+                                <Link to='/guidedirectory/3'>Guitar Bridge</Link>
                             </li>
                             <li>
-                                <Link to='/'>Site Home</Link>
+                                <Link to='/guidedirectory/2'>Guitar Strings</Link>
+                            </li>
+                            <li>
+                                <Link to='/guidedirectory/4'>Guitar Pickups</Link>
                             </li>
                         </ul>
                     </Col>
@@ -52,10 +55,10 @@ const Footer = () => {
                     </Col>
 
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5 style={{ color: "purple" }}>Buying Guides</h5>
+                        <h5 style={{ color: "purple" }}>Site Links</h5>
                         <ul className='list-unstyled'>
                             <li>
-                                <Link to='/guitardirectory'>Guitars</Link>
+                                <Link to='/'>Site Home</Link>
                             </li>
                             <li>
                                 <Link to='/guitardirectory'>Guitars</Link>
