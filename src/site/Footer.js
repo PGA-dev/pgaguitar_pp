@@ -60,13 +60,16 @@ const Footer = () => {
                                 <Link style={footstyleLink} to='/'>Site Home</Link>
                             </li>
                             <li>
-                                <Link  style={footstyleLink} to='/guitardirectory'>Guitars</Link>
+                                <Link  style={footstyleLink} to='/guidesiteref'>References</Link>
                             </li>
                             <li>
-                                <Link style={footstyleLink} to='/guidesitemap'>Guide Site Map</Link>
+                                <Link style={footstyleLink} to='/guidesitemap'>Site Map</Link>
                             </li>
                             <li>
-                                <Link style={footstyleLink} to='/'>Site Home</Link>
+                                <Link style={footstyleLink} to='/guideaboutpage'>About Page</Link>
+                            </li>
+                            <li>
+                                <Link style={footstyleLink} to='/about'>Author About</Link>
                             </li>
                         </ul>
                     </Col>
