@@ -1,13 +1,16 @@
-import { Col } from 'reactstrap';
 
 const Loading = () => {
     return (
-        <Col>
-            <i style={spinStyle} className='fa fa-spinner fa-pulse fa-3x fa-fw ' />
-            <p style={loadStyle}>Loading...</p>
-        </Col>
+        <>
+            <i style={spinStyle} className='fa fa-cog fa-spin fa-3x fa-fw' />
+            <p style={loadStyle}>Please Wait Loading...</p>
+        </>
     );
 };
+//fa fa-refresh fa-spin fa-3x fa-fw
+//fa fa-spinner fa-pulse fa-3x fa-fw
+//fa fa-cog fa-spin fa-3x fa-fw
+//fa fa-circle-o-notch fa-spin fa-3x fa-fw
 
 const loadStyle= {
     color: "aqua",
@@ -17,7 +20,7 @@ const loadStyle= {
 };
 
 const spinStyle= {
-    color: "aqua"
+    color: "magenta"
 };
 
 export default Loading;

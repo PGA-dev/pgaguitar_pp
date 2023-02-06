@@ -1,7 +1,7 @@
 import { baseUrl } from "../app/shared/baseUrl";
-
-export const mapImageURL = (arr) => {
-    return arr.map((item) => {
+//from NuCampsite
+export const mapImageURL = (rma) => {
+    return rma.map((item) => {
         return {
             ...item,
             image: baseUrl + item.image

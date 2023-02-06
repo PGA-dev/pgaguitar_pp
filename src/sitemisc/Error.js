@@ -1,19 +1,19 @@
-import { Col } from "reactstrap";
+//import { Col } from "reactstrap";
 
 
 const Error = ({ errMsg }) => {
     return (
-        <Col>
+        <>
             <h4 style={errorStyle}>{errMsg}</h4>
-        </Col>
+        </>
     );
 };
 
-const errorStyle= {
-    color: "aqua",
+const errorStyle = {
+    color: "magenta",
     padding: "2px",
-    fontSize: "24px",
-    fontFamily: "Papyrus"
+    fontSize: "40px",
+    fontFamily: "papyrus"
 };
 
 export default Error;

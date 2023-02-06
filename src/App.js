@@ -23,7 +23,6 @@ function App() {
       dispatch(fetchGuitarStat());
   }, [dispatch]);
 
-
   return (
     <div style={{ background: '#000000', opacity:'.98', color: 'aqua'}} >
     <div className='App'>
