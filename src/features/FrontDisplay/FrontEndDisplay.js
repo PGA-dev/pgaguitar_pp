@@ -17,7 +17,7 @@ const FrontEndDisplay = () => {
 return(
     <Row>
         {features.map((feature, idx) => {
-            const { featuredItem, isLoading, errMsg } = feature;
+            const { frontFeature, isLoading, errMsg } = feature;
             if (isLoading) {
                 return <Loading key={idx} />;
             }
@@ -25,9 +25,9 @@ return(
                 return <Error errMsg={errMsg} key={idx} />;
             }
             return (
-                featuredItem && (
+                frontFeature && (
                     <Col md='12' className='mt-5' key={idx}>
-                        <FrontFormat feature={featuredItem} />
+                        <FrontFormat feature={frontFeature} />
                     </Col>
                 )
             );

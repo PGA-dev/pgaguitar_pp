@@ -59,7 +59,7 @@ export const selectGuitarById = (guitarid) => (state) =>{
 
 export const selectFeaturedGuitar1 = (state) => {
     return {
-        featuredItem: state.guitar.guitarArray.find(
+        frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 1),
             isLoading: state.guitar.isLoading,
             errMsg: state.guitar.errMsg
@@ -68,7 +68,7 @@ export const selectFeaturedGuitar1 = (state) => {
 
 export const selectFeaturedGuitar2 = (state) => {
     return {
-        featuredItem: state.guitar.guitarArray.find(
+        frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 2),
             isLoading: state.guitar.isLoading,
             errMsg: state.guitar.errMsg
@@ -77,7 +77,7 @@ export const selectFeaturedGuitar2 = (state) => {
 
 export const selectFeaturedGuitar3 = (state) => {
     return {
-        featuredItem: state.guitar.guitarArray.find(
+        frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 3),
             isLoading: state.guitar.isLoading,
             errMsg: state.guitar.errMsg

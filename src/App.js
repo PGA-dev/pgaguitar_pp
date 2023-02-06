@@ -13,6 +13,7 @@ import AboutPage from './pages/AboutPage';
 import GuideAboutPage from './pages/GuideAboutPage';
 import { fetchGuitarStat } from './features/guitarstats/guitarStatSlice';
 import { fetchGuitar } from './features/guitar/guitarSlice';
+import GuideSiteMap from './pages/GuideSiteMap';
 //import { useState } from 'react';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path='contact' element={<ContactPage />}  />
         <Route path='about' element={<AboutPage />} />
         <Route path='guideaboutpage' element={<GuideAboutPage />} />
+        <Route path='guidesitemap' element={<GuideSiteMap />} />
         <Route path='guidedirectory' element={<GuideDirectory />} />
         <Route
           path='guidedirectory/:guitarid'

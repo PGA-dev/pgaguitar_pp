@@ -63,7 +63,7 @@ const Footer = () => {
                                 <Link  style={footstyleLink} to='/guitardirectory'>Guitars</Link>
                             </li>
                             <li>
-                                <Link style={footstyleLink} to='/guitarbody'>Guitar Body</Link>
+                                <Link style={footstyleLink} to='/guidesitemap'>Guide Site Map</Link>
                             </li>
                             <li>
                                 <Link style={footstyleLink} to='/'>Site Home</Link>
