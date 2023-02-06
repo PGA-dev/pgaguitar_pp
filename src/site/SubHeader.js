@@ -6,12 +6,12 @@ const SubHeader = ({ current, detail }) => {
         <Row style={headstyleNav}>
 
             <Col className="text-left" >
-                <Breadcrumb>
-                    <BreadcrumbItem>
+                <Breadcrumb >
+                    <BreadcrumbItem >
                         <Link style={headstyleNav} to='/'>Home</Link>
-                    </BreadcrumbItem>
+                    </BreadcrumbItem >
                     {detail && (
-                        <BreadcrumbItem>
+                        <BreadcrumbItem >
                             <Link style={headstyleNav} to='/guidedirectory'>Guide Directory</Link>
                         </BreadcrumbItem>
                     )}
@@ -25,8 +25,8 @@ const SubHeader = ({ current, detail }) => {
 
 const headstyleNav= {
     color: "slateblue",
-    padding: "15px",
-    fontSize: "35px",
+    padding: "25px",
+    fontSize: "48px",
     fontFamily: "Papyrus"
 };
 

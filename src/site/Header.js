@@ -11,11 +11,6 @@ const Header = () => {
         transform: toggle ? 'scale(1,1)' : 'scale(0,0)',
         config: { duration: 1500 }
     });
-    const animatedStyle2 = useSpring({
-        opacity: toggle ? 1 : 0,
-        transform: toggle ? 'scale(1,1)' : 'scale(0,1)',
-        config: { duration: 1500 }
-    });
 
     useEffect(() => {
         setToggle(true);
