@@ -25,8 +25,8 @@ const GuitarDetailPage = () => {
     } else {
         content = (
             <>
-                <CampsiteDetail guitar={guitar} />
-                <CommentsList guitarid={guitarid} />
+                <GuitarDetail guitar={guitar} />
+                <GuitarStatList guitarid={guitarid} />
             </>
         );
     }

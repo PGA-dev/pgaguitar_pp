@@ -1,14 +1,45 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { GUITAR } from "../../app/shared/GUITAR";
+//import { GUITAR } from "../../app/shared/GUITAR";
+import { baseUrl } from '../../app/shared/baseUrl';
+import { mapImageURL } from "../../sitemisc/mapImageURL";
 
+
+export const fetchGuitar = createAsyncThunk(
+    'guitar/fetchGuitar',
+    async () => {
+        const response = await fetch(baseUrl + 'guitar');
+        if (!response.ok) {
+            return Promise.reject('Unable to fetch, status: ' + response.status);
+        }
+        const data = await response.json();
+        return data;
+    }
+);
 const initialState = {
-    guitarArray: GUITAR
+    guitarArray: [],
+    isLoading: true,
+    errMsg: ''
 };
 
-const guitarSlice = createSlice ({
-    name: 'guitars',
-    initialState
-})
+const guitarSlice = createSlice({
+    name: 'guitar',
+    initialState,
+    reducers: {},
+    extraReducers: {
+        [fetchGuitar.pending]: (state) => {
+            state.isLoading = true;
+        },
+        [fetchGuitar.fulfilled]: (state, action) => {
+            state.isLoading = false;
+            state.errMsg = '';
+            state.guitarArray = mapImageURL(action.payload);
+        },
+        [fetchGuitar.rejected]: (state, action) => {
+            state.isLoading = false;
+            state.errMsg = action.error ? action.error.message : 'Fetch failed';
+        }
+    }
+});
 
 
 export const guitarReducer = guitarSlice.reducer;
@@ -26,14 +57,29 @@ export const selectGuitarById = (guitarid) => (state) =>{
 
 
 export const selectFeaturedGuitar1 = () => {
-    return state.guitars.guitarArray.find((guitar) => guitar.featured === 1);
+    return {
+        featuredItem:state.guitars.guitarArray.find(
+            (guitar) => guitar.featured === 1),
+            isLoading: state.campsites.isLoading,
+            errMsg: state.campsites.errMsg
+    };
 };
 
 export const selectFeaturedGuitar2 = () => {
-    return state.guitars.guitarArray.find((guitar) => guitar.featured === 2);
+    return {
+        featuredItem:state.guitars.guitarArray.find(
+            (guitar) => guitar.featured === 2),
+            isLoading: state.campsites.isLoading,
+            errMsg: state.campsites.errMsg
+    };
 };
 
 export const selectFeaturedGuitar3 = () => {
-    return state.guitars.guitarArray.find((guitar) => guitar.featured === 3);
+    return {
+        featuredItem:state.guitars.guitarArray.find(
+            (guitar) => guitar.featured === 3),
+            isLoading: state.campsites.isLoading,
+            errMsg: state.campsites.errMsg
+    };
 };
 
