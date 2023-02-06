@@ -9,7 +9,7 @@ import GuitarDetailPage from './pages/GuitarDetailPage';
 import './App.css';
 import AboutPage from './pages/AboutPage';
 import GuideAboutPage from './pages/GuideAboutPage';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 function App() {
   //const [style, changeStyle] = useState("#00000f"); must get this working on page change
