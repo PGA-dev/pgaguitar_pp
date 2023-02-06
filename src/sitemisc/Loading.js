@@ -1,11 +1,11 @@
-//import { Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 
 const Loading = () => {
     return (
-        <>
+        <Col>
             <i style={spinStyle} className='fa fa-spinner fa-pulse fa-3x fa-fw ' />
             <p style={loadStyle}>Loading...</p>
-        </>
+        </Col>
     );
 };
 

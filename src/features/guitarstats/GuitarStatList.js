@@ -1,9 +1,26 @@
 import { Col } from 'reactstrap';
 import GuitarStat from './GuitarStat';
 import { selectStatByGuitarId } from './guitarStatSlice';
+import Error from '../../sitemisc/Error';
+import Loading from '../../sitemisc/Loading';
+import { useSelector } from "react-redux";
 
 const GuitarStatList = ({ guitarid }) => {
-    const guitarstats = selectStatByGuitarId(guitarid);
+    const guitarstats = useSelector(selectStatByGuitarId(guitarid));
+    const isLoading = useSelector((state) => state.guitarstat.isLoading);
+    const errMsg = useSelector((state) => state.guitarstat.errMsg);
+
+    if (isLoading) {
+        return (
+            <Loading />
+        );
+    }
+
+    if (errMsg) {
+        return (
+            <Error errMsg={errMsg} />
+        );
+    }
 
     if (guitarstats && guitarstats.length > 0) {
         return (
@@ -17,7 +34,7 @@ const GuitarStatList = ({ guitarid }) => {
     }
     return (
         <Col md='5' className='m-1' style={{padding:'5px', fontFamily: 'papyrus', color: 'blueviolet'}}>
-            We don't have any information on this model yet.
+            We don't have any stats on this model yet.
         </Col>
     );
 };

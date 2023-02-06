@@ -6,21 +6,14 @@ import Footer from './site/Footer';
 import NavHeader from './site/NavHeader';
 import GuideDirectory from './pages/GuideDirectory';
 import GuitarDetailPage from './pages/GuitarDetailPage';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 import './App.css';
 import AboutPage from './pages/AboutPage';
 import GuideAboutPage from './pages/GuideAboutPage';
-import { fetchGuitarStat } from './features/guitarstats/guitarStatSliceASS';
 //import { useState } from 'react';
 
 function App() {
   //const [style, changeStyle] = useState("#00000f"); must get this working on page change
-  const dispatch = useDispatch();
-  useEffect(() => {
-      dispatch(fetchGuitar());
-      dispatch(fetchGuitarStat());
-  }, [dispatch]);
+
 
 
   return (
