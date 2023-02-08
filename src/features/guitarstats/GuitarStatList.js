@@ -15,13 +15,11 @@ const GuitarStatList = ({ guitarid }) => {
             <Loading />
         );
     }
-
     if (errorMsg) {
         return (
             <Error errorMsg={errorMsg} />
         );
     }
-
     if (guitarstats && guitarstats.length > 0) {
         return (
             <Col md='12' className='m-1'>
@@ -34,7 +32,7 @@ const GuitarStatList = ({ guitarid }) => {
     }
     return (
         <Col md='5' className='m-1' style={{ padding: '5px', fontFamily: 'papyrus', color: 'blueviolet' }}>
-            We don't have any stats on this model yet.
+            We don't have any OutSide Links for this model yet.
         </Col>
     );
 };

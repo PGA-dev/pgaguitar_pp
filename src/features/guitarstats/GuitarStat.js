@@ -1,4 +1,3 @@
-//import { Col } from "reactstrap";
 
 const GuitarStat = ({ guitarstat }) => {
     const { nameMan,nameMan2, nameMan3, nameMan4,  nameMan5, Manufacture1URL, Manufacture2URL, Manufacture3URL, Manufacture4URL, Manufacture5URL } = guitarstat;
