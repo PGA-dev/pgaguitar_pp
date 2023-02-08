@@ -26,7 +26,7 @@ const AboutPage = () => {
                 <Col>
                     <Card>
                         <CardHeader className=" mt-1 bg text-left" style={{ border: "5px ridge #e6e3fa", borderRadius: "2%", backgroundColor: "black", color: "aqua", padding: "12px", fontSize: "50px", fontFamily: "papyrus" }}>
-                            <Row className="row-right"><div className=""><img top style={{ height: 290 }} width='25%' src={profile} alt='Author' ></img></div></Row>
+                            <Row className="row-right"><div className=""><img style={{ height: 290 }} width='25%' src={profile} alt='Author' ></img></div></Row>
                             <Row><div m='2'>About the Author</div></Row>
                         </CardHeader>
                         <CardBody className="bg" style={{ border: "5px ridge #e6e3ea", backgroundColor: "black", color: "aqua", padding: "6px", fontSize: "35px", fontFamily: "papyrus" }}>

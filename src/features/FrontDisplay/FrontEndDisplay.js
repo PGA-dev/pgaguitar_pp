@@ -1,8 +1,8 @@
 import { Col, Row } from 'reactstrap';
 import FrontFormat from './FrontFormat';
 import { selectFeaturedGuitar1, selectFeaturedGuitar2, selectFeaturedGuitar3 } from '../guitar/guitarSlice';
-import Error from '../../sitemisc/Error';
-import Loading from '../../sitemisc/Loading';
+import ErrorMessage from '../../sitemisc/ErrorMessage';
+import LoadingMessage from '../../sitemisc/LoadingMessage';
 import { useSelector } from "react-redux";
 
 //Used to map DisplayCards for HomePage...
@@ -14,25 +14,25 @@ const FrontEndDisplay = () => {
         selectFeaturedGuitar3(state)
     ]);
     console.log('features:', features);
-return(
-    <Row>
-        {features.map((feature, idx) => {
-            const { frontFeature, isLoading, errMsg } = feature;
-            if (isLoading) {
-                return <Loading key={idx} />;
-            }
-            if (errMsg) {
-                return <Error errMsg={errMsg} key={idx} />;
-            }
-            return (
-                frontFeature && (
-                    <Col md='12' className='mt-5' key={idx}>
-                        <FrontFormat feature={frontFeature} />
-                    </Col>
-                )
-            );
-        })}
-    </Row>
+    return (
+        <Row>
+            {features.map((feature, idx) => {
+                const { frontFeature, isLoading, errorMsg } = feature;
+                if (isLoading) {
+                    return <LoadingMessage key={idx} />;
+                }
+                if (errorMsg) {
+                    return <ErrorMessage errorMsg={errorMsg} key={idx} />;
+                }
+                return (
+                    frontFeature && (
+                        <Col md='12' className='mt-5' key={idx}>
+                            <FrontFormat feature={frontFeature} />
+                        </Col>
+                    )
+                );
+            })}
+        </Row>
     );
 };
 

@@ -1,6 +1,6 @@
-import { baseUrl } from "../app/shared/baseUrl";
+import { baseUrl } from "./baseUrl";
 //from NuCampsite
-export const mapImageURL = (rma) => {
+export const concatImgURL = (rma) => {
     return rma.map((item) => {
         return {
             ...item,

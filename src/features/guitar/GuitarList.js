@@ -2,23 +2,23 @@ import { useSelector } from "react-redux";
 import { Row, Col } from 'reactstrap';
 import GuitarCard from "./GuitarCard";
 import { selectAllGuitar } from './guitarSlice';
-import Error from '../../sitemisc/Error';
-import Loading from '../../sitemisc/Loading';
+import ErrorMessage from '../../sitemisc/ErrorMessage';
+import LoadingMessage from '../../sitemisc/LoadingMessage';
 
 //Guitar Directory pull
 const GuitarList = () => {
     const guitar = useSelector(selectAllGuitar);
     console.log('guitar:', guitar);
     const isLoading = useSelector((state) => state.guitar.isLoading);
-    const errMsg = useSelector((state) => state.guitar.errMsg);
+    const errorMsg = useSelector((state) => state.guitar.errorMsg);
 
     return isLoading ? (
         <Row>
-                <Loading />
+            <LoadingMessage />
         </Row>
-    ) : errMsg ? (
+    ) : errorMsg ? (
         <Row>
-                <Error errMsg={errMsg} />
+            <ErrorMessage errorMsg={errorMsg} />
         </Row>
     ) : (
         <Row className='ms-auto'>

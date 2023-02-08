@@ -5,8 +5,8 @@ import { selectGuitarById } from '../features/guitar/guitarSlice';
 import GuitarDetail from '../features/guitar/GuitarDetail';
 import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../site/SubHeader';
-import Error from '../sitemisc/Error';
-import Loading from '../sitemisc/Loading';
+import ErrorMessage from '../sitemisc/ErrorMessage';
+import LoadingMessage from '../sitemisc/LoadingMessage';
 
 
 const GuitarDetailPage = () => {
@@ -15,13 +15,13 @@ const GuitarDetailPage = () => {
     console.log('guitar', guitar)
 
     const isLoading = useSelector((state) => state.guitar.isLoading);
-    const errMsg = useSelector((state) => state.guitar.errMsg);
+    const errorMsg = useSelector((state) => state.guitar.errorMsg);
     let content = null;
 
     if (isLoading) {
-        content = <Loading />;
-    } else if (errMsg) {
-        content = <Error errMsg={errMsg} />;
+        content = <LoadingMessage />;
+    } else if (errorMsg) {
+        content = <ErrorMessage errorMsg={errorMsg} />;
     } else {
         content = (
             <>
