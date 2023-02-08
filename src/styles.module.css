@@ -14,11 +14,13 @@
   }
   
   .back {
-    background-image: url(/src/app/assets/img/p_region_SR5006_OL_00_05.png);
+    /* background-image: url(/src/app/assets/img/p_region_SR5006_OL_00_05.png); */
+    background-image: url(http://localhost:3001/images/guitar.jpg);
   }
   
   .front {
-    background-image: url(/src/app/assets/img/guitar.jpg);
+    /* background-image: url(/src/app/assets/img/guitar.jpg); */
+    background-image: url(http://localhost:3001/images/p_region_RGA622XH_BK_00_01.png);
   }
   
   .container {
