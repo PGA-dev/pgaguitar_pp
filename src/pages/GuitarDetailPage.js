@@ -7,7 +7,7 @@ import GuitarStatList from '../features/guitarstats/GuitarStatList';
 import SubHeader from '../site/SubHeader';
 import ErrorMessage from '../sitemisc/ErrorMessage';
 import LoadingMessage from '../sitemisc/LoadingMessage';
-
+import GuitarStatList2 from '../features/guitarstats2/GuitarStatList2';
 
 const GuitarDetailPage = () => {
     const { guitarid } = useParams();
@@ -26,6 +26,7 @@ const GuitarDetailPage = () => {
         content = (
             <>
                 <GuitarDetail guitar={guitar} />
+                <GuitarStatList2 guitarid={guitarid} />
                 <GuitarStatList guitarid={guitarid} />
             </>
         );

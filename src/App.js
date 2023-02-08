@@ -15,6 +15,7 @@ import { fetchGuitarStat } from './features/guitarstats/guitarStatSlice';
 import { fetchGuitar } from './features/guitar/guitarSlice';
 import GuideSiteMap from './pages/GuideSiteMap';
 import GuideSiteReferences from './pages/GuideSiteRef';
+import { fetchGuitarStat2 } from './features/guitarstats2/guitarStatSlice2';
 //import { useState } from 'react';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   useEffect(() => {
       dispatch(fetchGuitar());
       dispatch(fetchGuitarStat());
+      dispatch(fetchGuitarStat2());
   }, [dispatch]);
 
   return (
