@@ -6,6 +6,14 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
+    Form,
+    FormGroup,
+    Label,
+    Input,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
@@ -32,48 +40,80 @@ const NavHeader = () => {
 
     return (
 
-            <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
-                <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-                <Collapse isOpen={menuOpen} navbar>
-                    <Nav className='me-auto' navbar>
+        <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
+            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
+            <Collapse isOpen={menuOpen} navbar>
+                <Nav className='me-auto' navbar>
                     <animated.div style={animatedStyle2}>
                         <NavItem>
                             <NavLink className='nav-link' to='/' style={{ color: "magenta" }}>
                                 <i style={{ color: "SlateBlue" }} className='fa fa-h-square fa-lg' /> Home
                             </NavLink>
                         </NavItem>
-                        </animated.div>
-                        <animated.div style={animatedStyle}>
+                    </animated.div>
+                    <animated.div style={animatedStyle}>
                         <NavItem>
                             <NavLink className='nav-link' to='/guidedirectory' style={{ color: "magenta" }}>
                                 <i style={{ color: "aqua" }} className='fa fa-cogs fa-sm' /> Guides
                             </NavLink>
                         </NavItem>
-                        </animated.div>
-                        <animated.div style={animatedStyle2}>
+                    </animated.div>
+                    <animated.div style={animatedStyle}>
+                        <UncontrolledDropdown nav inNavbar >
+                            <DropdownToggle   nav caret>
+                                <div style={{ color: "aqua" }}className='fa fa-cogs fa-sm'><span style={{ color: "magenta", fontFamily:'papyrus' }} >Guide Directory</span></div>
+                            </DropdownToggle>
+                            <DropdownMenu right>
+                                <DropdownItem href='/guidedirectory/0'>Guitar Body</DropdownItem>
+                                <DropdownItem href='/guidedirectory/1'>Guitar Neck</DropdownItem>
+                                <DropdownItem href='/guidedirectory/2'>Guitar Strings</DropdownItem>
+                                <DropdownItem href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
+                                <DropdownItem href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
+                                <DropdownItem href='/guidedirectory/5'>Guitar Frets</DropdownItem>
+                                <DropdownItem href='/guidedirectory/6'>Guitar Picks</DropdownItem>
+                                <DropdownItem href='/guidedirectory/7'>Guitar Brands</DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem href='/guidedirectory'>Guide Directory</DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
+                    </animated.div>
+                    <animated.div style={animatedStyle2}>
                         <NavItem>
                             <NavLink className='nav-link' to='/guideaboutpage' style={{ color: "magenta" }}>
                                 <i style={{ color: "SlateBlue" }} className='fa fa-gear fa-sm' /> About the Guide
                             </NavLink>
                         </NavItem>
-                        </animated.div>
-                        <animated.div style={animatedStyle}>
+                    </animated.div>
+                    <animated.div style={animatedStyle}>
                         <NavItem>
                             <NavLink className='nav-link' to='/about' style={{ color: "magenta" }}>
                                 <i style={{ color: "aqua" }} className='fa fa-gg fa-lg' /> Your Guide
                             </NavLink>
                         </NavItem>
-                        </animated.div>
-                        <animated.div style={animatedStyle2}>
+                    </animated.div>
+                    <animated.div style={animatedStyle2}>
                         <NavItem>
                             <NavLink className='nav-link' to='/contact' style={{ color: "magenta" }}>
                                 <i style={{ color: "SlateBlue" }} className='fa fa-thumbs-up fa-lg' /> Contact
                             </NavLink>
                         </NavItem>
-                        </animated.div>
-                    </Nav>
-                </Collapse>
-            </Navbar>
+                    </animated.div>
+                    <animated.div style={animatedStyle}>
+                        <Form>
+                            <FormGroup>
+                                <Input
+                                    id="guideSearch"
+                                    name="search"
+                                    placeholder="Guide Search"
+                                    type="search"
+                                />
+                            </FormGroup>
+                        </Form>
+                    </animated.div>
+                </Nav>
+            </Collapse>
+
+        </Navbar>
 
     );
 };
