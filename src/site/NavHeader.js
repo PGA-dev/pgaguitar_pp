@@ -52,28 +52,21 @@ const NavHeader = () => {
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
-                        <NavItem>
-                            <NavLink className='nav-link' to='/guidedirectory' style={{ color: "magenta" }}>
-                                <i style={{ color: "aqua" }} className='fa fa-cogs fa-sm' /> Guides
-                            </NavLink>
-                        </NavItem>
-                    </animated.div>
-                    <animated.div style={animatedStyle}>
                         <UncontrolledDropdown nav inNavbar >
-                            <DropdownToggle   nav caret>
-                                <div style={{ color: "aqua" }}className='fa fa-cogs fa-sm'><span style={{ color: "magenta", fontFamily:'papyrus' }} >Guide Directory</span></div>
+                            <DropdownToggle   nav caret style={{ color: "aqua" }}>
+                                <div style={{ color: "aqua" }} className='fa fa-cogs fa-sm'><span style={{ color: "magenta", fontFamily:'papyrus' }} >Guide Directory</span></div>
                             </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem href='/guidedirectory/0'>Guitar Body</DropdownItem>
-                                <DropdownItem href='/guidedirectory/1'>Guitar Neck</DropdownItem>
-                                <DropdownItem href='/guidedirectory/2'>Guitar Strings</DropdownItem>
-                                <DropdownItem href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
-                                <DropdownItem href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
-                                <DropdownItem href='/guidedirectory/5'>Guitar Frets</DropdownItem>
-                                <DropdownItem href='/guidedirectory/6'>Guitar Picks</DropdownItem>
-                                <DropdownItem href='/guidedirectory/7'>Guitar Brands</DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem href='/guidedirectory'>Guide Directory</DropdownItem>
+                                <DropdownItem  style={{ color: "aqua", fontFamily:'papyrus' }}  href='/guidedirectory/0'>Guitar Body</DropdownItem>
+                                <DropdownItem style={{ color: "magenta", fontFamily:'papyrus' }} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
+                                <DropdownItem style={{ color: "aqua", fontFamily:'papyrus' }} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
+                                <DropdownItem style={{ color: "magenta", fontFamily:'papyrus' }} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
+                                <DropdownItem style={{ color: "aqua", fontFamily:'papyrus' }} href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
+                                <DropdownItem style={{ color: "magenta", fontFamily:'papyrus' }} href='/guidedirectory/5'>Guitar Frets</DropdownItem>
+                                <DropdownItem style={{ color: "aqua", fontFamily:'papyrus' }} href='/guidedirectory/6'>Guitar Picks</DropdownItem>
+                                <DropdownItem style={{ color: "magenta", fontFamily:'papyrus' }} href='/guidedirectory/7'>Guitar Brands</DropdownItem>
+                                <DropdownItem style={{ fontFamily:'papyrus', border: 'aqua ridge 2px' }} divider />
+                                <DropdownItem style={{ color: "aqua", fontFamily:'papyrus' }} href='/guidedirectory'>Guide Directory</DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </animated.div>
