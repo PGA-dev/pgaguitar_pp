@@ -54,17 +54,18 @@ const NavHeader = () => {
                     <animated.div style={animatedStyle}>
                         <UncontrolledDropdown nav inNavbar >
                             <DropdownToggle   nav caret style={navHead2}>
-                                <div style={{ color: "aqua" }} className='fa fa-cogs fa-sm'><span style={navHead1} >Guide Directory</span></div>
+                                <div style={{color: 'aqua'}} className='fa fa-cogs fa-sm '><span style={navHead1} >Guide Directory</span></div>
                             </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem  style={navList2}  href='/guidedirectory/0'>Guitar Body</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/5'>Guitar Frets</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidedirectory/6'>Guitar Picks</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/7'>Guitar Brands</DropdownItem>
+                                <DropdownItem  style={navList1}  href='/guidedirectory/0'>Guitar Body</DropdownItem>
+                                <DropdownItem style={navList2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
+                                <DropdownItem style={navList1} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
+                                <DropdownItem style={navList2} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
+                                <DropdownItem style={navList1} href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
+                                <DropdownItem style={navList2} href='/guidedirectory/5'>Guitar Frets</DropdownItem>
+                                <DropdownItem style={navList1} href='/guidedirectory/6'>Guitar Electronics</DropdownItem>
+                                <DropdownItem style={navList2} href='/guidedirectory/7'>Guitar Picks</DropdownItem>
+                                <DropdownItem style={navList1} href='/guidedirectory/8'>Guitar Brands</DropdownItem>
                                 <DropdownItem style={navborder} divider />
                                 <DropdownItem style={navList2} href='/guidedirectory'>Guide Directory</DropdownItem>
                             </DropdownMenu>
@@ -94,7 +95,7 @@ const NavHeader = () => {
                     <animated.div style={animatedStyle}>
                         <Form >
                             <FormGroup >
-                                <Input className={styles.search_box}
+                                <Input className={styles.box}
                                     id="guideSearch"
                                     name="search"
                                     placeholder="Guide Search"
@@ -143,10 +144,7 @@ const navborder= {
     fontFamily: "papyrus"
 };
 
-const searchBox= {
-    color: "aqua",
-    fontFamily: "papyrus"
-};
+
 
 
 export default NavHeader;

@@ -1,16 +1,54 @@
-.search_box, .search_box::placeholder{
+.box, .box::placeholder{
     color:aqua;
     font-family: papyrus;
     border: none;
 }
 
-.search_box::placeholder{
+.box::placeholder{
     color:aqua;
     font-family: papyrus;
 
 }
 
-.search_box:focus{
+/* .box:focus{
     color:aqua;
     font-family: papyrus;
+    border: 5px aqua;
+} */
+
+/* .nav1 {
+    color: magenta;
+    font-family: papyrus
 }
+
+.nav2 {
+    color: aqua;
+    font-family: papyrus
+}
+
+.nav3 {
+    color: magenta;
+    padding: 15px;
+    margin: 5px 40px;
+    font-size: 25px;
+    font-family: 'papyrus'
+}
+
+
+.nav4 {
+    color: aqua;
+    padding: 15px;
+    margin: 5px 40px;
+    font-size: 25px;
+    font-family: 'papyrus'
+}
+
+.navborder{
+    color: aqua;
+    border: aqua ridge 2px;
+    font-family: 'papyrus'
+}
+
+.nicon {
+    color: aqua;
+} */
