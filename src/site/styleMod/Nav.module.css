@@ -1,0 +1,16 @@
+.search_box, .search_box::placeholder{
+    color:aqua;
+    font-family: papyrus;
+    border: none;
+}
+
+.search_box::placeholder{
+    color:aqua;
+    font-family: papyrus;
+
+}
+
+.search_box:focus{
+    color:aqua;
+    font-family: papyrus;
+}
