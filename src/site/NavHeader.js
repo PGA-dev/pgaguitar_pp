@@ -47,14 +47,14 @@ const NavHeader = () => {
                     <animated.div style={animatedStyle2}>
                         <NavItem>
                             <NavLink className='nav-link' to='/' style={navHead1}>
-                                <i style={{ color: "SlateBlue" }} className='fa fa-h-square fa-lg' /> Home
+                                <i style={navy} className='fa fa-h-square fa-lg' /> Home
                             </NavLink>
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
                         <UncontrolledDropdown nav inNavbar >
                             <DropdownToggle   nav caret style={navHead2}>
-                                <div style={{color: 'aqua'}} className='fa fa-cogs fa-sm '><span style={navHead1} >Guide Directory</span></div>
+                                <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Guide Directory</span></div>
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem  style={navList1}  href='/guidedirectory/0'>Guitar Body</DropdownItem>
@@ -73,22 +73,22 @@ const NavHeader = () => {
                     </animated.div>
                     <animated.div style={animatedStyle2}>
                         <NavItem>
-                            <NavLink className='nav-link' to='/guideaboutpage' style={{ color: "magenta" }}>
-                                <i style={{ color: "SlateBlue" }} className='fa fa-gear fa-sm' /> About the Guide
+                            <NavLink className='nav-link' to='/guideaboutpage' style={navy3}>
+                                <i style={navy} className='fa fa-gear fa-sm' /> About the Guide
                             </NavLink>
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
                         <NavItem>
-                            <NavLink className='nav-link' to='/about' style={{ color: "magenta" }}>
-                                <i style={{ color: "aqua" }} className='fa fa-gg fa-lg' /> Your Guide
+                            <NavLink className='nav-link' to='/about' style={navy3}>
+                                <i style={navy2} className='fa fa-gg fa-lg' /> Your Guide
                             </NavLink>
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle2}>
                         <NavItem>
-                            <NavLink className='nav-link' to='/contact' style={{ color: "magenta" }}>
-                                <i style={{ color: "SlateBlue" }} className='fa fa-thumbs-up fa-lg' /> Contact
+                            <NavLink className='nav-link' to='/contact' style={navy3}>
+                                <i style={navy} className='fa fa-thumbs-up fa-lg' /> Contact
                             </NavLink>
                         </NavItem>
                     </animated.div>
@@ -140,11 +140,21 @@ const navList2= {
 
 const navborder= {
     color: "aqua",
-    border: "aqua ridge 2px",
+    border: "aqua ridge 5px",
     fontFamily: "papyrus"
 };
 
+const navy= {
+    color: "slateblue",
+};
 
+const navy2= {
+    color: "aqua",
+};
+
+const navy3= {
+    color: "magenta",
+};
 
 
 export default NavHeader;
