@@ -12,11 +12,12 @@ const ContactForm = () => {
             lastName: values.lastName,
             email: values.email,
             country: values.country,
+            date: new Date(Date.now()).toDateString(),
             feedback: values.feedback
         }
         
         console.log('form values:', values);
-        console.log('in JSON format:', JSON.stringify(values));
+        console.log('JSON format:', JSON.stringify(values));
         dispatch(postContact(contact));
         resetForm();
         
