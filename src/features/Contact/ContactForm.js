@@ -1,6 +1,6 @@
 import { Button, Col, Label, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import { validateContactForm } from "../sitemisc/validateContactForm";
+import { validateContactForm } from "../../sitemisc/validateContactForm";
 
 const ContactForm = () => {
     const handleSubmit = (values, { resetForm }) => {
@@ -54,16 +54,14 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label check md={{ size: 5, offset: 2 }}>
-                    <Field
-                        name='agree'
-                        type='checkbox'
-                        className='form-check-input'
-                    />{' '}
-                    Image to upload?
-                </Label>
-
+                <Label htmlFor='country' md='2'>
+                    Country
+                    </Label>
+                <Col md='10'>
+                    <Field className='form-control' name='country' placeholder='country' />
+                </Col>
             </FormGroup>
+
             <FormGroup row>
                 <Label htmlFor='feedback' md='2'>
                     Your Feedback
