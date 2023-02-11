@@ -1,23 +1,37 @@
 import { Button, Col, Label, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateContactForm } from "../../sitemisc/validateContactForm";
+import { postContact } from "./contactSlice";
+import { useDispatch } from "react-redux";
 
 const ContactForm = () => {
+    const dispatch = useDispatch();
     const handleSubmit = (values, { resetForm }) => {
+        const contact ={
+            firstName: values.firstName,
+            lastName: values.lastName,
+            email: values.email,
+            country: values.country,
+            feedback: values.feedback
+            //date: new Date(Date.now()).toISOString()
+        }
         console.log('form values:', values);
         console.log('in JSON format:', JSON.stringify(values));
+        dispatch(postContact(contact));
         resetForm();
+        
     };
     return <Formik
         initialValues={{
             firstName: '',
             lastName: '',
             email: '',
-            agree: false,
+            country: '',
             feedback: ''
         }}
         onSubmit={handleSubmit}
         validate={validateContactForm}
+
     >
         <Form>
             <FormGroup row>
@@ -59,9 +73,11 @@ const ContactForm = () => {
                     </Label>
                 <Col md='10'>
                     <Field className='form-control' name='country' placeholder='country' />
+                    <ErrorMessage name='country'>
+                        {(msg) => <p className='text-danger'>{msg}</p>}
+                    </ErrorMessage>
                 </Col>
             </FormGroup>
-
             <FormGroup row>
                 <Label htmlFor='feedback' md='2'>
                     Your Feedback
