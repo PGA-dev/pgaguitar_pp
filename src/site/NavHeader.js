@@ -8,7 +8,6 @@ import {
     NavItem,
     Form,
     FormGroup,
-    Label,
     Input,
     UncontrolledDropdown,
     DropdownToggle,
@@ -17,7 +16,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
-import styles from './styleMod/Nav.module.css';
+import navs from './styleMod/Nav.module.css';
 
 const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -95,7 +94,7 @@ const NavHeader = () => {
                     <animated.div style={animatedStyle}>
                         <Form >
                             <FormGroup >
-                                <Input className={styles.box}
+                                <Input className={navs.box}
                                     id="guideSearch"
                                     name="search"
                                     placeholder="Guide Search"
@@ -106,9 +105,7 @@ const NavHeader = () => {
                     </animated.div>
                 </Nav>
             </Collapse>
-
         </Navbar>
-
     );
 };
 //(css alternative) stylesheet

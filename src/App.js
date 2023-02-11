@@ -16,6 +16,7 @@ import { fetchGuitar } from './features/guitar/guitarSlice';
 import GuideSiteMap from './pages/GuideSiteMap';
 import GuideSiteReferences from './pages/GuideSiteRef';
 import { fetchGuitarStat2 } from './features/guitarstats2/guitarStatSlice2';
+import { fetchContact } from './features/Contact/contactSlice';
 //import { useState } from 'react';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       dispatch(fetchGuitar());
       dispatch(fetchGuitarStat());
       dispatch(fetchGuitarStat2());
+      dispatch(fetchContact());
   }, [dispatch]);
 
   return (
