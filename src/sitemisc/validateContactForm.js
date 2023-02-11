@@ -15,6 +15,13 @@ export const validateContactForm = (values) => {
         errors.lastName = 'The Last name should be in the the Xxxx format...2-15 chars';
     }
 
+        // Country
+
+        const regO = /^[A-Z a-z]{2,}$/;
+        if (!regO.test(values.country)) {
+            errors.country = 'The Country should be at least 2 chars, abbreviations accepted';
+        }
+
 
 
 
