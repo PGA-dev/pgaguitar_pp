@@ -13,8 +13,8 @@ const ContactForm = () => {
             email: values.email,
             country: values.country,
             feedback: values.feedback
-            //date: new Date(Date.now()).toISOString()
         }
+        
         console.log('form values:', values);
         console.log('in JSON format:', JSON.stringify(values));
         dispatch(postContact(contact));
