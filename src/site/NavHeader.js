@@ -16,7 +16,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
-import navs from './styleMod/Nav.module.css';
+import navs from '../../src/Nav.module.css';
 
 const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
