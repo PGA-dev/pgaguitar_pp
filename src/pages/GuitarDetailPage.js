@@ -8,7 +8,8 @@ import SubHeader from '../site/SubHeader';
 import ErrorMessage from '../sitemisc/ErrorMessage';
 import LoadingMessage from '../sitemisc/LoadingMessage';
 import GuitarStatList2 from '../features/guitarstats2/GuitarStatList2';
-import GuitarStatList3 from "../features/guitarstats3/GuitarStatList3";
+import GuitarStatList3 from '../features/guitarstats3/GuitarStatList3';
+import GuitarstatList4 from '../features/guitarstats4/GuitarStatList4'
 
 const GuitarDetailPage = () => {
     const { guitarid } = useParams();
@@ -30,6 +31,7 @@ const GuitarDetailPage = () => {
                 <GuitarStatList2 guitarid={guitarid} />
                 <GuitarStatList guitarid={guitarid} />
                 <GuitarStatList3 guitarid={guitarid} />
+                <GuitarstatList4 guitarid={guitarid} />
             </>
         );
     }
