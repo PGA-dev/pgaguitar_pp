@@ -1,8 +1,8 @@
 import { Col } from 'reactstrap';
 import GuitarStat5 from './GuitarStat5';
 import { selectStatByGuitarId5 } from './guitarStatSlice5';
-import Error from '../../sitemisc/ErrorMessage';
-import Loading from '../../sitemisc/LoadingMessage';
+import ErrorMessage from '../../sitemisc/ErrorMessage';
+import LoadingMessage from '../../sitemisc/LoadingMessage';
 import { useSelector } from "react-redux";
 
 const GuitarStatList5 = ({ guitarid }) => {
@@ -12,20 +12,18 @@ const GuitarStatList5 = ({ guitarid }) => {
 
     if (isLoading) {
         return (
-            <Loading />
+            <LoadingMessage />
         );
     }
-
     if (errorMsg) {
         return (
-            <Error errorMsg={errorMsg} />
+            <ErrorMessage errorMsg={errorMsg} />
         );
     }
-
     if (guitarstats5 && guitarstats5.length > 0) {
         return (
             <Col md='12' className='m-1'>
-                <h3 style={{ padding: '2px', fontFamily: 'papyrus', color: 'aqua' }}><b>Stat5</b></h3>
+                <h3 style={{ padding: '2px', fontFamily: 'papyrus', color: 'aqua' }}><b>Manufacturer Links</b></h3>
                 {guitarstats5.map((guitarstat5) => {
                     return <GuitarStat5 key={guitarstat5.id} guitarstat5={guitarstat5} />;
                 })}

@@ -55,7 +55,7 @@ const NavHeader = () => {
                             <DropdownToggle   nav caret style={navHead2}>
                                 <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Guide Directory</span></div>
                             </DropdownToggle>
-                            <DropdownMenu right>
+                            <DropdownMenu>
                                 <DropdownItem  style={navList1}  href='/guidedirectory/0'>Guitar Body</DropdownItem>
                                 <DropdownItem style={navList2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
                                 <DropdownItem style={navList1} href='/guidedirectory/2'>Guitar Strings</DropdownItem>

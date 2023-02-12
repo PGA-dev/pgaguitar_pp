@@ -1,8 +1,8 @@
 import { Col } from 'reactstrap';
 import GuitarStat2 from './GuitarStat2';
 import { selectStatByGuitarId2 } from './guitarStatSlice2';
-import Error from '../../sitemisc/ErrorMessage';
-import Loading from '../../sitemisc/LoadingMessage';
+import ErrorMessage from '../../sitemisc/ErrorMessage';
+import LoadingMessage from '../../sitemisc/LoadingMessage';
 import { useSelector } from "react-redux";
 
 const GuitarStatList2 = ({ guitarid }) => {
@@ -12,16 +12,14 @@ const GuitarStatList2 = ({ guitarid }) => {
 
     if (isLoading) {
         return (
-            <Loading />
+            <LoadingMessage />
         );
     }
-
     if (errorMsg) {
         return (
-            <Error errorMsg={errorMsg} />
+            <ErrorMessage errorMsg={errorMsg} />
         );
     }
-
     if (guitarstats2 && guitarstats2.length > 0) {
         return (
             <Col md='12' className='m-1'>
