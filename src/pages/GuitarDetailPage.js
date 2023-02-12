@@ -27,9 +27,9 @@ const GuitarDetailPage = () => {
     } else {
         content = (
             <>
-                <GuitarDetail guitar={guitar} />
-                <GuitarStatList2 guitarid={guitarid} />
+                <GuitarDetail guitar={guitar} /> 
                 <GuitarStatList guitarid={guitarid} />
+                <GuitarStatList2 guitarid={guitarid} />
                 <GuitarStatList3 guitarid={guitarid} />
                 <GuitarstatList4 guitarid={guitarid} />
             </>
