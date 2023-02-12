@@ -15,15 +15,12 @@ export const validateContactForm = (values) => {
         errors.lastName = 'The Last name should be in the the Xxxx format...2-15 chars';
     }
 
-        // Country
+    // Country
 
-        const regO = /^[A-Z a-z]{2,}$/;
-        if (!regO.test(values.country)) {
-            errors.country = 'The Country should be at least 2 chars, abbreviations accepted';
-        }
-
-
-
+    const regO = /^[A-Z a-z]{2,}$/;
+    if (!regO.test(values.country)) {
+        errors.country = 'The Country should be at least 2 chars, abbreviations accepted';
+    }
 
     //Email
     const regE = /^(\w)+([.-]?\w+)*(@)([\w]+)([.-]?\w+)*\.[a-z]{2,3}$/;
@@ -35,7 +32,6 @@ export const validateContactForm = (values) => {
     if (!values.feedback) {
         errors.feedback = 'Feedback Field Required';
     }
-
 
     return errors;
 };
