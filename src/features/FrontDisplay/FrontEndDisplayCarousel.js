@@ -8,7 +8,6 @@ import {
     CarouselItem,
     CarouselIndicators,
 } from 'reactstrap';
-//import FrontFormatC from './FrontFormatC';
 import ErrorMessage from '../../sitemisc/ErrorMessage';
 import LoadingMessage from '../../sitemisc/LoadingMessage';
 import {selectAllFrontItems} from './frontSlice'
