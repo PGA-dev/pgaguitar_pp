@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { baseUrl } from '../../sitemisc/baseUrl';
-//import { concatImgURL } from "../../sitemisc/concatImgURL";
+import { concatImgURL } from "../../sitemisc/concatImgURL";
 
 
 export const fetchFrontItems = createAsyncThunk(

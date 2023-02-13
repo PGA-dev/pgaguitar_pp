@@ -8,7 +8,7 @@ import {
     CarouselItem,
     CarouselIndicators,
 } from 'reactstrap';
-import FrontFormatC from './FrontFormatC';
+//import FrontFormatC from './FrontFormatC';
 import ErrorMessage from '../../sitemisc/ErrorMessage';
 import LoadingMessage from '../../sitemisc/LoadingMessage';
 import {selectAllFrontItems} from './frontSlice'
@@ -17,7 +17,7 @@ const FrontDisplayCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
-    const frontitems = useSelector(selectAllFrontItems());
+    const frontitems = useSelector(selectAllFrontItems);
     console.log('frontitems:', frontitems);
     const isLoading = useSelector((state) => state.frontitems.isLoading);
     const errorMsg = useSelector((state) => state.frontitems.errorMsg);
@@ -58,7 +58,7 @@ const FrontDisplayCarousel = () => {
                 onExited={() => setAnimating(false)}
                 onExiting={() => setAnimating(true)}
             >
-                <FrontFormatC />
+                <img src={item.src} alt={item.altText} />
             </CarouselItem>
         );
     });
