@@ -19,6 +19,7 @@ const ContactForm = () => {
         console.log('form values:', values);
         console.log('JSON format:', JSON.stringify(values));
         dispatch(postContact(contact));
+        alert(`Your Feedback has been recieved`);
         resetForm();
         
     };
