@@ -46,7 +46,7 @@ const FrontDisplayCarousel = () => {
 
     if (errorMsg) {
         return (
-            <ErrorMessage errMsg={errorMsg} />
+            <ErrorMessage errorMsg={errorMsg} />
         );
     }
 

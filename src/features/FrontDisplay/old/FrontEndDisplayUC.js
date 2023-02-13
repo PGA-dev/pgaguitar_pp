@@ -7,7 +7,7 @@ import {
     CarouselItem,
     CarouselIndicators,
 } from 'reactstrap';
-import { baseUrl } from '../../sitemisc/baseUrl';
+import { baseUrl } from '../../../sitemisc/baseUrl';
 
   
 const FrontDisplayCarousel = () => {
