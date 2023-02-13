@@ -20,6 +20,7 @@ import { fetchContact } from './features/Contact/contactSlice';
 import { fetchGuitarStat3 } from './features/guitarstats3/guitarStatSlice3';
 import { fetchGuitarStat4 } from './features/guitarstats4/guitarStatSlice4';
 import { fetchGuitarStat5 } from './features/guitarstats5/guitarStatSlice5';
+//import { fetchFrontItems } from './features/FrontDisplay/frontSlice';
 
 //import { useState } from 'react';
 
@@ -33,6 +34,7 @@ function App() {
     dispatch(fetchGuitarStat3());
     dispatch(fetchGuitarStat4());
     dispatch(fetchGuitarStat5());
+    //dispatch(fetchFrontItems());
     dispatch(fetchContact());
   }, [dispatch]);
 

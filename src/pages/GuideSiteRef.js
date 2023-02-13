@@ -15,7 +15,7 @@ const GuideSiteReferences = () => {
                 <Col md='6'>
                     <div>
                         <p>
-                            Guide's links to all images and materials covered....
+                            Future Site Refs
                         </p>
                     </div>
                 </Col>

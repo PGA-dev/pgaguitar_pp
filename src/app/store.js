@@ -8,6 +8,7 @@ import { contactReducer } from '../features/Contact/contactSlice';
 import { guitarstatReducer3 } from '../features/guitarstats3/guitarStatSlice3';
 import { guitarstatReducer4 } from '../features/guitarstats4/guitarStatSlice4';
 import { guitarstatReducer5 } from '../features/guitarstats5/guitarStatSlice5';
+//import { frontItemsReducer } from '../features/FrontDisplay/frontSlice';
 
 export const store = configureStore({
   reducer: {
@@ -17,6 +18,7 @@ export const store = configureStore({
     guitarstat3: guitarstatReducer3,
     guitarstat4: guitarstatReducer4,
     guitarstat5: guitarstatReducer5,
+    //frontitems: frontItemsReducer,
     contact: contactReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
