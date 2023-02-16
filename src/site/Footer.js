@@ -3,11 +3,26 @@ import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
+
+    const footstyleHead = {
+        color: "magenta",
+        padding: "5px",
+        fontSize: "40px",
+        fontFamily: "Papyrus"
+    };
+
+    const footstyleLink = {
+        color: "aqua",
+        fontSize: "24px",
+        padding: "5px 3px",
+        fontFamily: "Papyrus"
+    };
+
     return (
         <footer className='site-footer'>
             <Container>
                 <Row>
-                    <Col xs={{ size: 4, offset: 1}} sm='2'>
+                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5 style={footstyleHead}>Buying Guides</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -55,12 +70,12 @@ const Footer = () => {
 
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5 style={footstyleHead}>Site Links</h5>
-                        <ul  className='list-unstyled'>
+                        <ul className='list-unstyled'>
                             <li>
                                 <Link style={footstyleLink} to='/'>Site Home</Link>
                             </li>
                             <li>
-                                <Link  style={footstyleLink} to='/guidesiteref'>References</Link>
+                                <Link style={footstyleLink} to='/guidesiteref'>References</Link>
                             </li>
                             <li>
                                 <Link style={footstyleLink} to='/guidesitemap'>Site Map</Link>
@@ -96,19 +111,5 @@ const Footer = () => {
     );
 };
 
-
-const footstyleHead= {
-    color: "magenta",
-    padding: "5px",
-    fontSize: "40px",
-    fontFamily: "Papyrus"
-};
-
-const footstyleLink= {
-    color: "aqua",
-    fontSize: "24px",
-    padding: "5px 3px",
-    fontFamily: "Papyrus"
-};
 
 export default Footer;
