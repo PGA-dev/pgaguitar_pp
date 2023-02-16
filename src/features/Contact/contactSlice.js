@@ -16,11 +16,11 @@ export const fetchContact = createAsyncThunk(
 
 export const postContact = createAsyncThunk(
     'contact/postContact',
-    async (contact, {dispatch}) => {
+    async (contact, { dispatch }) => {
         const response = await fetch(baseUrl + 'contact', {
             method: 'POST',
             body: JSON.stringify(contact),
-            headers: {'Content-Type': 'application/json' }
+            headers: { 'Content-Type': 'application/json' }
         });
         if (!response.ok) {
             return Promise.reject('Unable to fetch, status: ' + response.status);
@@ -31,7 +31,7 @@ export const postContact = createAsyncThunk(
 );
 
 const initialState = {
-    contactArray:  [],
+    contactArray: [],
     isLoading: true,
     errMsg: ''
 };
@@ -55,10 +55,10 @@ const contactSlice = createSlice({
             state.isLoading = true;
         },
         [fetchContact.fulfilled]: (state, action) => {
-            state.contactArray = action.payload;
             state.isLoading = false;
             state.errMsg = '';
-            
+            state.contactArray = action.payload;
+
         },
         [fetchContact.rejected]: (state, action) => {
             state.isLoading = false;
@@ -67,7 +67,7 @@ const contactSlice = createSlice({
         [postContact.rejected]: (state, action) => {
             alert(
                 'Sorry Chatterbox, your contact feedback message could not be posted\nError: ' +
-            (action.error ? action.error.message : 'Fetch failed')
+                (action.error ? action.error.message : 'Fetch failed')
             );
         }
     }
