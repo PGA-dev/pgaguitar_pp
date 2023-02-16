@@ -22,6 +22,7 @@ const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [toggle, setToggle] = useState(false);
 
+
     const animatedStyle = useSpring({
         opacity: toggle ? 1 : 0,
         transform: toggle ? 'scale(1,1)' : 'scale(0,0)',
@@ -100,7 +101,9 @@ const NavHeader = () => {
                                     placeholder="Guide Search"
                                     type="search"
                                 />
+                                
                             </FormGroup>
+                            
                         </Form>
                     </animated.div>
                 </Nav>

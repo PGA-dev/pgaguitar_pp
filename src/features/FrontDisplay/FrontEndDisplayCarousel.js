@@ -10,8 +10,9 @@ import {
 } from 'reactstrap';
 import ErrorMessage from '../../sitemisc/ErrorMessage';
 import LoadingMessage from '../../sitemisc/LoadingMessage';
-import {selectAllFrontItems} from './frontSlice'
-  
+import { selectAllFrontItems } from './frontSlice'
+
+
 const FrontDisplayCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
@@ -35,7 +36,7 @@ const FrontDisplayCarousel = () => {
         const nextIndex = activeIndex === itemLength ?
             0 : activeIndex + 1;
         setActiveIndex(nextIndex);
-    }   
+    }
 
     if (isLoading) {
         return (
@@ -49,40 +50,40 @@ const FrontDisplayCarousel = () => {
         );
     }
 
-    if (frontitems && frontitems.length > 0){
-    const carouselItemData = frontitems.map((item) => {
+    if (frontitems && frontitems.length > 0) {
+        const carouselItemData = frontitems.map((item) => {
+            return (
+                <CarouselItem
+                    key={item.src}
+                    onExited={() => setAnimating(false)}
+                    onExiting={() => setAnimating(true)}
+                >
+                    <img src={item.src} alt={item.altText} />
+                </CarouselItem>
+            );
+        });
         return (
-            <CarouselItem
-                key={item.src}
-                onExited={() => setAnimating(false)}
-                onExiting={() => setAnimating(true)}
-            >
-                <img src={item.src} alt={item.altText} />
-            </CarouselItem>
+            <div style={{
+                display: 'block', width: 1200, padding: 30
+            }}>
+                <h1>Featured</h1>
+                <Carousel previous={previousButton} next={nextButton}
+                    activeIndex={activeIndex}>
+                    <CarouselIndicators items={frontitems}
+                        activeIndex={activeIndex}
+                        onClickHandler={(newIndex) => {
+                            if (animating) return;
+                            setActiveIndex(newIndex);
+                        }} />
+                    {carouselItemData}
+                    <CarouselControl directionText="Prev"
+                        direction="prev" onClickHandler={previousButton} />
+                    <CarouselControl directionText="Next"
+                        direction="next" onClickHandler={nextButton} />
+                </Carousel>
+            </div >
         );
-    });
-    return (
-        <div style={{
-            display: 'block', width: 1200, padding: 30
-        }}>
-            <h1>Featured</h1>
-            <Carousel previous={previousButton} next={nextButton}
-                activeIndex={activeIndex}>
-                <CarouselIndicators items={frontitems}
-                    activeIndex={activeIndex}
-                    onClickHandler={(newIndex) => {
-                        if (animating) return;
-                        setActiveIndex(newIndex);
-                    }} />
-                {carouselItemData}
-                <CarouselControl directionText="Prev"
-                    direction="prev" onClickHandler={previousButton} />
-                <CarouselControl directionText="Next"
-                    direction="next" onClickHandler={nextButton} />
-            </Carousel>
-        </div >
-    ); 
-};
+    };
 }
-  
+
 export default FrontDisplayCarousel;
