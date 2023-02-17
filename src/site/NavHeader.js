@@ -6,9 +6,6 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
-    Form,
-    FormGroup,
-    Input,
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -16,7 +13,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
-import navs from '../../src/Nav.module.css';
+
 
 const NavHeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -42,12 +39,32 @@ const NavHeader = () => {
     //(css alternative) stylesheet
     const navHead1 = {
         color: "magenta",
-        fontFamily: "papyrus"
+        fontFamily: "papyrus",
+        fontWeight: "500"
     };
 
-    const navHead2 = {
+    const navHead1Hover = {
+        color: "magenta",
+        fontFamily: "papyrus",
+        fontWeight: "900"
+    };
+
+    const navHead1Click = {
         color: "aqua",
-        fontFamily: "papyrus"
+        fontFamily: "papyrus",
+        fontWeight: "900"
+    };
+
+
+    const caret = {
+        color: "aqua",
+        fontFamily: "papyrus",
+    };
+
+    const caretClick = {
+        color: "magenta",
+        fontFamily: "papyrus",
+        fontWeight: 900
     };
 
     const navList1 = {
@@ -58,12 +75,40 @@ const NavHeader = () => {
         fontFamily: "papyrus"
     };
 
+    const navList1Hover = {
+        color: "magenta",
+        padding: "16px",
+        margin: "5px 40px",
+        fontSize: "27px",
+        fontFamily: "papyrus",
+        fontWeight: 700
+    };
+
+
     const navList2 = {
         color: "aqua",
         padding: "15px",
         margin: "5px 40px",
         fontSize: "25px",
         fontFamily: "papyrus"
+    };
+
+    const navList2Hover = {
+        color: "aqua",
+        padding: "16px",
+        margin: "5px 40px",
+        fontSize: "27px",
+        fontFamily: "papyrus",
+        fontWeight: 700
+    };
+
+    const navListClick = {
+        color: "slateblue",
+        padding: "15px",
+        margin: "5px 40px",
+        fontSize: "26px",
+        fontFamily: "papyrus",
+        fontWeight: 900
     };
 
     const navborder = {
@@ -84,13 +129,60 @@ const NavHeader = () => {
         color: "magenta",
     };
 
-    // const useNav = () => {
-    //     const [style, setStyle] = useState(footstyleLink);
-    //     const onMouseEnter = () => setStyle(footstyleHover3)
-    //     const onClick = () => setStyle(footstyleClick)
-    //     const onMouseLeave = () => setStyle(footstyleLink)
-    //     return { style, onClick, onMouseEnter, onMouseLeave }
-    // }
+    const useNav = () => {
+        const [style, setStyle] = useState(navHead1);
+        const onMouseEnter = () => setStyle(navHead1Hover)
+        const onClick = () => setStyle(navHead1Click)
+        const onMouseLeave = () => setStyle(navHead1)
+        return { style, onClick, onMouseEnter, onMouseLeave }
+    }
+
+    const useNavlist1 = () => {
+        const [style, setStyle] = useState(navList1);
+        const onMouseEnter = () => setStyle(navList1Hover)
+        const onClick = () => setStyle(navListClick)
+        const onMouseLeave = () => setStyle(navList1)
+        return { style, onClick, onMouseEnter, onMouseLeave }
+    }
+
+    const useNavlist2 = () => {
+        const [style, setStyle] = useState(navList2);
+        const onMouseEnter = () => setStyle(navList2Hover)
+        const onClick = () => setStyle(navListClick)
+        const onMouseLeave = () => setStyle(navList2)
+        return { style, onClick, onMouseEnter, onMouseLeave }
+    }
+
+    const useCaret = () => {
+        const [style, setStyle] = useState(caret);
+        const onClick = () => setStyle(caretClick)
+        const onMouseLeave = () => setStyle(caret)
+        return { style, onClick, onMouseLeave }
+    }
+
+    const unH = useNav();
+    const unGD = useNav();
+    const unAG = useNav();
+    const unYG = useNav();
+    const unC = useNav();
+    const unS = useNav();
+
+    const caGD = useCaret();
+    const caS = useCaret();
+
+    const unlOne1 = useNavlist1();
+    const unlOne2 = useNavlist2();
+    const unlOne3 = useNavlist1();
+    const unlOne4 = useNavlist2();
+    const unlOne5 = useNavlist1();
+    const unlOne6 = useNavlist2();
+    const unlOne7 = useNavlist1();
+    const unlOne8 = useNavlist2();
+    const unlOne9 = useNavlist1();
+    const unlOne10 = useNavlist2();
+
+    const unlTwo1 = useNavlist2();
+    const unlTwo2 = useNavlist1();
 
     return (
         <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
@@ -99,60 +191,60 @@ const NavHeader = () => {
                 <Nav className='me-auto' navbar>
                     <animated.div style={animatedStyle2}>
                         <NavItem>
-                            <NavLink className='nav-link' to='/' style={navHead1}>
-                                <i style={navy} className='fa fa-h-square fa-lg' /> Home
+                            <NavLink className='nav-link' to='/' >
+                                <i style={navy} className='fa fa-h-square fa-lg' /><span {...unH}>Home</span>
                             </NavLink>
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
                         <UncontrolledDropdown nav inNavbar >
-                            <DropdownToggle nav caret style={navHead2}>
-                                <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Guide Directory</span></div>
+                            <DropdownToggle nav caret {...caGD}>
+                                <div style={navy2} className='fa fa-cogs fa-sm '><span {...unGD} >Guide Directory</span></div>
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem style={navList1} href='/guidedirectory/0'>Guitar Body</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidedirectory/5'>Guitar Frets</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/6'>Guitar Electronics</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidedirectory/7'>Guitar Picks</DropdownItem>
-                                <DropdownItem style={navList1} href='/guidedirectory/8'>Guitar Brands</DropdownItem>
+                                <DropdownItem {...unlOne1} href='/guidedirectory/0'>Guitar Body</DropdownItem>
+                                <DropdownItem {...unlOne2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
+                                <DropdownItem {...unlOne3} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
+                                <DropdownItem {...unlOne4} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
+                                <DropdownItem {...unlOne5} href='/guidedirectory/4'>Guitar Pickups</DropdownItem>
+                                <DropdownItem {...unlOne6} href='/guidedirectory/5'>Guitar Frets</DropdownItem>
+                                <DropdownItem {...unlOne7} href='/guidedirectory/6'>Guitar Electronics</DropdownItem>
+                                <DropdownItem {...unlOne8} href='/guidedirectory/7'>Guitar Picks</DropdownItem>
+                                <DropdownItem {...unlOne9} href='/guidedirectory/8'>Guitar Brands</DropdownItem>
                                 <DropdownItem style={navborder} divider />
-                                <DropdownItem style={navList2} href='/guidedirectory'>Guide Directory</DropdownItem>
+                                <DropdownItem {...unlOne10} href='/guidedirectory'>Guide Directory</DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </animated.div>
                     <animated.div style={animatedStyle2}>
                         <NavItem>
                             <NavLink className='nav-link' to='/guideaboutpage' style={navy3}>
-                                <i style={navy} className='fa fa-gear fa-sm' /> About the Guide
+                                <i style={navy} className='fa fa-gear fa-sm' /> <span {...unAG}>About the Guide</span>
                             </NavLink>
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
                         <NavItem>
                             <NavLink className='nav-link' to='/about' style={navy3}>
-                                <i style={navy2} className='fa fa-gg fa-lg' /> Your Guide
+                                <i style={navy2} className='fa fa-gg fa-lg' /> <span {...unYG}>Your Guide</span>
                             </NavLink>
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle2}>
                         <NavItem>
                             <NavLink className='nav-link' to='/contact' style={navy3}>
-                                <i style={navy} className='fa fa-thumbs-up fa-lg' /> Contact
+                                <i style={navy} className='fa fa-thumbs-up fa-lg' /> <span {...unC}>Contact</span>
                             </NavLink>
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
                         <UncontrolledDropdown nav inNavbar >
-                            <DropdownToggle nav caret style={navHead2}>
-                                <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Site</span></div>
+                            <DropdownToggle nav caret {...caS}>
+                                <div style={navy2} className='fa fa-cogs fa-sm '><span {...unS} >Site</span></div>
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem style={navList1} href='/guidesitemap'>Site Map</DropdownItem>
-                                <DropdownItem style={navList2} href='/guidesiteref'>Site References</DropdownItem>
+                                <DropdownItem {...unlTwo1} href='/guidesitemap'>Site Map</DropdownItem>
+                                <DropdownItem {...unlTwo2} href='/guidesiteref'>Site References</DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </animated.div>

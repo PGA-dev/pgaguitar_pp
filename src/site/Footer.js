@@ -71,10 +71,10 @@ const Footer = () => {
     };
 
     const footstyleHover3 = {
-        color: "#0d6efd",
-        fontSize: "24px",
-        padding: "5px 3px",
-        fontFamily: "Papyrus",
+        color: '#0d6efd',
+        fontSize: '24px',
+        padding: '5px 3px',
+        fontFamily: 'Papyrus',
         fontWeight: 900,
         textDecoration: 'none',
         cursor: 'crosshair'
@@ -189,10 +189,10 @@ const Footer = () => {
                         <h5 {...ach}>Author Contact</h5>
                         <ul className='list-unstyled'>
                             <li >
-                                <a {...ac1} href="https://www.linkedin.com/in/paul-adam-86ba423b/">Author LI</a>
+                                <a {...ac1} href="https://www.linkedin.com/in/paul-adam-86ba423b/" target="_blank" rel="noreferrer">Author LI</a>
                             </li>
                             <li>
-                                <a {...ac2} className='btn btn-link' href='https://www.youtube.com/channel/UCdSa6weDVHCPFJzjE9M4foA'>Author's YouTube</a>
+                                <a {...ac2} className='btn btn-link' href='https://www.youtube.com/channel/UCdSa6weDVHCPFJzjE9M4foA' target="_blank" rel="noreferrer">Author's YouTube</a>
                             </li>
                             <li>
                                 <a {...ac3}
@@ -234,16 +234,16 @@ const Footer = () => {
                         <h5 {...olh}>Outside Links</h5>
                         <ul className='list-unstyled'>
                             <li>
-                                <a {...ol1} href="https://www.jemsite.com/">Jemsite</a>
+                                <a {...ol1} href="https://www.jemsite.com/" target="_blank" rel="noreferrer">Jemsite</a>
                             </li>
                             <li>
-                                <a {...ol2} href="https://www.nucamp.co/">NuCamp</a>
+                                <a {...ol2} href="https://www.nucamp.co/" target="_blank" rel="noreferrer">NuCamp</a>
                             </li>
                             <li>
-                                <a {...ol3} href="https://www.ibanez.com/usa/">Ibanez</a>
+                                <a {...ol3} href="https://www.ibanez.com/usa/" target="_blank" rel="noreferrer">Ibanez</a>
                             </li>
                             <li>
-                                <a {...ol4} href="https://www.dimarzio.com/">Dimarzio Pickups</a>
+                                <a {...ol4} href="https://www.dimarzio.com/" target="_blank" rel="noreferrer">Dimarzio Pickups</a>
                             </li>
                         </ul>
                     </Col>
