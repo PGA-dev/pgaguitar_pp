@@ -39,6 +39,52 @@ const NavHeader = () => {
         setToggle(true);
     }, []);
 
+    //(css alternative) stylesheet
+    const navHead1 = {
+        color: "magenta",
+        fontFamily: "papyrus"
+    };
+
+    const navHead2 = {
+        color: "aqua",
+        fontFamily: "papyrus"
+    };
+
+    const navList1 = {
+        color: "magenta",
+        padding: "15px",
+        margin: "5px 40px",
+        fontSize: "25px",
+        fontFamily: "papyrus"
+    };
+
+    const navList2 = {
+        color: "aqua",
+        padding: "15px",
+        margin: "5px 40px",
+        fontSize: "25px",
+        fontFamily: "papyrus"
+    };
+
+    const navborder = {
+        color: "aqua",
+        border: "aqua ridge 5px",
+        fontFamily: "papyrus"
+    };
+
+    const navy = {
+        color: "slateblue",
+    };
+
+    const navy2 = {
+        color: "aqua",
+    };
+
+    const navy3 = {
+        color: "magenta",
+    };
+
+
     return (
         <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
@@ -53,11 +99,11 @@ const NavHeader = () => {
                     </animated.div>
                     <animated.div style={animatedStyle}>
                         <UncontrolledDropdown nav inNavbar >
-                            <DropdownToggle   nav caret style={navHead2}>
+                            <DropdownToggle nav caret style={navHead2}>
                                 <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Guide Directory</span></div>
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem  style={navList1}  href='/guidedirectory/0'>Guitar Body</DropdownItem>
+                                <DropdownItem style={navList1} href='/guidedirectory/0'>Guitar Body</DropdownItem>
                                 <DropdownItem style={navList2} href='/guidedirectory/1'>Guitar Neck</DropdownItem>
                                 <DropdownItem style={navList1} href='/guidedirectory/2'>Guitar Strings</DropdownItem>
                                 <DropdownItem style={navList2} href='/guidedirectory/3'>Guitar Bridges</DropdownItem>
@@ -101,59 +147,15 @@ const NavHeader = () => {
                                     placeholder="Guide Search"
                                     type="search"
                                 />
-                                
+
                             </FormGroup>
-                            
+
                         </Form>
                     </animated.div>
                 </Nav>
             </Collapse>
         </Navbar>
     );
-};
-//(css alternative) stylesheet
-const navHead1= {
-    color: "magenta",
-    fontFamily: "papyrus"
-};
-
-const navHead2= {
-    color: "aqua",
-    fontFamily: "papyrus"
-};
-
-const navList1= {
-    color: "magenta",
-    padding: "15px",
-    margin: "5px 40px",
-    fontSize: "25px",
-    fontFamily: "papyrus"
-};
-
-const navList2= {
-    color: "aqua",
-    padding: "15px",
-    margin: "5px 40px",
-    fontSize: "25px",
-    fontFamily: "papyrus"
-};
-
-const navborder= {
-    color: "aqua",
-    border: "aqua ridge 5px",
-    fontFamily: "papyrus"
-};
-
-const navy= {
-    color: "slateblue",
-};
-
-const navy2= {
-    color: "aqua",
-};
-
-const navy3= {
-    color: "magenta",
 };
 
 
