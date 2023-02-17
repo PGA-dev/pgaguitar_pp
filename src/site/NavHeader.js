@@ -84,6 +84,13 @@ const NavHeader = () => {
         color: "magenta",
     };
 
+    // const useNav = () => {
+    //     const [style, setStyle] = useState(footstyleLink);
+    //     const onMouseEnter = () => setStyle(footstyleHover3)
+    //     const onClick = () => setStyle(footstyleClick)
+    //     const onMouseLeave = () => setStyle(footstyleLink)
+    //     return { style, onClick, onMouseEnter, onMouseLeave }
+    // }
 
     return (
         <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
@@ -139,18 +146,15 @@ const NavHeader = () => {
                         </NavItem>
                     </animated.div>
                     <animated.div style={animatedStyle}>
-                        <Form >
-                            <FormGroup >
-                                <Input className={navs.box}
-                                    id="guideSearch"
-                                    name="search"
-                                    placeholder="Guide Search"
-                                    type="search"
-                                />
-
-                            </FormGroup>
-
-                        </Form>
+                        <UncontrolledDropdown nav inNavbar >
+                            <DropdownToggle nav caret style={navHead2}>
+                                <div style={navy2} className='fa fa-cogs fa-sm '><span style={navHead1} >Site</span></div>
+                            </DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem style={navList1} href='/guidesitemap'>Site Map</DropdownItem>
+                                <DropdownItem style={navList2} href='/guidesiteref'>Site References</DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
                     </animated.div>
                 </Nav>
             </Collapse>

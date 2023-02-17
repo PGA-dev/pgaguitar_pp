@@ -55,7 +55,7 @@ const ContactForm = () => {
     const btnActive = {
         backgroundColor: '#FF3131',
         color: 'aqua',
-        border: '5px solid magenta',
+        border: '5px solid violet',
         borderRadius: '15px',
         boxShadow: '0 8px rgb(120, 120, 120)',
         transform: 'translateY(5px)'
