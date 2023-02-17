@@ -17,7 +17,7 @@ const ContactPage = () => {
                     <ContactForm />
                 </Col>
             </Row>
-            <Row className='row-content align-items-center'>
+            <Row className='row-border align-items-center'>
                 <Col sm='12'>
 
                 </Col>

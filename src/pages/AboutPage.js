@@ -13,7 +13,7 @@ const AboutPage = () => {
                     <br></br>
                 </Col>
             </Row>
-            <Row className='row-content ms-auto'>
+            <Row className='row-border ms-auto'>
                 <GuitarFlip />
             </Row>
             <Row>
