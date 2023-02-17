@@ -11,6 +11,7 @@ import {
 import ErrorMessage from '../../sitemisc/ErrorMessage';
 import LoadingMessage from '../../sitemisc/LoadingMessage';
 import { selectAllFrontItems } from './frontSlice'
+import { Link } from 'react-router-dom';
 
 
 const FrontDisplayCarousel = () => {
@@ -58,7 +59,7 @@ const FrontDisplayCarousel = () => {
                     onExited={() => setAnimating(false)}
                     onExiting={() => setAnimating(true)}
                 >
-                    <img src={item.src} alt={item.altText} />
+                    <Link to={'/about'}><img src={item.src} alt={item.altText} /></Link>
                 </CarouselItem>
             );
         });
