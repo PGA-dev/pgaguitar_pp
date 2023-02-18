@@ -67,7 +67,7 @@ const contactSlice = createSlice({
         [postContact.rejected]: (state, action) => {
             alert(
                 'Sorry Chatterbox, your contact feedback message could not be posted\nError: ' +
-                (action.error ? action.error.message : 'Fetch failed')
+                (action.error ? action.error.message : 'Post failed')
             );
         }
     }
