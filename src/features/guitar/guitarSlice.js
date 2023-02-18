@@ -49,7 +49,7 @@ export const selectAllGuitar = (state) => {
     return state.guitar.guitarArray;
 };
 
-export const selectGuitarById = (guitarid) => (state) =>{
+export const selectGuitarById = (guitarid) => (state) => {
     return state.guitar.guitarArray.find(
         (guitar) => guitar.id === parseInt(guitarid));
 };
@@ -59,8 +59,8 @@ export const selectFeaturedGuitar1 = (state) => {
     return {
         frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 1),
-            isLoading: state.guitar.isLoading,
-            errorMsg: state.guitar.errorMsg
+        isLoading: state.guitar.isLoading,
+        errorMsg: state.guitar.errorMsg
     };
 };
 
@@ -68,8 +68,8 @@ export const selectFeaturedGuitar2 = (state) => {
     return {
         frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 2),
-            isLoading: state.guitar.isLoading,
-            errorMsg: state.guitar.errorMsg
+        isLoading: state.guitar.isLoading,
+        errorMsg: state.guitar.errorMsg
     };
 };
 
@@ -77,8 +77,8 @@ export const selectFeaturedGuitar3 = (state) => {
     return {
         frontFeature: state.guitar.guitarArray.find(
             (guitar) => guitar.featured === 3),
-            isLoading: state.guitar.isLoading,
-            errorMsg: state.guitar.errorMsg
+        isLoading: state.guitar.isLoading,
+        errorMsg: state.guitar.errorMsg
     };
 };
 

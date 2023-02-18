@@ -21,11 +21,10 @@ import { fetchGuitarStat3 } from './features/guitarstats3/guitarStatSlice3';
 import { fetchGuitarStat4 } from './features/guitarstats4/guitarStatSlice4';
 import { fetchGuitarStat5 } from './features/guitarstats5/guitarStatSlice5';
 import { fetchFrontItems } from './features/FrontDisplay/frontSlice';
+import { fetchLinks } from './features/links/linkSlice';
 
-//import { useState } from 'react';
 
 function App() {
-  //const [style, changeStyle] = useState("#00000f"); must get this working on page change
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchGuitar());
@@ -36,6 +35,7 @@ function App() {
     dispatch(fetchGuitarStat5());
     dispatch(fetchFrontItems());
     dispatch(fetchContact());
+    dispatch(fetchLinks());
   }, [dispatch]);
 
   return (
