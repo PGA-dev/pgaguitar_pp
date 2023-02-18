@@ -1,23 +1,18 @@
-# Guitar Buying Manufacturing Specifications Guide for Guitar Players
-### Ibanez POC
-## A NuCamp Project
+# Guitar Buying Guide for Guitar Players
+### A Guide for all your guitar needs
+## A NuCamp React.JS Project
 ### by PGA
 
-#### https://github.com/PGA-dev/_pp.git //still private
+#### https://github.com/PGA-dev/PGAGuitar
 ## Portfolio Project Perspectives
-One of the most interesting questions I get asked as a guitar instructor is: "what paramaters are relevant to buying a guitar?" The answer, like most issues in life, varies with the needs of the student, or musician asking the question. While most beginner players don't really need a lot of information to get them started, potentially realizing that too much overkill on specifics might end up killing their "enjoyable" new hobby, they do often need solid technical data to inform them and educate them to make future musical decisions and purchases. Advanced, or pro-level players, often need a great deal more information on each instrument, and a way of comparing relevant brands and models for their particular musical needs. For these reasons I have decided to attempt a manufacturer-driven specification guide to electrical guitars for my Bootstrap project; with an optimistic hope to extend this to an honors project, or as a part of a larger honors package for graduation. 
+One of the most interesting questions I get asked as a guitar instructor is: "what paramaters are relevant to buying a guitar?" The answer, like most issues in life, varies with the needs of the student, or musician asking the question. While most beginner players don't really need a lot of information to get them started, potentially realizing that too much overkill on specifics might end up killing their "enjoyable" new hobby, they do often need solid technical data to inform them and educate them to make future musical decisions and purchases. Advanced, or pro-level players, often need a great deal more information on each instrument, and a way of comparing relevant brands and models for their particular musical needs. For these reasons I have decided to attempt a guide site to all guitar related buying. 
 
 ## Prospective Features for Website Users
-- Guitar feature comparison tables
 - Links to major manufactuers
 - diferences in product features
- - Model differences (proprietary and general)
- - differences between different brands in their approach to manufacturing and marketing instruments
-- Contact information to aid musicians in both informing their searches, and to update bugs, or improvements needed to the website
-- Links to reviews and retail purchase sites
--Initial version will be a POC using Ibanez as the only brand
-    -Using Ibanez is useful due to the Company's transparent parts/sales/marketing featured right on the Ibanez USA site
-- This is a re-hash of my original Bootstrap project, that has been totally reformulated for React
+ - Links to buying guides
+ - YouTube links to gear demo vids
+ - eventually I will update a great deal of my own knowledge, when this goes live, for how to buy guitar gear, but for now I need to keep it simple.
 
 ## Prospective technology
 - React
@@ -29,22 +24,25 @@ One of the most interesting questions I get asked as a guitar instructor is: "wh
 - gitlab for local git editing
 - GitHub repositories
 
-## Layout (prospective - this was the original from BS)
+## Layout 
 - Home Page
-- General Guide Page
-- About the Guide
+- General Guide About Page
+- About the Guide Author (About Page)
 - Contact Page
-- Initially all data will be in the form of an array, then will draw from DB
-- Guitar Source Data list feeds from an array that is a conjuction of the following:
-    - Guitar Array
-    - Multiscale Guitar array
-    - Bass Array
-    - Multi bass array
-- Guitar Page
-- Bass Page
-- Multiscale Guitar page
-- Guitar details array that will sort based upon instrument id
+- Directory Page for Guides:
+    - Basic Guides are:
+        - Guitar Brands
+        - Guitar Body
+        - Guitar Necks
+        - Guitar Strings
+        - Guitar Bridges
+        - Guitar Pickups
+        - Guitar Frets
+        - Guitar Electronics
+        - Guitar Picks
+- Guide Site References page
 - Site Map
+- Currently Data is in JSON format, and being fetched from a JSON server -- eventually will be a Mongo List, or a PostGres DB
 ## Market Survey & Research
 
 While current websites by manufacturers give specifications on each guitar model, often you must look to a maintenance spec sheet, retail outlet marketing, and potentially online reviews...who many times must contact the company for their info...in order to get detailed, and accurate, information on a particular instrument. Most consumers rely on a single point of contact with the company, often provided by a retail outlet; this can be useful, but not often fully relevant, detailed, or understandable.

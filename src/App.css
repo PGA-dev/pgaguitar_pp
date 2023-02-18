@@ -35,7 +35,8 @@ h2 {
     color: aqua;
 }
 
-.card-img-overlay .card-title {
+.card-img-overlay,
+.card-title {
     color: #061568;
     font-size: 35px;
     background-color: rgba(0, 0, 0, .2);
