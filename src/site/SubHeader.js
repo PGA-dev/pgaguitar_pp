@@ -2,7 +2,10 @@ import { Col, Row, Breadcrumb, BreadcrumbItem } from "reactstrap";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+
 const SubHeader = ({ current, detail }) => {
+
+
 
     const headstyleNav = {
         color: "aqua",

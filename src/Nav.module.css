@@ -1,4 +1,5 @@
-.box, .box::placeholder{
-    color:aqua;
+.box,
+.box::placeholder {
+    color: aqua;
     font-family: papyrus;
 }

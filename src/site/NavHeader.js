@@ -183,7 +183,7 @@ const NavHeader = () => {
 
     const unlTwo1 = useNavlist2();
     const unlTwo2 = useNavlist1();
-
+    //end styles
     return (
         <Navbar id='navhead' dark color='primary' sticky='top' expand='lg'>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />

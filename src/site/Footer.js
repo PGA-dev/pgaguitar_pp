@@ -6,23 +6,6 @@ import { useState } from 'react';
 const Footer = () => {
 
     //keep padding, margins, fontFamily and fontWeights in for posible mod later
-    const footstyleHead = {
-        color: "magenta",
-        padding: "5px",
-        fontSize: "40px",
-        fontFamily: "Papyrus",
-        fontWeight: 500,
-        textDecoration: 'none'
-    };
-
-    const footstyleHeadHover = {
-        color: "magenta",
-        padding: "5px",
-        fontSize: "40px",
-        fontFamily: "Papyrus",
-        fontWeight: 700,
-        textDecoration: 'none'
-    };
 
     const footstyleLink = {
         color: "aqua",
@@ -122,18 +105,8 @@ const Footer = () => {
         return { style, onClick, onMouseEnter, onMouseLeave }
     }
 
-    const useFeetHead = () => {
-        const [style, setStyle] = useState(footstyleHead);
-        const onMouseEnter = () => setStyle(footstyleHeadHover)
-        const onMouseLeave = () => setStyle(footstyleHead)
-        return { style, onMouseEnter, onMouseLeave }
-    }
-
     // individual style calls for each link and heading
-    const bgh = useFeetHead();
-    const ach = useFeetHead();
-    const slh = useFeetHead();
-    const olh = useFeetHead();
+
 
     const bg1 = useFeet();
     const bg2 = useFeet();
@@ -165,7 +138,7 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5 {...bgh}>Buying Guides</h5>
+                        <h5 id='fhead'>Buying Guides</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <Link {...bg1} to='/guidedirectory/0'>Guitar Body</Link>
@@ -186,7 +159,7 @@ const Footer = () => {
                     </Col>
 
                     <Col xs='6' sm='3' className='text-center'>
-                        <h5 {...ach}>Author Contact</h5>
+                        <h5 id='fhead'>Author Contact</h5>
                         <ul className='list-unstyled'>
                             <li >
                                 <a {...ac1} href="https://www.linkedin.com/in/paul-adam-86ba423b/" target="_blank" rel="noreferrer">Author LI</a>
@@ -211,7 +184,7 @@ const Footer = () => {
                     </Col>
 
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5 {...slh}>Site Links</h5>
+                        <h5 id='fhead'>Site Links</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <Link {...sl1} to='/'>Site Home</Link>
@@ -231,7 +204,7 @@ const Footer = () => {
                         </ul>
                     </Col>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
-                        <h5 {...olh}>Outside Links</h5>
+                        <h5 id='fhead'>Outside Links</h5>
                         <ul className='list-unstyled'>
                             <li>
                                 <a {...ol1} href="https://www.jemsite.com/" target="_blank" rel="noreferrer">Jemsite</a>

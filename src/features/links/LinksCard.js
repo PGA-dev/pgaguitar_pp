@@ -1,5 +1,5 @@
 import { Card, CardText } from 'reactstrap';
-//import { Link } from 'react-router-dom';
+
 
 
 //Used in Site Map
@@ -8,23 +8,16 @@ const LinksCard = ({ links }) => {
 
     return (
         <Card style={cardCSS}>
-            <CardText><a style={linkCSS} href={url}>{name}</a></CardText>
+            <CardText><a id='linkCSS' href={url}>{name}</a></CardText>
         </Card>
 
     );
 }
 
-const linkCSS = {
-    color: "aqua",
-    padding: "15px",
-    margin: "20px",
-    fontSize: "35px",
-    fontFamily: "Papyrus",
-    textDecoration: 'none'
-};
 
 const cardCSS = {
-    margin: "20px",
-};
+    margin: '20px',
+    border: '5px solid slateblue'
+}
 
 export default LinksCard;
