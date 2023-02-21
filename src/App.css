@@ -4,14 +4,17 @@
     --danger-clr: magenta;
     --success-clr: #49fb35;
     --info-subtle: slateblue;
+    --danger-almost: #a424ff;
     --body-clr: black;
     --primary-clr: #09155a;
     --light-clr: white;
+    --light-2nd: #d8f8f8;
     --dark-clr: #333333;
     --border-clr: #20678b;
 
     --border-std: 5px solid #20678b;
     --text-dec-std: none;
+    --text-dec-line: underline;
 
     --font-main: 'papyrus';
     --font-sec: arial;
@@ -34,7 +37,7 @@ a {
     color: var(--info-clr);
     font-size: 25px;
     text-decoration: var(--text-dec-std);
-    font-weight: var(--fw--bright);
+    font-weight: var(--fw--normbr);
 
 }
 
@@ -53,6 +56,15 @@ h4,
 .card-body>.card-title {
     font-family: var(--font-main), fantasy;
 
+}
+
+/* Used for Card Headings */
+h4 {
+    padding: 2px;
+    font-family: papyrus;
+    font-size: 40px;
+    color: #a424ff;
+    font-weight: 900
 }
 
 h1 {
@@ -105,7 +117,7 @@ h1 {
 .card-body {
 
     font-family: var(--font-main);
-    color: var(--info-clr);
+    color: var(--light-2nd);
 }
 
 h2 {
@@ -141,7 +153,7 @@ h2 {
 
 .row-border {
     padding: 50px 0;
-    border-bottom: 0px ridge;
+    border-bottom: 5px ridge;
     min-height: 200px;
 }
 
@@ -238,23 +250,24 @@ h2 {
     background-color: black;
 }
 
-#fhead {
-    color: magenta;
+/*Footer Head*/
+h5 {
+    color: var(--danger-almost);
     padding: 5px;
     font-size: 40px;
-    font-family: Papyrus;
-    font-weight: 500;
-    text-decoration: none
+    font-family: var(--font-main);
+    font-weight: var(--fw--bright-wow);
+    text-decoration: var(--text-dec-line)
 }
 
-#fhead:hover {
+/* h5:hover {
     color: magenta;
     padding: 5px;
     font-size: 40px;
     font-family: Papyrus;
     font-weight: 900;
-    text-decoration: none
-}
+    text-decoration: var(--text-dec-line)
+} */
 
 /* carousel stuff */
 

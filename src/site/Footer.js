@@ -17,7 +17,7 @@ const Footer = () => {
 
     const footstyleClick = {
         color: "slateblue",
-        fontSize: "24px",
+        fontSize: "28px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 100,
@@ -26,7 +26,7 @@ const Footer = () => {
 
     const footstyleHover = {
         color: "magenta",
-        fontSize: "24px",
+        fontSize: "26px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 900,
@@ -36,7 +36,7 @@ const Footer = () => {
 
     const footstyleClick2 = {
         color: "magenta",
-        fontSize: "24px",
+        fontSize: "28px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 100,
@@ -45,7 +45,7 @@ const Footer = () => {
 
     const footstyleHover2 = {
         color: "white",
-        fontSize: "24px",
+        fontSize: "26px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 900,
@@ -55,7 +55,7 @@ const Footer = () => {
 
     const footstyleHover3 = {
         color: '#0d6efd',
-        fontSize: '24px',
+        fontSize: '26px',
         padding: '5px 3px',
         fontFamily: 'Papyrus',
         fontWeight: 900,
@@ -64,8 +64,8 @@ const Footer = () => {
     };
 
     const footstyleHover4 = {
-        color: "slateblue",
-        fontSize: "24px",
+        color: "#a424ff",
+        fontSize: "26px",
         padding: "5px 3px",
         fontFamily: "Papyrus",
         fontWeight: 900,
@@ -136,7 +136,7 @@ const Footer = () => {
     return (
         <footer className='site-footer'>
             <Container>
-                <Row>
+                <Row className='row '>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5 id='fhead'>Buying Guides</h5>
                         <ul className='list-unstyled'>

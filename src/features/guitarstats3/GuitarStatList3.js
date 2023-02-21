@@ -25,7 +25,7 @@ const GuitarStatList3 = ({ guitarid }) => {
     if (guitarstats3 && guitarstats3.length > 0) {
         return (
             <Col md='12' className='m-1'>
-                <h4 style={gslhead3}><b>Stat3</b></h4>
+                <h4>Stat3</h4>
                 {guitarstats3.map((guitarstat3) => {
                     return <GuitarStat3 key={guitarstat3.id} guitarstat3={guitarstat3} />;
                 })}
@@ -33,17 +33,12 @@ const GuitarStatList3 = ({ guitarid }) => {
         );
     }
     return (
-        <Col md='5' className='m-1' style={gslhead3}>
+        <Col md='5' className='m-1'>
             We don't have any stats on this model yet.
         </Col>
     );
 };
 
-const gslhead3 = {
-    padding: '2px',
-    fontFamily: 'papyrus',
-    color: 'slateblue',
-    fontWeight: 900
-}
+
 
 export default GuitarStatList3;

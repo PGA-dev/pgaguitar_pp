@@ -23,7 +23,7 @@ const GuitarStatList5 = ({ guitarid }) => {
     if (guitarstats5 && guitarstats5.length > 0) {
         return (
             <Col md='12' className='m-1'>
-                <h3 style={{ padding: '2px', fontFamily: 'papyrus', color: 'aqua' }}><b>Manufacturer Links</b></h3>
+                <h4> Manufacturer Links</h4>
                 {guitarstats5.map((guitarstat5) => {
                     return <GuitarStat5 key={guitarstat5.id} guitarstat5={guitarstat5} />;
                 })}

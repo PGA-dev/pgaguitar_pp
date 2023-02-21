@@ -8,29 +8,24 @@ const GuitarStat = ({ guitarstat }) => {
         <>
             <ul className='list-unstyled m-2 p-1' style={{ fontFamily: 'papyrus' }} >
                 <li>
-                    <a style={gslia} href={Manufacture1URL}>{nameMan}</a>
+                    <a href={Manufacture1URL}>{nameMan}</a>
                 </li>
                 <li>
-                    <a style={gslia} href={Manufacture2URL}>{nameMan2}</a>
+                    <a href={Manufacture2URL}>{nameMan2}</a>
                 </li>
                 <li>
-                    <a style={gslia} href={Manufacture3URL}>{nameMan3}</a>
+                    <a href={Manufacture3URL}>{nameMan3}</a>
                 </li>
                 <li>
-                    <a style={gslia} href={Manufacture4URL}>{nameMan4}</a>
+                    <a href={Manufacture4URL}>{nameMan4}</a>
                 </li>
                 <li>
-                    <a style={gslia} href={Manufacture5URL}>{nameMan5}</a>
+                    <a href={Manufacture5URL}>{nameMan5}</a>
                 </li>
             </ul>
         </>
     );
 };
 
-const gslia = {
-    color: 'aqua',
-    fontFamily: 'papyrus',
-    fontWeight: 700,
-    textDecoration: 'none'
-}
+
 export default GuitarStat;
