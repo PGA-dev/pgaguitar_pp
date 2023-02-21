@@ -22,7 +22,7 @@ const Header = () => {
             <Col id='headerhead' >
                 <h1 m='12' id='title' style={headstyle} >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
                 <animated.div style={animatedStyle}>
-                    <h4 style={{ color: "aqua", padding: "6px", fontSize: "45px", fontFamily: "Arial-Bold" }} className='text-center'><i>A Guitar Player's Best Friend</i></h4>
+                    <h4 className='text-center'><i>A Guitar Player's Best Friend</i></h4>
                 </animated.div>
             </Col>
         </Row>
