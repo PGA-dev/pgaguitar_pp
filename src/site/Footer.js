@@ -165,12 +165,11 @@ const Footer = () => {
                                 <a {...ac1} href="https://www.linkedin.com/in/paul-adam-86ba423b/" target="_blank" rel="noreferrer">Author LI</a>
                             </li>
                             <li>
-                                <a {...ac2} className='btn btn-link' href='https://www.youtube.com/channel/UCdSa6weDVHCPFJzjE9M4foA' target="_blank" rel="noreferrer">Author's YouTube</a>
+                                <a {...ac2} href='https://www.youtube.com/channel/UCdSa6weDVHCPFJzjE9M4foA' target="_blank" rel="noreferrer">Author's YouTube</a>
                             </li>
                             <li>
                                 <a {...ac3}
                                     role='button'
-                                    className='btn btn-link'
                                     href='mailto:paulgadam@gmail.com'
                                 >
                                     <i {...ac4} className='' /> Author Email

@@ -167,7 +167,7 @@ const ContactForm = () => {
             </FormGroup>
             <FormGroup row>
                 <Col md={{ size: 10, offset: 0 }}>
-                    <Button
+                    <Button className="btn"
                         {...active}
                         type="submit"
                     >{buttonText}

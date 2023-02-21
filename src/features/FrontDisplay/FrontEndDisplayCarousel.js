@@ -36,7 +36,6 @@ const FrontDisplayCarousel = () => {
         opacity: '.87'
     };
 
-
     const useCross = () => {
         const [style, setStyle] = useState(cursorDefault);
         const onMouseEnter = () => setStyle(crossHover)
