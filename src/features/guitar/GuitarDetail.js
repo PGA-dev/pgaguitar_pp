@@ -3,7 +3,7 @@ import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 const GuitarDetail = ({ guitar }) => {
 
     const { image, name } = guitar;
-
+    //
     return (
         <Col md='12' className='m-1'>
             <Card id='bgcard2'>

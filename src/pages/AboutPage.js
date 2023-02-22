@@ -32,7 +32,7 @@ const AboutPage = () => {
                         </CardHeader>
                         <CardBody className="bg" style={{ border: "5px ridge #e6e3ea", backgroundColor: "black", color: "aqua", padding: "6px", fontSize: "35px", fontFamily: "papyrus" }}>
                             <div style={{ color: 'magenta', fontFamily: 'Arial-bold' }}>
-                                <ul>
+                                <ul className="list-unstyled m-2 p-1">
                                     <li>
                                         <p>Guitar Player for 40 years</p>
                                     </li>

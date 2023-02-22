@@ -16,8 +16,8 @@
     --text-dec-std: none;
     --text-dec-line: underline;
 
-    --font-main: 'papyrus';
-    --font-sec: arial;
+    --font-main: papyrus;
+    --font-sec: arial-bold;
 
     --fw-norm: 300;
     --fw--normbr: 500;
@@ -33,13 +33,67 @@ body {
     color: var(--info-clr)
 }
 
-a {
+h1 {
+    font-family: var(--font-main);
+    color: var(--info-clr);
+}
+
+
+h2 {
+    color: aqua;
+    font-family: var(--font-main);
+}
+
+/* Used in SubHead */
+h3 {
+    padding: 2px;
+    font-family: var(--font-main);
+    font-size: 45px;
+    color: var(--info-clr);
+    font-weight: 700
+}
+
+
+/* Used for Card Headings */
+h4 {
+    padding: 2px;
+    font-family: papyrus;
+    font-size: 40px;
+    color: var(--danger-almost);
+    font-weight: 900;
+    text-decoration: var(--text-dec-line);
+}
+
+/*Footer Head*/
+h5 {
+    color: var(--danger-clr);
+    padding: 5px;
+    font-size: 40px;
+    font-family: var(--font-main);
+    font-weight: var(--fw--normbr);
+    text-decoration: var(--text-dec-line)
+}
+
+
+
+
+a,
+link {
     color: var(--info-clr);
     font-size: 25px;
     text-decoration: var(--text-dec-std);
     font-weight: var(--fw--normbr);
 
 }
+
+a:hover,
+link:hover {
+    color: var(--danger-almost);
+    font-size: 27px;
+    text-decoration: var(--text-dec-std);
+    font-weight: var(--fw--bright-wow);
+}
+
 
 p {
     color: var(--info-subtle);
@@ -49,30 +103,10 @@ p {
     font-family: var(--font-main);
 }
 
-h1,
-h2,
-h3,
-h4,
-.card-body>.card-title {
-    font-family: var(--font-main), fantasy;
-
-}
-
-/* Used for Card Headings */
-h4 {
-    padding: 2px;
-    font-family: papyrus;
-    font-size: 40px;
-    color: #a424ff;
-    font-weight: 900
-}
-
-h1 {
-    font-family: var(--font-main);
-    color: var(--info-clr);
-}
 
 
+
+/*Buttons*/
 .btn:hover {
     color: var(--body-clr);
     background-color: var(--info-clr);
@@ -105,58 +139,8 @@ h1 {
 }
 
 
-.card-title {
-    font-weight: var(--font-main);
-    font-size: 1.25rem;
-    font-family: papyrus;
-    color: var(--danger-clr);
-}
 
-
-
-.card-body {
-
-    font-family: var(--font-main);
-    color: var(--light-2nd);
-}
-
-h2 {
-    color: aqua;
-    font-family: var(--font-main);
-}
-
-.card,
-.card-text {
-    color: var(--info-clr);
-    text-decoration: var(--text-dec-std);
-}
-
-
-.card-img-overlay>.card-title {
-    color: var(--danger-clr);
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(0, 0, 0, 0);
-    font-weight: 900;
-    font-size: 65px;
-}
-
-#linkCSS {
-    color: var(--info-clr);
-    padding: 15px;
-    margin: 20px;
-    font-size: 35px;
-    font-family: var(--font-main);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-
-.row-border {
-    padding: 50px 0;
-    border-bottom: 5px ridge;
-    min-height: 200px;
-}
-
+/* Footer */
 .site-footer {
     background-image: radial-gradient(black, #09155a);
     padding: 20px 0;
@@ -166,6 +150,95 @@ h2 {
 }
 
 
+/*card related*/
+
+.card-body>.card-title {
+    font-family: var(--font-main), fantasy;
+
+}
+
+.card-title {
+    font-weight: var(--font-main);
+    font-size: 1.25rem;
+    font-family: papyrus;
+    color: var(--danger-almost);
+}
+
+.card-body {
+
+    font-family: var(--font-main);
+    color: var(--light-2nd);
+}
+
+.card,
+.card-text {
+    color: var(--info-clr);
+    text-decoration: var(--text-dec-std);
+}
+
+.card>.card-img {
+    border: #20678b ridge 5px;
+}
+
+.card-img-overlay>.card-title {
+    color: var(--danger-clr);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 900;
+    font-size: 65px;
+}
+
+/*Guide pages*/
+#crdimg2 {
+    border: #20678b ridge 3px;
+    background-color: black;
+}
+
+#bgcard2 {
+    border: #2e80aa ridge 5px;
+    background-color: black;
+    opacity: .94;
+}
+
+#gdetail {
+    color: chartreuse;
+    font-weight: 900;
+    font-size: 45px;
+    border: #2e80aa ridge 5px;
+    background-color: black;
+}
+
+/* Guide Site Map Links */
+#linkCSS {
+    color: var(--info-clr);
+    padding: 15px;
+    margin: 20px;
+    font-size: 35px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#linkCSS:hover {
+    color: var(--danger-almost);
+    padding: 15px;
+    margin: 20px;
+    font-size: 37px;
+    font-family: var(--font-main);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+
+/* General Utilities */
+.row-border {
+    padding: 50px 0;
+    border-bottom: 5px ridge;
+    min-height: 200px;
+}
+
+
+/*Entry and exit for opacity and trans values from Spring -- see styles.module.css for more*/
 .page-enter {
     opacity: 0;
     transform: translateX(-100%);
@@ -186,24 +259,7 @@ h2 {
     transition: 300ms ease-in;
 }
 
-.card>.card-img {
-    border: #20678b ridge 5px;
-}
 
-#crdimg2 {
-    border: #20678b ridge 3px;
-    background-color: black;
-}
-
-#title {
-    font-size: 75px;
-    color: fuchsia;
-    font-family: papyrus;
-}
-
-#siteRefs {
-    font-size: 14px;
-}
 
 #navhead {
     /* background-color: #901cad; */
@@ -224,93 +280,22 @@ h2 {
     font-family: papyrus;
 }
 
-#frontcard {
-    color: var(--primary-clr);
-    border: var(--border-clr) ridge 5px;
-    background-color: black;
-}
+
 
 #bgcard {
     border: #2e80aa ridge 5px;
     background-color: black;
 }
 
-#bgcard2 {
-    border: #2e80aa ridge 5px;
+
+/* Old or Deprecated */
+
+/* #frontcard {
+    color: var(--primary-clr);
+    border: var(--border-clr) ridge 5px;
     background-color: black;
-    opacity: .94;
-}
-
-
-#gdetail {
-    color: chartreuse;
-    font-weight: 900;
-    font-size: 45px;
-    border: #2e80aa ridge 5px;
-    background-color: black;
-}
-
-/*Footer Head*/
-h5 {
-    color: var(--danger-almost);
-    padding: 5px;
-    font-size: 40px;
-    font-family: var(--font-main);
-    font-weight: var(--fw--bright-wow);
-    text-decoration: var(--text-dec-line)
-}
-
-/* h5:hover {
-    color: magenta;
-    padding: 5px;
-    font-size: 40px;
-    font-family: Papyrus;
-    font-weight: 900;
-    text-decoration: var(--text-dec-line)
 } */
 
-/* carousel stuff */
-
-
-
-/* .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
+/* #siteRefs {
+    font-size: 14px;
 } */
-
-
-/*  
-
-To swap them for font awesome with pure CSS:
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: none;
-}
-
-.carousel-control-prev-icon:after, .carousel-control-next-icon:after {     
-  content: "\f053";
-  font-family: 'Font Awesome 5 Free', sans-serif;
-}
-
-.carousel-control-next-icon:after {
-  content: "\f054";
-}*/

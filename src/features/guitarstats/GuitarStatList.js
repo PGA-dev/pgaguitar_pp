@@ -39,12 +39,12 @@ const GuitarStatList = ({ guitarid }) => {
     );
 };
 
-const gslhead = {
-    padding: '2px',
-    fontFamily: 'papyrus',
-    color: '#a424ff',
-    fontSize: '40px',
-    fontWeight: 900
-}
+// const gslhead = {
+//     padding: '2px',
+//     fontFamily: 'papyrus',
+//     color: '#a424ff',
+//     fontSize: '40px',
+//     fontWeight: 900
+// }
 
 export default GuitarStatList;

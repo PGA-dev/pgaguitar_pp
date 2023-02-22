@@ -14,7 +14,7 @@ const GuideSiteMap = () => {
                     </div>
                 </Col>
             </Row>
-            <Row className='row-border align-items-center'>
+            <Row className='align-items-center'>
                 <LinksMapper />
             </Row>
         </Container>

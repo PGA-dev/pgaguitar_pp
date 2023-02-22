@@ -1,8 +1,6 @@
 import { Card, CardText } from 'reactstrap';
 import { linksUrl } from '../../sitemisc/linksUrl';
 
-
-
 //Used in Site Map
 const LinksCard = ({ links }) => {
     const { id, name, url } = links;
@@ -19,7 +17,8 @@ const LinksCard = ({ links }) => {
 
 const cardCSS = {
     margin: '20px',
-    border: '5px solid slateblue'
+    border: '3px solid slateblue',
+    borderRadius: '35px'
 }
 
 
