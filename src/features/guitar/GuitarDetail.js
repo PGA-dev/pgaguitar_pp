@@ -1,17 +1,17 @@
-import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, Col, CardTitle } from 'reactstrap';
 //import { Link } from 'react-router-dom';
 const GuitarDetail = ({ guitar }) => {
 
     const { image, name } = guitar;
-    //
+
     return (
         <Col md='12' className='m-1'>
-            <Card id='bgcard2'>
-                <CardImg id='crdimg2' top src={image} alt={name} />
+            <Card className='card'>
+                <CardImg className='card-img' top src={image} alt={name} />
                 <CardBody>
-                    <CardText id='gdetail' className='text-center'>
+                    <CardTitle className='card-title text-center'>
                         {name}
-                    </CardText>
+                    </CardTitle>
                 </CardBody>
             </Card>
         </Col>

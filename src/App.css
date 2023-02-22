@@ -31,9 +31,20 @@
     --fs-text-hover: 27px;
     --fs-text-small: 16px;
 
+    /* Bootstrap Example*/
+    --bs-text-red: indigo;
+
 }
 
-
+.label-text {
+    background-color: var(--body-clr);
+    color: var(--info-clr);
+    font-family: var(--font-sec);
+    font-weight: var(--fw--bright);
+    font-size: var(--fs-text-hover);
+    padding: 1px;
+    margin: 1px 5px 5px;
+}
 
 body {
     font-family: var(--font-fam), fantasy;
@@ -55,7 +66,7 @@ h2 {
 h3 {
     padding: 2px;
     font-family: var(--font-main);
-    font-size: 45px;
+    font-size: var(--fs--subhead);
     color: var(--info-clr);
     font-weight: 700
 }
@@ -71,7 +82,7 @@ h4 {
     text-decoration: var(--text-dec-line);
 }
 
-/*Footer Head*/
+/*Used in Footer Headings*/
 h5 {
     color: var(--danger-clr);
     padding: 5px;
@@ -82,10 +93,9 @@ h5 {
 }
 
 
-
-
 a,
-link {
+link,
+.link {
     color: var(--info-clr);
     font-size: 25px;
     text-decoration: var(--text-dec-std);
@@ -94,7 +104,8 @@ link {
 }
 
 a:hover,
-link:hover {
+link:hover,
+.link:hover {
     color: var(--danger-almost);
     font-size: 27px;
     text-decoration: var(--text-dec-std);
@@ -109,8 +120,6 @@ p {
     font-weight: var(--fw--bright);
     font-family: var(--font-main);
 }
-
-
 
 
 /*Buttons*/
@@ -146,45 +155,30 @@ p {
 }
 
 
-
-/* Footer */
-.site-footer {
-    background-image: radial-gradient(black, #09155a);
-    padding: 20px 0;
-    margin-top: black 4rem;
-    border-top: #3894c2 solid;
-    font-family: papyrus;
-}
-
-
 /*card related*/
-
-.card-body>.card-title {
-    font-family: var(--font-main), fantasy;
-
+.card {
+    border: #2e80aa ridge 3px;
+    background-color: black;
+    opacity: .99;
 }
 
 .card-title {
-    font-weight: var(--font-main);
-    font-size: 1.25rem;
-    font-family: papyrus;
     color: var(--danger-almost);
+    font-weight: var(--fw--bright-wow);
+    font-size: 45px;
+    border: #2e80aa ridge 5px;
+    background-color: black;
 }
 
 .card-body {
-
     font-family: var(--font-main);
     color: var(--light-2nd);
 }
 
-.card,
+
 .card-text {
     color: var(--info-clr);
     text-decoration: var(--text-dec-std);
-}
-
-.card>.card-img {
-    border: #20678b ridge 5px;
 }
 
 .card-img-overlay>.card-title {
@@ -195,45 +189,9 @@ p {
     font-size: 65px;
 }
 
-/*Guide pages*/
-#crdimg2 {
+.card-img {
     border: #20678b ridge 3px;
     background-color: black;
-}
-
-#bgcard2 {
-    border: #2e80aa ridge 5px;
-    background-color: black;
-    opacity: .94;
-}
-
-#gdetail {
-    color: chartreuse;
-    font-weight: 900;
-    font-size: 45px;
-    border: #2e80aa ridge 5px;
-    background-color: black;
-}
-
-/* Guide Site Map Links */
-#linkCSS {
-    color: var(--info-clr);
-    padding: 15px;
-    margin: 20px;
-    font-size: 35px;
-    font-family: var(--font-main);
-    font-weight: 500;
-    text-decoration: none;
-}
-
-#linkCSS:hover {
-    color: var(--danger-almost);
-    padding: 15px;
-    margin: 20px;
-    font-size: 37px;
-    font-family: var(--font-main);
-    font-weight: 900;
-    text-decoration: none;
 }
 
 
@@ -266,8 +224,17 @@ p {
     transition: 300ms ease-in;
 }
 
+/* Footer */
+.site-footer {
+    background-image: radial-gradient(black, #09155a);
+    padding: 20px 0;
+    margin-top: black 4rem;
+    border-top: #3894c2 solid;
+    font-family: papyrus;
+}
 
 
+/*Heading material with ids*/
 #navhead {
     /* background-color: #901cad; */
     background-image: radial-gradient(black, #09155a);
@@ -287,22 +254,23 @@ p {
     font-family: papyrus;
 }
 
-
-
-#bgcard {
-    border: #2e80aa ridge 5px;
-    background-color: black;
+/* Guide Site Map Links */
+#linkCSS {
+    color: var(--info-clr);
+    padding: 15px;
+    margin: 20px;
+    font-size: 35px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    text-decoration: none;
 }
 
-
-/* Old or Deprecated */
-
-/* #frontcard {
-    color: var(--primary-clr);
-    border: var(--border-clr) ridge 5px;
-    background-color: black;
-} */
-
-/* #siteRefs {
-    font-size: 14px;
-} */
+#linkCSS:hover {
+    color: var(--danger-almost);
+    padding: 15px;
+    margin: 20px;
+    font-size: 37px;
+    font-family: var(--font-main);
+    font-weight: 900;
+    text-decoration: none;
+}

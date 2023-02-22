@@ -96,7 +96,7 @@ const ContactForm = () => {
 
     const active = useActive();
 
-
+    //style={labelText}
     return <Formik
         initialValues={{
             firstName: '',
@@ -111,7 +111,7 @@ const ContactForm = () => {
     >
         <Form>
             <FormGroup row>
-                <Label style={labelText} htmlFor='firstName' md='3'>
+                <Label className="label-text" htmlFor='firstName' md='3'>
                     First Name
                 </Label>
                 <Col md='12'>
@@ -122,7 +122,7 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label style={labelText} htmlFor='lastName' md='3'>
+                <Label className="label-text" htmlFor='lastName' md='3'>
                     Last Name
                 </Label>
                 <Col md='12'>
@@ -133,7 +133,7 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label style={labelText} htmlFor='email' md='3'>
+                <Label className="label-text" htmlFor='email' md='3'>
                     Email
                 </Label>
                 <Col md='12'>
@@ -144,7 +144,7 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label style={labelText} htmlFor='country' md='3'>
+                <Label className="label-text" htmlFor='country' md='3'>
                     Country
                 </Label>
                 <Col md='12'>
@@ -155,7 +155,7 @@ const ContactForm = () => {
                 </Col>
             </FormGroup>
             <FormGroup row>
-                <Label style={labelText} htmlFor='feedback' md='4'>
+                <Label className="label-text" htmlFor='feedback' md='4'>
                     Feedback
                 </Label>
                 <Col md='12'>
