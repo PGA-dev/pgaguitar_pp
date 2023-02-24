@@ -36,15 +36,6 @@
 
 }
 
-.label-text {
-    background-color: var(--body-clr);
-    color: var(--info-clr);
-    font-family: var(--font-sec);
-    font-weight: var(--fw--bright);
-    font-size: var(--fs-text-hover);
-    padding: 1px;
-    margin: 1px 5px 5px;
-}
 
 body {
     font-family: var(--font-fam), fantasy;
@@ -58,7 +49,7 @@ h1 {
 
 
 h2 {
-    color: aqua;
+    color: var(--info-clr);
     font-family: var(--font-main);
 }
 
@@ -68,17 +59,17 @@ h3 {
     font-family: var(--font-main);
     font-size: var(--fs--subhead);
     color: var(--info-clr);
-    font-weight: 700
+    font-weight: var(--fw--bright)
 }
 
 
 /* Used for Card Headings */
 h4 {
     padding: 2px;
-    font-family: papyrus;
+    font-family: var(--font-main);
     font-size: 40px;
     color: var(--danger-almost);
-    font-weight: 900;
+    font-weight: var(--fw--bright-wow);
     text-decoration: var(--text-dec-line);
 }
 
@@ -121,6 +112,16 @@ p {
     font-family: var(--font-main);
 }
 
+/*Formik*/
+.label-text {
+    background-color: var(--body-clr);
+    color: var(--info-clr);
+    font-family: var(--font-sec);
+    font-weight: var(--fw--bright);
+    font-size: var(--fs-text-hover);
+    padding: 1px;
+    margin: 1px 5px 5px;
+}
 
 /*Buttons*/
 .btn:hover {
@@ -157,17 +158,17 @@ p {
 
 /*card related*/
 .card {
-    border: #2e80aa ridge 3px;
-    background-color: black;
+    border: var(--border-clr) ridge 3px;
+    background-color: var(--body-clr);
     opacity: .99;
 }
 
 .card-title {
     color: var(--danger-almost);
     font-weight: var(--fw--bright-wow);
-    font-size: 45px;
-    border: #2e80aa ridge 5px;
-    background-color: black;
+    font-size: var(--fs--subhead);
+    border: var(--border-clr) ridge 5px;
+    background-color: var(--body-clr);
 }
 
 .card-body {
