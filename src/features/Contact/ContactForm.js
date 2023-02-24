@@ -74,15 +74,6 @@ const ContactForm = () => {
         transitionDuration: '0.2s'
     }
 
-    const labelText = {
-        backgroundColor: 'black',
-        color: 'aqua',
-        padding: '1px',
-        margin: '1px 5px 5px',
-        textDecoration: 'none',
-        fontSize: "28px",
-        fontWeight: 700
-    }
 
     const errorText = {
         backgroundColor: 'black',
