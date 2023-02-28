@@ -275,3 +275,22 @@ p {
     font-weight: 900;
     text-decoration: none;
 }
+
+/*carousel*/
+.carousel-control,
+.previous-Button,
+.next-Button {
+    color: var(--info-clr);
+    background-color: var(--danger-almost);
+
+}
+
+#uc {
+    cursor: default;
+    opacity: .98
+}
+
+#uc:hover {
+    cursor: crosshair;
+    opacity: .87
+}
