@@ -31,6 +31,7 @@
     --fs--text: 24px;
     --fs-text-hover: 27px;
     --fs-text-small: 16px;
+    --fs-link: 35px;
 
 }
 
@@ -61,7 +62,7 @@ h3 {
 }
 
 h3::before {
-    background: var(--danger-almost);
+    background: var(--info-subtle);
     content: "";
     inset: 0;
     position: absolute;
@@ -69,7 +70,6 @@ h3::before {
     transform-origin: center;
     transition: transform 250ms ease-in-out;
     z-index: -1;
-    /*to avoid fill*/
 }
 
 h3:hover::before {
@@ -77,19 +77,6 @@ h3:hover::before {
 
 }
 
-/* AA's h3::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    inset: 0 0 0 0;
-    background: var(--danger-almost);
-    z-index: -1;
-    transition: transform .3s ease;
-} */
 
 /* Used for Card Headings */
 h4 {
@@ -111,9 +98,7 @@ h5 {
     text-decoration: var(--text-dec-line)
 }
 
-a,
-link,
-.link {
+:is(a) {
     color: var(--info-clr);
     font-size: var(--fs--text);
     text-decoration: var(--text-dec-std);
@@ -121,9 +106,7 @@ link,
 
 }
 
-a:hover,
-link:hover,
-.link:hover {
+a:is(:hover) {
     color: var(--danger-almost);
     font-size: var(--fs-text-hover);
     text-decoration: var(--text-dec-std);
@@ -209,14 +192,14 @@ p {
 .card-img-overlay>.card-title {
     color: var(--danger-clr);
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--body-clr);
     font-weight: var(--fw--bright-wow);
     font-size: var(--fs--heading);
 }
 
 .card-img {
     border: #20678b ridge 3px;
-    background-color: black;
+    background-color: var(--body-clr);
 }
 
 
@@ -283,32 +266,11 @@ p {
 .headstyle {
     color: var(--info-subtle);
     padding: 8px;
-    font-size: 65px;
+    font-size: var(--fs--heading);
     font-family: var(--font-main)
 }
 
 ;
-
-/* Guide Site Map Links */
-#linkCSS {
-    color: var(--info-clr);
-    padding: 15px;
-    margin: 20px;
-    font-size: 35px;
-    font-family: var(--font-main);
-    font-weight: 500;
-    text-decoration: var(--text-dec-std);
-}
-
-#linkCSS:hover {
-    color: var(--danger-almost);
-    padding: 15px;
-    margin: 20px;
-    font-size: 37px;
-    font-family: var(--font-main);
-    font-weight: 900;
-    text-decoration: var(--text-dec-std);
-}
 
 /*carousel*/
 .carousel-control,
@@ -351,4 +313,26 @@ p {
     cursor: crosshair;
     opacity: 1;
     background-color: var(--dark-clr);
+}
+
+/* Guide Site Map Links */
+#linkCSS,
+#linkCSS:focus {
+    color: var(--info-clr);
+    padding: 15px;
+    margin: 20px;
+    font-size: 35px;
+    font-family: var(--font-main);
+    font-weight: var(--fw--bright);
+    text-decoration: var(--text-dec-std)
+}
+
+#linkCSS:hover {
+    color: var(--danger-almost);
+    padding: 15px;
+    margin: 20px;
+    font-size: 37px;
+    font-family: var(--font-main);
+    font-weight: var(--fw--bright-wow);
+    text-decoration: var(--text-dec-std);
 }
