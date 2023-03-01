@@ -18,9 +18,9 @@ const Header = () => {
 
     return (
 
-        <Row className='text-center'>
-            <Col id='headerhead' >
-                <h1 m='12' id='title' style={headstyle} >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
+        <Row className='text-center site-header'>
+            <Col >
+                <h1 m='12' id='title' className='headstyle' >Players Index: A Modern Buyers Guide for Guitar Gear</h1>
                 <animated.div style={animatedStyle}>
                     <h3 className='text-center'><i>A Guitar Player's Best Friend</i></h3>
                 </animated.div>

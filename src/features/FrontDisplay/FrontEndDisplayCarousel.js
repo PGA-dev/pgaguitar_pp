@@ -25,26 +25,6 @@ const FrontDisplayCarousel = () => {
 
     const itemLength = frontitems.length - 1
 
-    // const cursorDefault = {
-    //     cursor: 'default',
-    //     opacity: '98'
-
-    // }
-
-    // const crossHover = {
-    //     cursor: 'crosshair',
-    //     opacity: '.87'
-    // };
-
-    // const useCross = () => {
-    //     const [style, setStyle] = useState(cursorDefault);
-    //     const onMouseEnter = () => setStyle(crossHover)
-    //     const onMouseLeave = () => setStyle(cursorDefault)
-    //     return { style, onMouseEnter, onMouseLeave }
-    // }
-    // {...uc}
-    // const uc = useCross();
-
 
     const previousButton = () => {
         if (animating) return;
@@ -98,9 +78,9 @@ const FrontDisplayCarousel = () => {
                             setActiveIndex(newIndex);
                         }} />
                     {carouselItemData}
-                    <CarouselControl directionText="Prev"
+                    <CarouselControl className='carousel-control' directionText="Prev"
                         direction="prev" onClickHandler={previousButton} />
-                    <CarouselControl directionText="Next"
+                    <CarouselControl className='carousel-control' directionText="Next"
                         direction="next" onClickHandler={nextButton} />
                 </Carousel>
             </div >

@@ -9,8 +9,9 @@
     --primary-clr: #09155a;
     --light-clr: white;
     --light-2nd: #d8f8f8;
-    --dark-clr: #333333;
+    --dark-clr: #111115;
     --border-clr: #20678b;
+    --border-2nd-clr: #3498c2;
 
     --border-std: 5px solid #20678b;
     --text-dec-std: none;
@@ -31,14 +32,11 @@
     --fs-text-hover: 27px;
     --fs-text-small: 16px;
 
-    /* Bootstrap Example*/
-    --bs-text-red: indigo;
-
 }
 
 
 body {
-    font-family: var(--font-fam), fantasy;
+    font-family: var(--font-fam), Arial;
     color: var(--info-clr)
 }
 
@@ -62,12 +60,42 @@ h3 {
     font-weight: var(--fw--bright)
 }
 
+h3::before {
+    background: var(--danger-almost);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: transform 250ms ease-in-out;
+    z-index: -1;
+    /*to avoid fill*/
+}
+
+h3:hover::before {
+    transform: scaleY(1);
+
+}
+
+/* AA's h3::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: var(--danger-almost);
+    z-index: -1;
+    transition: transform .3s ease;
+} */
 
 /* Used for Card Headings */
 h4 {
     padding: 2px;
     font-family: var(--font-main);
-    font-size: 40px;
+    font-size: var(--fs--pagehead);
     color: var(--danger-almost);
     font-weight: var(--fw--bright-wow);
     text-decoration: var(--text-dec-line);
@@ -77,18 +105,17 @@ h4 {
 h5 {
     color: var(--danger-clr);
     padding: 5px;
-    font-size: 40px;
+    font-size: var(--fs--subhead);
     font-family: var(--font-main);
     font-weight: var(--fw--normbr);
     text-decoration: var(--text-dec-line)
 }
 
-
 a,
 link,
 .link {
     color: var(--info-clr);
-    font-size: 25px;
+    font-size: var(--fs--text);
     text-decoration: var(--text-dec-std);
     font-weight: var(--fw--normbr);
 
@@ -98,7 +125,7 @@ a:hover,
 link:hover,
 .link:hover {
     color: var(--danger-almost);
-    font-size: 27px;
+    font-size: var(--fs-text-hover);
     text-decoration: var(--text-dec-std);
     font-weight: var(--fw--bright-wow);
 }
@@ -106,7 +133,7 @@ link:hover,
 
 p {
     color: var(--info-subtle);
-    font-size: 25px;
+    font-size: var(--fs--text);
     text-decoration: var(--text-dec-std);
     font-weight: var(--fw--bright);
     font-family: var(--font-main);
@@ -124,7 +151,7 @@ p {
 }
 
 /*Buttons*/
-.btn:hover {
+.btn:is(:hover) {
     color: var(--body-clr);
     background-color: var(--info-clr);
     border: 5px solid var(--light-clr);
@@ -132,7 +159,7 @@ p {
     box-shadow: 0 8px var(--primary-clr);
 }
 
-.btn:active {
+.btn:is(:active) {
     background-color: var(--body-clr);
     color: var(--info-clr);
     box-shadow: 0 5px var(--secondary-clr);
@@ -140,10 +167,7 @@ p {
 
 }
 
-.btn,
-.btn:visited,
-.btn:link,
-.btn:disabled {
+.btn:is(:visited, :link, :disabled) {
     display: inline-block;
     text-decoration: none;
     font-family: var(--font-main);
@@ -186,8 +210,8 @@ p {
     color: var(--danger-clr);
     font-family: 'Courier New', Courier, monospace;
     background-color: rgba(0, 0, 0, 0);
-    font-weight: 900;
-    font-size: 65px;
+    font-weight: var(--fw--bright-wow);
+    font-size: var(--fs--heading);
 }
 
 .card-img {
@@ -227,33 +251,43 @@ p {
 
 /* Footer */
 .site-footer {
-    background-image: radial-gradient(black, #09155a);
+    background-image: radial-gradient(var(--body-clr), var(--primary-clr));
     padding: 20px 0;
-    margin-top: black 4rem;
-    border-top: #3894c2 solid;
-    font-family: papyrus;
+    margin-top: var(--body-clr) 4rem;
+    border-top: var(--border-2nd-clr) solid;
+    font-family: var(--font-main);
 }
 
 
 /*Heading material with ids*/
 #navhead {
     /* background-color: #901cad; */
-    background-image: radial-gradient(black, #09155a);
-    border-bottom: #20678b solid 1px;
+    background-image: radial-gradient(var(--body-clr), var(--primary-clr));
+    border-bottom: var(--border-clr) solid 1px;
     margin-bottom: 0rem;
     min-height: 1rem;
-    font-family: papyrus;
+    font-family: var(--font-main);
 }
 
-#headerhead {
+#headerhead,
+.site-header {
     /* background-color: #901cad; */
-    background-image: radial-gradient(#09155a, black);
-    border-bottom: #20678b solid 2px;
+    background-image: radial-gradient(var(--primary-clr), var(--body-clr));
+    border-bottom: var(--border-clr) solid 2px;
     margin-bottom: 1rem;
     padding-top: 4rem;
     min-height: 15rem;
-    font-family: papyrus;
+    font-family: var(--font-main);
 }
+
+.headstyle {
+    color: var(--info-subtle);
+    padding: 8px;
+    font-size: 65px;
+    font-family: var(--font-main)
+}
+
+;
 
 /* Guide Site Map Links */
 #linkCSS {
@@ -263,7 +297,7 @@ p {
     font-size: 35px;
     font-family: var(--font-main);
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: var(--text-dec-std);
 }
 
 #linkCSS:hover {
@@ -273,7 +307,7 @@ p {
     font-size: 37px;
     font-family: var(--font-main);
     font-weight: 900;
-    text-decoration: none;
+    text-decoration: var(--text-dec-std);
 }
 
 /*carousel*/
@@ -281,16 +315,40 @@ p {
 .previous-Button,
 .next-Button {
     color: var(--info-clr);
-    background-color: var(--danger-almost);
+    background-color: var(--body-clr);
+    opacity: .1;
 
 }
 
+
+.carousel-control:focus {
+    color: var(--info-clr);
+    opacity: .1;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    background-color: var(--body-clr);
+}
+
+.carousel-control:is(.previous-Button:hover,
+    .next-Button:hover, :hover) {
+    color: var(--info-clr);
+    background-color: var(--dark-clr);
+    opacity: 1;
+
+}
+
+/*Front Carousel image -- ID because we have many other link>img*/
 #uc {
     cursor: default;
-    opacity: .98
+    opacity: .97;
+    color: #000;
+    position: relative;
+    text-decoration: none;
 }
 
-#uc:hover {
+#uc:is(:hover, #uc:active,
+    #uc:focus) {
     cursor: crosshair;
-    opacity: .87
+    opacity: 1;
+    background-color: var(--dark-clr);
 }
