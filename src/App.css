@@ -273,9 +273,7 @@ p {
 ;
 
 /*carousel*/
-.carousel-control,
-.previous-Button,
-.next-Button {
+.carousel-control {
     color: var(--info-clr);
     background-color: var(--body-clr);
     opacity: .1;
@@ -291,8 +289,7 @@ p {
     background-color: var(--body-clr);
 }
 
-.carousel-control:is(.previous-Button:hover,
-    .next-Button:hover, :hover) {
+.carousel-control:hover {
     color: var(--info-clr);
     background-color: var(--dark-clr);
     opacity: 1;

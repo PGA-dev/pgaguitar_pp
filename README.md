@@ -80,3 +80,63 @@ While current websites by manufacturers give specifications on each guitar model
 
 8. Nuno's interview with Richard Lasner from Ibanez USA (from wayback machine):
     - https://web.archive.org/web/20120309020308/http://www.ibanezregister.com/history/nuno/nuno-richlasner.htm
+
+# SiteLinkRef
+
+-https://d2emr0qhzqfj88.cloudfront.net/s3fs-public/products/DP259BB%2BBK.png
+
+
+
+-https://www.thomannmusic.com/ibanez_low_edge_pro_cosmo_black.htm
+
+
+
+-https://www.daddario.com/globalassets/inriver/resources/ds_nyxl1046_main_transparent2.png
+
+
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_RGR5221_TFR_00_01.png
+
+
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_RGA622XH_BK_00_01.png
+
+
+### Pia
+-https://www.ibanez.com/common/product_artist_file/file/p_region_PIA3761C_BLP_00_02.png
+
+### 8520
+https://www.ibanez.com/common/product_artist_file/file/p_region_RG8520_GE_00_03.png
+
+
+-https://static.wikia.nocookie.net/ibanez/images/9/97/2018_RG8527Z_RPK_00_02.png/revision/latest?cb=20180907153002
+
+
+-https://static.wikia.nocookie.net/ibanez/images/4/49/2018_RG8527Z_SDE_00_01_pd.png/revision/latest?cb=20180516200603
+
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_BTB1936_SFL_1P_01.png
+
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_SR5000_OL_00_05.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_EHB1505MS_PLF_1P_01.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_EHB1506MS_BIF_1P_01.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_RGDR4327_NTF_00_01.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_RG5170B_BK_00_01.png
+
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_RGR5221_TFR_00_01.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_JIVAX2_GH_00_02.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_S6570Q_NBL_00_02.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_M8M_33_03.png
+
+-https://www.ibanez.com/common/product_artist_file/file/p_region_JS2GD_00_02.png
+
+-https://www.ibanez.com/images/products/detail/neck_01.jpg
