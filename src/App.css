@@ -98,7 +98,7 @@ h5 {
     text-decoration: var(--text-dec-line)
 }
 
-:is(a) {
+a {
     color: var(--info-clr);
     font-size: var(--fs--text);
     text-decoration: var(--text-dec-std);
@@ -106,7 +106,7 @@ h5 {
 
 }
 
-a:is(:hover) {
+a:hover {
     color: var(--danger-almost);
     font-size: var(--fs-text-hover);
     text-decoration: var(--text-dec-std);
