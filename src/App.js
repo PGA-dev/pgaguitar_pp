@@ -22,6 +22,7 @@ import { fetchGuitarStat4 } from './features/guitarstats4/guitarStatSlice4';
 import { fetchGuitarStat5 } from './features/guitarstats5/guitarStatSlice5';
 import { fetchFrontItems } from './features/FrontDisplay/frontSlice';
 import { fetchLinks } from './features/links/linkSlice';
+import { fetchSiteRef } from './features/SiteRef/siteRefSlice';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
     dispatch(fetchFrontItems());
     dispatch(fetchContact());
     dispatch(fetchLinks());
+    dispatch(fetchSiteRef());
   }, [dispatch]);
 
   return (

@@ -10,6 +10,7 @@ import { guitarstatReducer4 } from '../features/guitarstats4/guitarStatSlice4';
 import { guitarstatReducer5 } from '../features/guitarstats5/guitarStatSlice5';
 import { frontItemsReducer } from '../features/FrontDisplay/frontSlice';
 import { linksReducer } from '../features/links/linkSlice';
+import { siteRefReducer } from '../features/SiteRef/siteRefSlice';
 
 export const store = configureStore({
   reducer: {
@@ -22,6 +23,7 @@ export const store = configureStore({
     frontitems: frontItemsReducer,
     contact: contactReducer,
     links: linksReducer,
+    siteref: siteRefReducer,
   },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });
