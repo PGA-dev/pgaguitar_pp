@@ -410,4 +410,30 @@ p {
     font-weight: var(--fw--bright-wow);
     text-decoration: var(--text-dec-std);
 }
+/*Load and Error messaging*/
 
+.load-style {
+    color:var(--info-clr);
+    padding: 2px;
+    font-size: 24px;
+    font-family: Papyrus;
+}
+
+.error-style {
+    color:var(--info-clr);
+    padding: 2px;
+    font-size: 40px;
+    font-family: Papyrus;
+    text-decoration: none;
+}
+
+.error-head {
+    color: var(--danger-clr);
+    padding: 2px;
+    font-size: 40px;
+    font-family: papyrus;
+}
+
+#spin, .spin-style + .fa-spin {
+    color: var(--danger-clr);
+};
