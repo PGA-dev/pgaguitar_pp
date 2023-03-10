@@ -32,6 +32,7 @@
     --fs-text-hover: 27px;
     --fs-text-small: 16px;
     --fs-link: 35px;
+    --fs-link-hover: 37px;
 
 }
 
@@ -122,44 +123,38 @@ p {
     font-family: var(--font-main);
 }
 
-/*Formik*/
-.label-text {
-    background-color: var(--body-clr);
-    color: var(--info-clr);
-    font-family: var(--font-sec);
-    font-weight: var(--fw--bright);
-    font-size: var(--fs-text-hover);
-    padding: 1px;
-    margin: 1px 5px 5px;
-}
 
 /*Buttons*/
-.btn:is(:hover) {
-    color: var(--body-clr);
-    background-color: var(--info-clr);
-    border: 5px solid var(--light-clr);
+.btn:is(.btn, :visited, :link, :disabled) {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-size: var(--fs--text);
+    outline: none;
+    color: var(--info-clr);
+    background-color: var(--primary-clr);
+    border: 5px solid var(--secondary-clr);
     border-radius: 15px;
-    box-shadow: 0 8px var(--primary-clr);
+    box-shadow: 0 8px var(--dark-clr);
+}
+
+.btn:is(:hover) {
+    color: var(--danger-clr);
+    background-color: var(--body-clr);
+    border-radius: 15px;
+    font-size: var(--fs-text-hover);
+    box-shadow: 0 3px var(--info-clr);
 }
 
 .btn:is(:active) {
     background-color: var(--body-clr);
     color: var(--info-clr);
+    border: 5px solid var(--info-clr);
+    border-radius: 15px;
+    box-shadow: 0 4px rgb(120, 120, 120);
     box-shadow: 0 5px var(--secondary-clr);
     transform: translateY(5px);
-
-}
-
-.btn:is(:visited, :link, :disabled) {
-    display: inline-block;
-    text-decoration: none;
-    font-family: var(--font-main);
-    outline: none;
-    color: var(--info-clr);
-    background-color: var(--info-subtle);
-    border: 5px solid var(--secondary-clr);
-    border-radius: 15px;
-    box-shadow: 0 8px var(--dark-clr);
+    transition-delay: 0.2s;
 }
 
 
@@ -182,7 +177,6 @@ p {
     font-family: var(--font-main);
     color: var(--light-2nd);
 }
-
 
 .card-text {
     color: var(--info-clr);
@@ -242,9 +236,8 @@ p {
 }
 
 
-/*Heading material with ids*/
+/*Heading*/
 #navhead {
-    /* background-color: #901cad; */
     background-image: radial-gradient(var(--body-clr), var(--primary-clr));
     border-bottom: var(--border-clr) solid 1px;
     margin-bottom: 0rem;
@@ -254,7 +247,6 @@ p {
 
 #headerhead,
 .site-header {
-    /* background-color: #901cad; */
     background-image: radial-gradient(var(--primary-clr), var(--body-clr));
     border-bottom: var(--border-clr) solid 2px;
     margin-bottom: 1rem;
@@ -326,15 +318,35 @@ p {
 .headstyle-nav-nobar {
     border: 0px black;
 }
-;
+
+/*Formik*/
+.label-text {
+    background-color: var(--body-clr);
+    color: var(--info-clr);
+    font-family: var(--font-sec);
+    font-weight: var(--fw--bright);
+    font-size: var(--fs-text-hover);
+    padding: 1px;
+    margin: 1px 5px 5px;
+}
+
+/*Contact Form error message Formik*/
+.error-text {
+    background-color: var(--body-clr);
+    color: var(--danger-clr);
+    padding: 1px;
+    margin: 10px 0px 1px;
+    text-decoration: underline;
+    font-size: var(--fs-text-hover);
+    font-weight: var(--fw--bright);
+}
+
 
 /*carousel*/
 .carousel-control {
     color: var(--info-clr);
     background-color: var(--body-clr);
     opacity: .1;
-
-
 }
 
 
@@ -364,31 +376,38 @@ p {
     text-decoration: none;
 }
 
-#uc:is(:hover, #uc:active,
-    #uc:focus) {
+#uc:is(:hover, :active,
+    :focus) {
     cursor: crosshair;
     opacity: 1;
     background-color: var(--dark-clr);
 }
 
 /* Guide Site Map Links */
-#linkCSS,
-#linkCSS:focus {
+.link-card {
+    margin: 20px;
+    border: 4px solid var(--info-subtle);
+    border-radius: 35px;
+}
+
+.link-anchor,
+.link-anchor:focus {
     color: var(--info-clr);
     padding: 15px;
     margin: 20px;
-    font-size: 35px;
+    font-size: var(--fs-link);
     font-family: var(--font-main);
     font-weight: var(--fw--bright);
     text-decoration: var(--text-dec-std)
 }
 
-#linkCSS:hover {
+.link-anchor:hover {
     color: var(--danger-almost);
     padding: 15px;
     margin: 20px;
-    font-size: 37px;
+    font-size: var(--fs-link-hover);
     font-family: var(--font-main);
     font-weight: var(--fw--bright-wow);
     text-decoration: var(--text-dec-std);
 }
+

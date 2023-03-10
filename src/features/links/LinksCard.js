@@ -8,18 +8,13 @@ const LinksCard = ({ links }) => {
 
     const cardURL = linksUrl + url;
     return (
-        <Card style={cardCSS} className=' mb-4'>
-            <CardText><a id='linkCSS' href={cardURL}>{name}</a></CardText>
+        <Card  className=' mb-4 link-card'>
+            <CardText><a className='link-anchor' href={cardURL}>{name}</a></CardText>
         </Card>
 
     );
 }
 
-const cardCSS = {
-    margin: '20px',
-    border: '3px solid slateblue',
-    borderRadius: '35px'
-}
 
 
 

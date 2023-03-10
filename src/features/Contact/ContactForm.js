@@ -28,66 +28,21 @@ const ContactForm = () => {
     };
 
 
-    //****CSS Sort of...****     
+    //****Button Text****     
     const [buttonText, setButtonText] = useState("Send Feedback");
     const useActive = () => {
-        const [style, setStyle] = useState(btnContact);
-        const onMouseEnter = () => setStyle(btnHover)
         const onClick = () => {
             setButtonText('Submitting...');
-            setStyle(btnActive)
             setTimeout(() => {
                 setButtonText("Send Feedback");
             }, 700);
         }
-        const onMouseLeave = () => setStyle(btnContact)
-        return { style, onClick, onMouseEnter, onMouseLeave }
+        return { onClick }
     }
 
-    const btnContact = {
-        display: 'inline-block',
-        textDecoration: 'none',
-        outline: 'none',
-        color: 'aqua',
-        backgroundColor: '#09155a',
-        border: '5px solid grey',
-        borderRadius: '15px',
-        boxShadow: '0 3px rgb(88, 88, 104)'
-    }
-
-    const btnHover = {
-        backgroundColor: 'dark blue',
-        border: '5px solid grey',
-        borderRadius: '15px',
-        boxShadow: '0 2px aqua',
-        transitionDuration: '0.5s',
-        color: 'indigo'
-    }
-
-    const btnActive = {
-        backgroundColor: 'black',
-        color: 'aqua',
-        border: '5px solid aqua',
-        borderRadius: '15px',
-        boxShadow: '0 4px rgb(120, 120, 120)',
-        transform: 'translateY(5px)',
-        transitionDuration: '0.2s'
-    }
+     const active = useActive();
 
 
-    const errorText = {
-        backgroundColor: 'black',
-        color: 'magenta',
-        padding: '1px',
-        margin: '10px 0px 1px',
-        textDecoration: 'underline',
-        fontSize: "27px",
-        fontWeight: 700
-    }
-
-    const active = useActive();
-
-    //style={labelText}
     return <Formik
         initialValues={{
             firstName: '',
@@ -108,7 +63,7 @@ const ContactForm = () => {
                 <Col md='12'>
                     <Field className='form-control' name='firstName' placeholder='FirstName' />
                     <ErrorMessage name='firstName'>
-                        {(msg) => <p style={errorText}>{msg}</p>}
+                        {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
                 </Col>
             </FormGroup>
@@ -119,7 +74,7 @@ const ContactForm = () => {
                 <Col md='12'>
                     <Field className='form-control' name='lastName' placeholder='LastName' />
                     <ErrorMessage name='lastName'>
-                        {(msg) => <p style={errorText}>{msg}</p>}
+                        {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
                 </Col>
             </FormGroup>
@@ -130,7 +85,7 @@ const ContactForm = () => {
                 <Col md='12'>
                     <Field className='form-control' name='email' placeholder='Email' />
                     <ErrorMessage name='email'>
-                        {(msg) => <p style={errorText}>{msg}</p>}
+                        {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
                 </Col>
             </FormGroup>
@@ -141,7 +96,7 @@ const ContactForm = () => {
                 <Col md='12'>
                     <Field className='form-control' name='country' placeholder='country' />
                     <ErrorMessage name='country'>
-                        {(msg) => <p style={errorText}>{msg}</p>}
+                        {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
                 </Col>
             </FormGroup>
@@ -152,7 +107,7 @@ const ContactForm = () => {
                 <Col md='12'>
                     <Field className='form-control' name='feedback' placeholder='We appreciate your feedback' as='textarea' rows='4' />
                     <ErrorMessage name='feedback'>
-                        {(msg) => <p style={errorText}>{msg}</p>}
+                        {(msg) => <p className="error-text">{msg}</p>}
                     </ErrorMessage>
                 </Col>
             </FormGroup>
