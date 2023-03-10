@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { baseUrl } from '../../sitemisc/baseUrl';
 
 
-
 export const fetchLinks = createAsyncThunk(
     'links/fetchLinks',
     async () => {

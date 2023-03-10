@@ -1,6 +1,6 @@
 import { Card, CardText } from 'reactstrap';
 import { linksUrl } from '../../sitemisc/linksUrl';
-import { useState } from 'react';
+
 
 //Used in Site Map
 const LinksCard = ({ links }) => {
@@ -14,8 +14,6 @@ const LinksCard = ({ links }) => {
 
     );
 }
-
-
 
 
 export default LinksCard;
