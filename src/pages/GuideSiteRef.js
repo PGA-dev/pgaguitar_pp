@@ -1,6 +1,7 @@
 import { Container, Col, Row, Button } from 'reactstrap';
 import SubHeader from '../site/SubHeader';
 import IPIAImg from '../app/assets/img/p_region_PIA3761C_BLP_00_02.png';
+import SiteRefMapper from '../features/SiteRef/SiteRefMapper';
 
 const GuideSiteReferences = () => {
     return (
@@ -12,22 +13,9 @@ const GuideSiteReferences = () => {
                         <img src={IPIAImg} alt='Ibanez RGA622' className='rounded img-fluid' />
                     </div>
                 </Col>
-                <Col md='6'>
-                    <div>
-                        <p>
-                            Future Site Refs
-                        </p>
-                        
-                    </div>
-                </Col>
             </Row>
-            <Row className='row-border align-items-center'>
-                <Col sm='12'>
-                    <Button className='btn'>my button</Button>
-                </Col>
-                <Col>
-
-                </Col>
+            <Row>
+                <SiteRefMapper />
             </Row>
         </Container>
     );
