@@ -7,7 +7,7 @@ const GuitarCard = ({ guitar }) => {
     return (
         <Link to={`${id}`}>
             <Card id='bgcard'>
-                <CardImg width='100%' src={image} alt={name} style={{ height: 1000 }} />
+                <CardImg width='50%' src={image} alt={name} style={{ height: 600 }} />
                 <CardImgOverlay>
                     <CardTitle style={ctGuide}>Explore the {name} Guide</CardTitle>
                 </CardImgOverlay>

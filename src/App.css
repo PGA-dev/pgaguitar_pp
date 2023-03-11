@@ -1,4 +1,5 @@
 :root {
+    /*Custom sheet -- colors are simplified for my bootstrap addicted friends*/
     --info-clr: aqua;
     --secondary-clr: grey;
     --danger-clr: magenta;
@@ -390,7 +391,7 @@ p {
 /* Guide Site Map Links */
 .link-card {
     margin: 20px;
-    border: 4px solid var(--border-clr);
+    border: 4px solid var(--info-subtle);
     border-radius: 35px;
 }
 

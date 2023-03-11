@@ -13,13 +13,13 @@ const GuitarList = () => {
     const errorMsg = useSelector((state) => state.guitar.errorMsg);
 
     return isLoading ? (
-        <Row>
+        <>
             <LoadingMessage />
-        </Row>
+        </>
     ) : errorMsg ? (
-        <Row>
+        <>
             <ErrorMessage errorMsg={errorMsg} />
-        </Row>
+        </>
     ) : (
         <Row className='ms-auto'>
             {guitar.map((guitar) => {

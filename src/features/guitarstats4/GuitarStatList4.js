@@ -33,8 +33,10 @@ const GuitarStatList4 = ({ guitarid }) => {
         );
     }
     return (
-        <Col md='5' className='m-1' style={{ padding: '5px', fontFamily: 'papyrus', color: 'blueviolet' }}>
-            We don't have any stats on this model yet.
+        <Col>
+            {console.log('No stats on this item yet')}
+            <br></br>
+            <br></br>
         </Col>
     );
 };

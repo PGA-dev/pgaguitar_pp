@@ -33,8 +33,10 @@ const GuitarStatList3 = ({ guitarid }) => {
         );
     }
     return (
-        <Col md='5' className='m-1'>
-            We don't have any stats on this model yet.
+        <Col>
+            {console.log('No stats on this item yet')}
+            <br></br>
+            <br></br>
         </Col>
     );
 };
