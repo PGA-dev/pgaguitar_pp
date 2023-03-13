@@ -29,11 +29,6 @@ const Header = () => {
 
     );
 };
-// const headstyle = {
-//     color: "SlateBlue",
-//     padding: "8px",
-//     fontSize: "65px",
-//     fontFamily: "Papyrus"
-// };
+
 
 export default Header;
