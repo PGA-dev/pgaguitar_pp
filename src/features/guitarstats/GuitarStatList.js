@@ -25,7 +25,7 @@ const GuitarStatList = ({ guitarid }) => {
     if (guitarstats && guitarstats.length > 0) {
         return (
             <Col md='12' className='m-1 p-2'>
-                <h4>External Links</h4>
+                <h4>Introduction</h4>
                 {guitarstats.map((guitarstat) => {
                     return <GuitarStat key={guitarstat.id} guitarstat={guitarstat} />;
                 })}
