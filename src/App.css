@@ -205,7 +205,7 @@ p {
 /* General Utilities */
 .row-border {
     padding: 50px 0;
-    border-bottom: 5px ridge;
+    border-bottom: 2px ridge var(--border-2nd-clr);
     min-height: 200px;
 }
 

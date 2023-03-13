@@ -1,4 +1,4 @@
-//import {  Card, CardHeader, CardBody } from "reactstrap";
+
 
 const GuitarStat2 = ({ guitarstat2 }) => {
     const { head, text } = guitarstat2;
