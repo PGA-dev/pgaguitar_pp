@@ -1,12 +1,15 @@
-import {  Card, CardHeader, CardBody } from "reactstrap";
+
 
 const GuitarStat3 = ({ guitarstat3 }) => {
-    const { head, text } = guitarstat3;
+    const {videoId, text } = guitarstat3;
     return (
-        <Card>
-            <CardHeader>{head}</CardHeader>
-            <CardBody>{text}</CardBody>
-        </Card>
+        <>
+            <ul className='list-unstyled' style={{ padding: '2px', fontFamily: 'papyrus', color: 'slateblue' }}>
+                <li>
+                    <a href={videoId} target="_blank" rel="noreferrer">{text}</a>
+                </li>
+            </ul>
+        </>
     );
 };
 

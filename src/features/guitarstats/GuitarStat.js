@@ -6,8 +6,8 @@ const GuitarStat = ({ guitarstat }) => {
     const { head, text } = guitarstat;
     return (
         <Card>
-            <CardHeader>{head}</CardHeader>
-            <CardBody>{text}</CardBody>
+            <CardHeader color="magenta" style={{fontSize: '45px'}}>{head}</CardHeader>
+            <CardBody><p>{text}</p></CardBody>
         </Card>
     );
 };
