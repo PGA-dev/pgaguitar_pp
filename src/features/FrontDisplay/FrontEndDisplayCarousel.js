@@ -60,7 +60,7 @@ const FrontDisplayCarousel = () => {
                     onExited={() => setAnimating(false)}
                     onExiting={() => setAnimating(true)}
                 >
-                    <Link to={'/guidedirectory/8'}><img id='uc' src={item.src} alt={item.altText} /></Link>
+                    <Link to={'/about'}><img id='uc' src={item.src} alt={item.altText} /></Link>
                 </CarouselItem>
             );
         });
@@ -68,7 +68,7 @@ const FrontDisplayCarousel = () => {
             <div style={{
                 display: 'block', width: 1200, padding: 30
             }}>
-                <h1>Checkout Guitar Brand Guide</h1>
+                <h1>Meet Your Guide</h1>
                 <Carousel previous={previousButton} next={nextButton}
                     activeIndex={activeIndex}>
                     <CarouselIndicators items={frontitems}
