@@ -83,7 +83,6 @@ h3:hover::before {
 
 }
 
-
 /* Used for Card Headings */
 h4 {
     padding: 2px;
@@ -109,7 +108,6 @@ a {
     font-size: var(--fs--text);
     text-decoration: var(--text-dec-std);
     font-weight: var(--fw--normbr);
-
 }
 
 a:hover {
@@ -333,6 +331,16 @@ p {
     font-size: var(--fs-text-hover);
     padding: 1px;
     margin: 1px 5px 5px;
+}
+
+.form-control {
+    background-color: var(--dark-clr);
+    color: var(--info-clr)
+}
+
+.formgroup {
+    background-color: var(--body-clr); 
+    color: var(--info-clr)  
 }
 
 /*Contact Form error message Formik*/

@@ -14,7 +14,7 @@ const GuitarCard = ({ guitar }) => {
             </Card>
         </Link>
     );
-}
+};
 
 const ctGuide = {
     color: 'aqua',

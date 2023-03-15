@@ -1,4 +1,4 @@
-import { Card, CardTitle, CardBody, CardText, CardHeader, CardSubtitle } from 'reactstrap';
+import { Card, CardBody,  CardHeader, CardSubtitle } from 'reactstrap';
 
 
 //Used in Site Map

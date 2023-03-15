@@ -19,7 +19,6 @@ const ContactPage = () => {
             </Row>
             <Row className='align-items-center'>
                 <Col sm='12'>
-
                 </Col>
                 <Col>
 
