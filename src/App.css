@@ -14,6 +14,14 @@
     --border-clr: #20678b;
     --border-2nd-clr: #3498c2;
 
+    /* Custom colors for gradient color-chase cards -- these might change on and off, so must be done separately*/
+    --clr-1: aqua;
+    --clr-2: magenta;
+    --clr-3: #a424ff;
+    --clr-4: #cffbff;
+    --clr-5: slateblue;
+    --clr-6: aqua;
+
     --border-std: 5px solid #20678b;
     --text-dec-std: none;
     --text-dec-line: underline;
@@ -162,12 +170,55 @@ p {
 
 
 /*card related*/
-.card {
-    border: var(--border-clr) ridge 3px;
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  
+  .card {
     background-color: var(--body-clr);
-    opacity: .99;
+    border-radius: 0.9rem;
+    position: relative;
 }
-
+  .card::before,
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: -0.7rem;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-1),
+      var(--clr-2),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-5),
+      var(--clr-6),
+      var(--clr-5),
+      var(--clr-4),
+      var(--clr-3),
+      var(--clr-2),
+      var(--clr-1)
+    );
+    border-radius: inherit;
+    animation: rotation 4000ms linear infinite;
+  }
+  
+  .card::after {
+    filter: blur(3.5rem);
+  }
+  
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
+  
 .card-title {
     color: var(--danger-almost);
     font-weight: var(--fw--bright-wow);
