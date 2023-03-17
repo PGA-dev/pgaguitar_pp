@@ -8,6 +8,7 @@ const LoadingMessage = () => {
     );
 };
 
+
 const spinStyle= {
     color: "magenta"
 };
