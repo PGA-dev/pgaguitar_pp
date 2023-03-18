@@ -199,6 +199,7 @@ p {
 
 
 /*card related*/
+/*property var lets the value be treated as an angle of the background, not as the rotational position of the card itself*/
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
