@@ -26,11 +26,11 @@ const AboutPage = () => {
             <Row>
                 <Col>
                     <Card>
-                        <CardHeader className=" mt-1 bg text-left" style={{ border: "5px ridge #e6e3fa", borderRadius: "2%", backgroundColor: "black", color: "aqua", padding: "12px", fontSize: "50px", fontFamily: "papyrus" }}>
+                        <CardHeader className=" mt-2 bg text-left" style={{ backgroundColor: "black", color: "aqua", padding: "12px", fontSize: "50px", fontFamily: "papyrus", textDecoration: "underline"}}>
                             <Row className="row-right"><div className=""><a href="https://www.linkedin.com/in/paul-adam-86ba423b" target="_blank" rel="noreferrer"><img style={{ height: 290 }} width='25%' src={profile} alt='Author' ></img></a></div></Row>
                             <Row><div m='2'>About the Author</div></Row>
                         </CardHeader>
-                        <CardBody className="bg" style={{ border: "5px ridge #e6e3ea", backgroundColor: "black", color: "aqua", padding: "6px", fontSize: "35px", fontFamily: "papyrus" }}>
+                        <CardBody className="bg" style={{ backgroundColor: "black", color: "aqua", padding: "6px", fontSize: "35px", fontFamily: "papyrus" }}>
                             <div style={{ color: 'magenta', fontFamily: 'Arial-bold' }}>
                                 <ul className="list-unstyled m-2 p-1">
                                     <li>

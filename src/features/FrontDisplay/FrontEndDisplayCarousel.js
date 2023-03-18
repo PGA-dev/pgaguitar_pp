@@ -68,7 +68,7 @@ const FrontDisplayCarousel = () => {
             <div style={{
                 display: 'block', width: 1200, padding: 30
             }}>
-                <h1>Meet Your Guide</h1>
+                <div className='text-center'><h6>Welcome to the Guide</h6></div>
                 <Carousel previous={previousButton} next={nextButton}
                     activeIndex={activeIndex}>
                     <CarouselIndicators items={frontitems}

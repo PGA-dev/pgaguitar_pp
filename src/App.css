@@ -71,8 +71,10 @@ h3 {
     font-weight: var(--fw--bright)
 }
 
+
 h3:hover{
-    color: var(--danger-clr);
+    color: var(--light-2nd)
+    
 }
 
 h3::before {
@@ -82,15 +84,41 @@ h3::before {
     position: absolute;
     transform: scaleY(0);
     transform-origin: center;
-    transition: transform 250ms ease-in-out;
+    transition: transform 950ms ease-in-out;
     z-index: -1;
+
 }
 
 h3:hover::before {
-    transform: scaleY(1);
-
+    transform: scaley(1);
+    animation: colorback 7500ms infinite;
 }
 
+@keyframes colorback {
+    0% {
+      background-color:  var(--clr-2);
+    }
+    10%{
+        background-color:  var(--clr-3);
+    }
+    25% {
+        background-color:  var(--clr-1);
+    }
+    50% {
+        background-color:  var(--clr-5);
+    }
+    75%{
+        background-color:  var(--clr-1);
+    }
+    90% {
+        background-color:  var(--clr-3);
+    }
+    100% {
+        background-color:  var(--clr-2);
+    }
+  }
+
+  
 /* Used for Card Headings */
 h4 {
     padding: 2px;
@@ -110,6 +138,7 @@ h5 {
     font-weight: var(--fw--normbr);
     text-decoration: var(--text-dec-line)
 }
+
 
 a {
     color: var(--info-clr);
@@ -219,6 +248,47 @@ p {
     }
   }
   
+
+/*Carousel Text using blur conic gradient*/
+  h6{
+    font-family: papyrus;
+    font-size: var(--fs--pagehead);
+}
+div>h6{
+    font-size: var(--fs--heading);
+    color: aqua;
+    background-color: var(--body-clr);
+    border-radius: .5rem;
+    position: relative;
+}
+
+div>h6::before, div>h6::after{
+    content: "";
+    position: absolute;
+    inset: -0.1rem;
+    z-index: -1;
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-1),
+      var(--clr-2),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-5),
+      var(--clr-6),
+      var(--clr-5),
+      var(--clr-4),
+      var(--clr-3),
+      var(--clr-2),
+      var(--clr-1)
+    );
+    border-radius: inherit;
+    animation: rotation 4000ms linear infinite;
+  }
+
+  div>h6::after {
+    filter: blur(3.5rem);
+  }
+
 .card-title {
     color: var(--danger-almost);
     font-weight: var(--fw--bright-wow);
@@ -424,7 +494,7 @@ p {
     color: var(--info-clr);
     opacity: .1;
     transition-property: background-color;
-    transition-duration: 200ms;
+    transition-duration: 2000ms;
     background-color: var(--body-clr);
 
 }
